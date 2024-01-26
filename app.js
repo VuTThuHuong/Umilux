@@ -1,9 +1,8 @@
-let lists = document.querySelector('.slider-header-top .list-paragraph');
-let items = document.querySelectorAll('.slider-header-top .list-paragraph .items');
-let prev = document.getElementById('prev');
-let next = document.getElementById('next');
+let lists = document.querySelector('.slideshow .slide-list');
+let items = document.querySelectorAll('.slideshow .slide-list .slide-items');
 
 let active = 0;
+let lengthItem = items.length - 1;
 next.onclick = function(){
     if(active + 1 > lengthItem){
         active = 0;
@@ -26,4 +25,15 @@ let refreshSlider = setInterval(() => {next.click()},3000);
 function reloadSlider(){
     let checkleft = items[active].offsetLeft;
     lists.style.left = -checkleft + 'px';
+
+    let lastActiveDot = document.querySelector('.slideshow .list-dots li.active');
+    lastActiveDot.classList.remove('active');
+    list-dots[active].classList.add('active');
 }
+
+dots.forEach((li, key) => {
+    li.addEventListener('click', function () {
+        active = key;
+        reloadSlider();
+    })
+})

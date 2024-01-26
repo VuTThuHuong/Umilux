@@ -19,6 +19,60 @@ html {
 /**
  * Remove the margin in all browsers.
  */
+ .container,.container-fluid,.strecth-width {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  width: 100%
+}
+ @media (min-width: 1200px) {
+  .container,.container-fluid,.strecth-width {
+      --bs-gutter-x:3rem;
+  }
+}
+
+@media (max-width: 1199px) {
+  .row {
+      --bs-gutter-x:30px
+  }
+
+  .gap-tablet {
+      --bs-gutter-x: 30px!important;
+      --bls-gutter-x: 30px!important
+  }
+
+  .spt-tablet {
+      --section-padding-top: 5rem!important
+  }
+
+  .spb-tablet {
+      --section-padding-bottom: 5rem!important
+  }
+}
+
+@media (max-width: 767px) {
+  .row {
+      --bs-gutter-x:15px
+  }
+
+  .gap-mobile {
+      --bs-gutter-x: 15px!important;
+      --bs-gutter-x: 15px!important
+  }
+
+  :root {
+      --spacing-title: 2rem 0 3rem
+  }
+
+  .spt-mobile {
+      --section-padding-top: 3rem!important
+  }
+
+  .spb-mobile {
+      --section-padding-bottom: 3rem!important
+  }
+}
 
 body {
   margin: 0;
