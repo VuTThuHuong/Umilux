@@ -16,6 +16,7 @@
     --border-digital: #E5E8EC;
     --btn-primary-bg-hover: #253380;
     --bls-container-fluid-width: 1410px;
+    --box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
 }
 
 html,
@@ -129,11 +130,11 @@ section > section{
     text-align: center;
 }
 
-.list-paragraph .item {
+.list-paragraph .items {
     width: 100%;
     display: none;
 }
-.list-paragraph .item.active {
+.list-paragraph .items.active {
   display: block;
 }
 .list-paragraph p{
@@ -162,7 +163,7 @@ section > section{
 
 /* Header-Center*/
 .header-center{
-    margin: 20px;
+    margin: 20px 0;
 }
 .icon-input{
     left: 30px;
@@ -195,7 +196,8 @@ button[type="commit"]{
 }
 .text-icons{
     font-size: 14px;
-    margin-left: 5px;
+    margin-left: 15px;
+    line-height: 1.1;
 }
 .text-icons-top{
     font-size: 11px;
@@ -203,7 +205,7 @@ button[type="commit"]{
 }
 .header-wishlist-wrap{  
     position: relative;
-    margin: 0 30px;
+    margin: 0 15px;
 }
 .h-count{
     width: 18px;
@@ -216,12 +218,66 @@ button[type="commit"]{
     font-size: 10px;
     font-weight: var(--base-font-weight);
     position: absolute;
-    top: -6px;
-    left: 1.3rem;
-    background-color: var(--primary-color);
-    color: var(--color-white);
+    top: -4px;
+    left: 15px;
+    background-color: var(--key-digital);
+    color: var(--background);
+}
+/* Header-Bottom*/
+.header-bottom{
+    font-weight: var(--base-font-weight);
+    padding: 10px 0;
+    font-size: var(--base-font-size);
+    border-top: 1px solid var(--border-digital);
+    border-bottom: 1px solid var(--border-digital);
+}
+.header-bottom .col-left{
+    border-right: 1px solid var(--border-digital);
+}
+.menu-title{
+    font-weight: var(--font-weight-bold);
+}
+.text-menu{
+    margin-left: 10px;
+}
+.main-menu{
+    font-weight: var(--font-weight-bold);
+    margin: 0 20px;
+}
+.menu-vertical-horizontal  li.level0.menu-parent > a::after{
+    content: "\f107";
+    font: normal normal normal 14px/1 FontAwesome;
+    margin-left: 5px;
+}
+.menu-vertical-horizontal > li{
+   margin-left: 30px;
+}
+.menu-parent .submenu{
+    font-weight: var(--base-font-weight);
+    top: 35px;
+    background-color: var(--background);
+    padding: 30px;
+    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s ease;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
 }
 
+.default_dropdown ul.dropdown{
+    width: 200px;
+}
+.default_dropdown ul.dropdown li:not(:last-child){
+   margin-bottom: 15px;
+}
+.menu-parent:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+}
+.menu-custom-width-center{
+    left: 50%;
+    transform: translateX(-50%);
+}
 /*=====Main=====*/
 /* Slide-Menu */
 .slider{
@@ -230,12 +286,15 @@ button[type="commit"]{
 }
 /*Slide*/
 .slideshow{
-    overflow: hidden;
     width: 100%;
 }
-.slide-position{
+.slide-container {
+    overflow: hidden;
     position: relative;
+  }
+.slide-position{
     color: var(--background);
+    position: relative;
 }
 .slide-position .slide-text{
     position: absolute;
@@ -292,7 +351,8 @@ button[type="commit"]{
     position: absolute;
     bottom: 10px;
     color: var(--background);
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: center;
 }
@@ -300,7 +360,7 @@ button[type="commit"]{
     width: 10px;
     height: 10px;
     background-color:  rgba(255, 255, 255, 0.2);
-    margin: 20px;
+    margin: 10px;
     border-radius: 20px;
     transition: 1s;
 }
@@ -312,27 +372,80 @@ button[type="commit"]{
     overflow: hidden; 
 }
 
-.slide-position {
-    position: relative;
-}
-
 .slide-position img {
     width: 100%; 
-    height: auto; 
     display: block; 
+    object-fit: cover;
 }
 /*Menu*/
 .col-left{
     max-width: 22%;
 }
+.menu-width-full-width .submenu{
+    width: 100%;
+}
+.collection-infor{
+    background: #fff;
+    padding: 20px;
+    border-radius: 30px;
+    display: block;
+    bottom: 10px;
+    left: 25%;
+    transform: translateX(-5%);
+}
+.collection-infor a{
+    color: var(--body-fashion);
+    font-size: 16px;
+}
+.label{
+    font-size: 10px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    margin-left: 5px;
+    text-transform: uppercase;
+    color: var(--background);
+}
+.label1{
+    background-color: var(--color-timer);
+}
+.label2{
+    background-color: var(--key-digital);
+}
+.type_home{
+    width: 20%;
+    margin-bottom: 20px;
+}
+.type_home .home-item{
+    padding: 20px ;
+    border-radius: 20px;
+    background-color: var(--background);
+    box-shadow: var(--box-shadow);
+}
+.type_home .home-item .home-img{
+    border-radius: 10px;
+}
+
+.type_home .home-item .home-title{
+    padding-top: 10px;
+    font-weight: var(--font-weight-bold);
+    color: var(--title-fashion);
+}
+.loadmore-menu{
+    padding: 20px 0;
+}
+.loadmore-menu .demo{
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+}
 .menu-slide{
     font-size: var(--base-font-size);
     font-weight: var(--base-font-weight);
     background: #fff;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 20px;
 }
-.menu-slide li:not(:last-child){
+.menu-slide .verticalmenu-list > li:not(:last-child){
     padding: 10px 0;
     position: relative;
     border-bottom: 1px solid var(--border-digital);
@@ -340,7 +453,7 @@ button[type="commit"]{
 .menu-slide li a span{
     padding-left: 10px;
 }
-.menu-slide .dropdown-with-custom a::after{ 
+.menu-slide .dropdown-with-custom > a::after{ 
     content: "\f105";
     font: normal normal normal 14px/1 FontAwesome;
     float: right;
@@ -351,21 +464,53 @@ button[type="commit"]{
     padding-top: 10px;
 }
 .menu-slide .other-link i{
-    padding: 5px;
     float: right;
 }
 .menu-slide .other-link a{ 
     font-size: var(--base-font-size);
     font-weight: var(--font-weight-bold);
 }
+
+/*===== SubMenu ===*/
+.verticalmenu-list .submenu {
+    top: 0;
+    transform: translateY(-20px);
+    left: 110%;
+    border-radius: 30px;
+}
+.subchildmenu-title{
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 20px;
+}
+.subchildmenu:not(:last-child){
+    padding-bottom: 20px;
+}
+.submenu .menu-item{
+    margin-bottom: 15px;
+}
+.submenu-mobile-title{
+    display: none;
+}
+.block-banner img{
+    transition: var(--bls-transition);
+}
+.block-banner:hover img{
+    transform: scale(1.1);
+}
+/* .menu-slide-sticky{
+    top: 100%;
+    transform: translateY(20px);
+    left: 0;
+    width: 250px;
+    display: none;
+    z-index: 3;
+} */
+
 /* Product */
 .pro-items-lists{
     z-index: 1;
     display: flex;
     box-sizing: content-box;
-}
-.pro-items{
-    margin:0 10px;
 }
 .col-pro-items{
     color:var(--title-fashion);
@@ -410,6 +555,43 @@ button[type="commit"]{
     font-size: var(--base-font-size);
     margin-left: 5px;
 }
+.overlay{
+    top: 10px;
+    transform: translateX(-10px);
+    transition: opacity 0.4s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+.swiper-slide:hover .overlay{
+    visibility: visible;
+    opacity: 1;
+}
+.list-btn{
+    top: 20px;
+    right: 10px;
+}
+.btn-add{
+    border: none;
+    border-radius: 50px;
+    height: 40px;
+    width: 40px;
+    box-shadow: var(--box-shadow);
+    background-color: #FFF;
+    margin-bottom: 5px;
+}
+.btn-add:hover {
+   background-color: var(--title-fashion);
+   color: #fff;
+} 
+
+.product-icon path {
+    fill: var(--title-fashion); 
+    transition: fill 0.3s; 
+}
+.btn-add:hover .product-icon path {
+    fill: #ffffff; 
+}
+
 /* Selling*/
 .pro-banner{
     width: 40%;
@@ -507,7 +689,6 @@ button[type="commit"]{
 }
 .banner-image img{
     transition: var(--bls-transition);
-    object-fit: cover;
 }
 .banner-image{
     border-radius: 15px 15px 0 0;
@@ -515,11 +696,13 @@ button[type="commit"]{
 .banner-image-2{
     border-radius: 15px;
 }
-.banner-image img:hover{
+.banner-item:hover img{
     transform: scale(1.1);
     border-radius: 15px;
 }
 /*===Collection===*/
+
+
 .collection-items{
     background-color: #FFF;
     padding: 30px;
@@ -569,11 +752,8 @@ button[type="commit"]{
     padding-top: 60px;
     margin-bottom: 60px;
 }
-.footer-link h3{
-    font-size: 16px;
-    font-weight: var(--font-weight-bold);
-    margin-bottom: 25px;
-    color: var(--title-fashion);
+.footer-link h4 i{
+    display: none;
 }
 ul.social-link li a{
     margin-right: 10px;
@@ -615,16 +795,14 @@ ul.social-link a:hover{
 .newsletter-form input[type="email"]{
     text-align: left;
     margin-right: 10px;
-    width: 250px;
     font-size: 12px;
     padding: 10px 20px;
     border: 1px solid var(--border-digital);
 }
 .newsletter-form button[type="submit"]{
     font-weight: var(--base-font-weight);
-    width: 120px;
     font-size: 14px;
-    padding: 10px;
+    padding: 10px 20px;
     border: none;
     background: var(--key-digital);
 }
@@ -670,7 +848,11 @@ ul li.links a:hover{
 .btn:focus{
     box-shadow: none;
 }
-
+.footer-bottom button{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--body-fashion);
+}
 /* Dropdown Menu */
 .dropdown-menu{
     width: 150px;

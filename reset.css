@@ -7,7 +7,11 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -27,50 +31,26 @@ html {
   width: 100%
 }
  @media (min-width: 1200px) {
-  .container,.container-fluid,.strecth-width {
-      --bs-gutter-x:3rem;
+  .container,.container-fluid{
+      --bs-gutter-x: 4rem;
   }
 }
 
-@media (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1200px) {
+  .container,.container-fluid {
+    --bs-gutter-x: 4rem;
+  }
   .row {
       --bs-gutter-x:30px
   }
-
-  .gap-tablet {
-      --bs-gutter-x: 30px!important;
-      --bls-gutter-x: 30px!important
-  }
-
-  .spt-tablet {
-      --section-padding-top: 5rem!important
-  }
-
-  .spb-tablet {
-      --section-padding-bottom: 5rem!important
-  }
 }
 
-@media (max-width: 767px) {
+ @media (max-width: 768px){
+  .container,.container-fluid {
+      --bs-gutter-x: 2rem;
+  }
   .row {
       --bs-gutter-x:15px
-  }
-
-  .gap-mobile {
-      --bs-gutter-x: 15px!important;
-      --bs-gutter-x: 15px!important
-  }
-
-  :root {
-      --spacing-title: 2rem 0 3rem
-  }
-
-  .spt-mobile {
-      --section-padding-top: 3rem!important
-  }
-
-  .spb-mobile {
-      --section-padding-bottom: 3rem!important
   }
 }
 
