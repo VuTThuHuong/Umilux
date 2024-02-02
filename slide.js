@@ -89,6 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
     startAutoSlide();
   });
   
+  /*============ Footer Bottom =============*/
 
 
 /*===== Swiper Slide =====*/
@@ -135,3 +136,21 @@ const swiper = new Swiper('.slide-collection', {
         },
     },
   });
+
+
+/*========== Menu ===========*/
+document.addEventListener("DOMContentLoaded", function () {
+  const mobileMenu = document.querySelector(".mobile-menu");
+  const menuToggle = document.getElementById("moblie_menu_toggle");
+
+  if (menuToggle) {
+    menuToggle.addEventListener("click", () => {
+      toggleMenu();
+    });
+  }
+
+  function toggleMenu() {
+    mobileMenu.classList.toggle("active");
+  }
+});
+
