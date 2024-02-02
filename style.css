@@ -463,9 +463,6 @@ button[type="commit"]{
 .menu-slide .other-link{
     padding-top: 10px;
 }
-.menu-slide .other-link i{
-    float: right;
-}
 .menu-slide .other-link a{ 
     font-size: var(--base-font-size);
     font-weight: var(--font-weight-bold);
