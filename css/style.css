@@ -1,10 +1,10 @@
 /* Root */
 :root{
     --bls-transition: all 0.4s;
-    --title-fashion: #111;
-    --background: #FFF;
+    --title-fashion: rgba(17, 17, 17, 1);
+    --background: rgba(255, 255, 255, 1);
     --key-digital: #0D53BB;
-    --body-second: #999;
+    --body-second: rgba(141, 151, 158, 1);
     --color-timer: #DD3327;
     --body-fashion: #555;
     --base-font-size: 14px;
@@ -19,6 +19,24 @@
     --box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
     --border-color-base: #ebebeb
 }
+@font-face {
+    font-family: "General Sans";
+    src: url("../fonts/GeneralSans-Medium.otf") format("truetype");
+    font-weight: 400;
+  }
+  
+  @font-face {
+    font-family: "General Sans";
+    src: url("../fonts/GeneralSans-Regular.otf") format("truetype");
+    font-weight: 500;
+  }
+  
+  @font-face {
+    font-family: "General Sans";
+    src: url("../fonts/GeneralSans-Semibold.otf") format("truetype");
+    font-weight: 600;
+  }
+  
 
 html,
 body {
@@ -160,7 +178,7 @@ section > section{
     display: flex;
     justify-content: space-between;
 }
-.buttons-slider button{
+.buttons-slider div{
     width: 16px;
     height: 16px;
     border: none;
@@ -174,7 +192,12 @@ section > section{
     margin-right: 10px;
     transform: translateY(-50%);
 }
+.btn-secondary{
+    border: none;
+    background: transparent;
+    font-size: 14px;
 
+}
 /* Header-Center*/
 .header-center{
     margin: 20px 0;
@@ -398,8 +421,8 @@ button[type="commit"]{
     object-fit: cover;
 }
 /*Menu*/
-.col-left{
-    max-width: 22%;
+.slider .vertical-menu{
+   width: 22%;
 }
 .menu-width-custom .menu-custom-width-center{
     width: 1200px;
@@ -434,7 +457,7 @@ button[type="commit"]{
 .label2{
     background-color: var(--key-digital);
 }
-.type_home{
+.submenu .type_home{
     width: 20%;
     margin-bottom: 20px;
 }
@@ -513,6 +536,7 @@ button[type="commit"]{
 }
 .block-banner img{
     transition: var(--bls-transition);
+    object-fit: cover;
 }
 .block-banner:hover img{
     transform: scale(1.1);
@@ -527,7 +551,7 @@ button[type="commit"]{
     color:var(--title-fashion);
     padding: 20px;
     border-radius: 15px;
-    background-color: #FFF;
+    background-color: var(--background);
 }
 .pro-discount a{
     color: #fff;
@@ -626,7 +650,7 @@ button[type="commit"]{
 }
 
 /* Selling*/
-.pro-banner{
+.top-selling-products .pro-banner{
     width: 40%;
     position: relative;
 }
@@ -734,6 +758,10 @@ button[type="commit"]{
     border-radius: 15px;
 }
 /*===Collection===*/
+.title-collection{
+    font-size: 16px;
+    font-weight: var(--font-weight-bold);
+}
 .collection-items{
     background-color: #FFF;
     padding: 30px;
@@ -746,6 +774,10 @@ button[type="commit"]{
 }
 .deals .banner-desc{
     padding: 25px 30px 30px 30px;
+}
+.banner-title{
+    font-weight: var(--font-weight-bold);
+    font-size: 16px;
 }
 .card-item{
     background-color: #FFF;
@@ -800,7 +832,7 @@ ul.social-link a:hover .tooltip-content-bottom{
 .tooltip-content-bottom{
     position: absolute;
     left: 50%;
-    top: 200%;
+    top: 150%;
     transform: translateY(0) translateX(-50%);
     z-index: 2;
 }
@@ -828,6 +860,7 @@ ul.social-link a:hover .tooltip-content-bottom{
     font-size: 12px;
     padding: 10px 20px;
     border: 1px solid var(--border-digital);
+    font-weight: var(--base-font-weight);
 }
 .newsletter-form button[type="submit"]{
     font-weight: var(--base-font-weight);
@@ -835,6 +868,7 @@ ul.social-link a:hover .tooltip-content-bottom{
     padding: 10px 20px;
     border: none;
     background: var(--key-digital);
+    color : var(--background);
 }
 .newsletter-form button[type="submit"]:hover{
     background: var(--btn-primary-bg-hover);
@@ -884,9 +918,34 @@ ul li.links a:hover{
     color: var(--body-fashion);
 }
 /* Dropdown Menu */
+.language .dropdown-menu{
+    top: -240px;
+}
+.currency .dropdown-menu{
+    top: -120px;
+}
+#btn-language:checked ~ .dropdown-menu{
+    display: block;
+}
+#btn-currency:checked ~ .dropdown-menu{
+    display: block;
+}
+.btn{
+    margin-right: 10px;
+    font-weight: 500;
+}
 .dropdown-menu{
+    display: none;
+    background: white;
     width: 150px;
     padding: 15px;
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+    z-index: 1;
+    transition: var(--bls-transition);
+}
+.dropdown-menu li{
+    padding: 12px 0;
 }
 .dropdown-menu li .dropdown-item{
     transition: var(--bls-transition);
@@ -897,7 +956,7 @@ ul li.links a:hover{
    color: #111;
 }
 .dropdown-item {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     font-size: var(--base-font-size);
     color: var(--body-fashion);
     font-weight: var(--base-font-weight);

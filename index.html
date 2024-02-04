@@ -10,14 +10,14 @@
     <meta name="title" content="Umino - Umilux">
     <meta property="og:type" content="website">
     <title>Umilux</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-utilities.css">
+
 </head>
 
 <body>
@@ -27,8 +27,8 @@
         <div class="header-top">
             <div class="slider-header-top position-relative">
                 <div class="buttons-slider position-absolute position-header-top">
-                    <button id="prev"><i class="fa fa-angle-left"></i></button>
-                    <button id="next"><i class="fa fa-angle-right"></i></button>
+                    <div id="prev" role="button"><i class="fa fa-angle-left"></i></div>
+                    <div id="next" role="button"><i class="fa fa-angle-right"></i></div>
                 </div>
                 <div class="list-paragraph position-absolute position-header-top">
                     <div class="items">
@@ -41,11 +41,11 @@
                         <p>Auto Applied at Checkout — Limited Time Only</p>
                     </div>
                 </div>
-                <a href="#"class="position-absolute close-button">
+                <div class="position-absolute close-button">
                     <svg width="18" height="20" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:anim="http://www.w3.org/2000/anim" anim="" anim:transform-origin="50% 50%" anim:duration="1" anim:ease="ease-in-out">
                         <path id="î¨©" opacity="0.5" d="M0.972656 1.52148C0.820312 1.38086 0.744141 1.21094 0.744141 1.01172C0.744141 0.800781 0.820312 0.619141 0.972656 0.466797C1.11328 0.326172 1.28906 0.255859 1.5 0.255859C1.71094 0.255859 1.88672 0.326172 2.02734 0.466797L6 4.43945L9.97266 0.466797C10.1133 0.326172 10.2891 0.255859 10.5 0.255859C10.7109 0.255859 10.8867 0.326172 11.0273 0.466797C11.1797 0.619141 11.2559 0.800781 11.2559 1.01172C11.2559 1.21094 11.1797 1.38086 11.0273 1.52148L7.05469 5.49414L11.0273 9.4668C11.1797 9.61914 11.2559 9.80078 11.2559 10.0117C11.2559 10.2109 11.1797 10.3809 11.0273 10.5215C10.8867 10.6738 10.7109 10.75 10.5 10.75C10.2891 10.75 10.1133 10.6738 9.97266 10.5215L6 6.56641L2.02734 10.5215C1.88672 10.6738 1.71094 10.75 1.5 10.75C1.28906 10.75 1.11328 10.6738 0.972656 10.5215C0.820312 10.3809 0.744141 10.2109 0.744141 10.0117C0.744141 9.80078 0.820312 9.61914 0.972656 9.4668L4.94531 5.49414L0.972656 1.52148Z" fill="white"></path>
                     </svg>
-                </a>
+                </div>
             </div>
         </div> 
         <!--Header-Center-->
@@ -59,7 +59,7 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="col-lg-2 col-4 order-lg-1 order-2 justify-content-center justify-content-lg-start" style="aspect-ratio: 50%;">
+                    <div class="col-lg-2 col-4 order-lg-1 order-2 justify-content-center justify-content-lg-start">
                         <img src="Images/Logo.webp" alt="Logo" width="144" height="36" loading="lazy">
                     </div>
                     <div class="col-lg-7 order-lg-2 order-4 col-middle-center justify-content-center">
@@ -1058,7 +1058,7 @@
                                                 <div class="block-banner col-sm-5 d-none-mb overflow-hidden">
                                                     <div class="hover-zoom">
                                                         <a href="#" target="_self">
-                                                            <img loading="lazy" class="menu-thumb-icon" src="Images/bn_vertical.webp" alt="Banner Verticals" width="520" height="600">
+                                                            <img loading="lazy" class="menu-thumb-icon" src="Images/bn_vertical.webp" alt="Banner Verticals" width="520" height="920">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -1269,7 +1269,7 @@
                                                 <div class="block-banner col-sm-5 d-none-mb overflow-hidden">
                                                     <div class="hover-zoom">
                                                         <a href="#" target="_self">
-                                                            <img loading="lazy" class="menu-thumb-icon" src="Images/bn_vertical.webp" alt="Banner Verticals" width="520" height="600" loading="lazy">
+                                                            <img loading="lazy" class="menu-thumb-icon" src="Images/bn_vertical.webp" alt="Banner Verticals" width="520" height="920" loading="lazy">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -1452,7 +1452,7 @@
     </header>
 
     <!--Main-->
-    <main style="background-color: #F1F3F7;">
+    <main style="background-color: rgba(241, 243, 247, 1);">
         <!--Slider-Menu-->
         <section class="slider">
             <div class="container-fluid">
@@ -1665,7 +1665,7 @@
                                             <div class="block-banner col-sm-5 d-none-mb overflow-hidden">
                                                 <div class="hover-zoom">
                                                     <a href="#" target="_self">
-                                                        <img loading="lazy" class="menu-thumb-icon" src="Images/bn_vertical.webp" alt="Banner Verticals" width="520" height="600">
+                                                        <img loading="lazy" class="menu-thumb-icon" src="Images/bn_vertical.webp" alt="Banner Verticals" width="520" height="920">
                                                     </a>
                                                 </div>
                                             </div>
@@ -1876,7 +1876,7 @@
                                             <div class="block-banner col-sm-5 d-none-mb overflow-hidden">
                                                 <div class="hover-zoom">
                                                     <a href="#" target="_self">
-                                                        <img loading="lazy" class="menu-thumb-icon" src="Images/bn_vertical.webp" alt="Banner Verticals" width="520" height="600">
+                                                        <img loading="lazy" class="menu-thumb-icon" src="Images/bn_vertical.webp" alt="Banner Verticals" width="520" height="920">
                                                     </a>
                                                 </div>
                                             </div>
@@ -2068,7 +2068,7 @@
                                 </div>
                                 <div class="slide-items">
                                     <div class="slide-position">
-                                        <img src="Images/slide_1.webp" alt="Slide 3" width="100%" height="450" loading="lazy">
+                                        <img src="Images/slide_1.webp" alt="Slide 3" width="457" height="450" loading="lazy">
                                         <div class="slide-text">
                                             <p class="slide-subtitle">Best selling</p>
                                             <h2 class="slide-title">Top Quality
@@ -2099,7 +2099,7 @@
                             <div class="banner-item">
                                 <div class="banner-image banner-image-2 overflow-hidden">
                                     <a href="#" >
-                                        <img src="Images/banner_1.webp" alt="Banner" width="100%" height="200" loading="lazy">
+                                        <img src="Images/banner_1.webp" alt="Banner" width="457" height="200" loading="lazy">
                                     </a>
                                 </div>
                                 <div class="banner-text">
@@ -2119,7 +2119,7 @@
                             <div class="banner-item banner-image-2 overflow-hidden">
                                 <div class="banner-image">
                                     <a href="#"class="overflow-hidden">
-                                        <img src="Images/banner_2.webp" alt="Banner" width="100%" height="200" loading="lazy">
+                                        <img src="Images/banner_2.webp" alt="Banner" width="457" height="200" loading="lazy">
                                     </a>
                                 </div>
                                 <div class="banner-text">
@@ -2218,7 +2218,7 @@
                                             </div>
                                         </div>
                                         <div class="pro-info">
-                                            <a href="#"style="color: #999;font-size: 16px;">Toshiba</a>
+                                            <a href="#"style="color: rgba(141, 151, 158, 1);font-size: 16px;">Toshiba</a>
                                             <h3 class="pro-name"><a href="#" >Skytech Blaze Gaming PC Intel Core i5
                                                     15700F 5.1
                                                     GH</a>z</h3>
@@ -2296,7 +2296,7 @@
                                             </div>
                                         </div>
                                         <div class="pro-info">
-                                            <a href="#"style="color: #999;font-size: 16px;">Toshiba</a>
+                                            <a href="#"style="color: rgba(141, 151, 158, 1);font-size: 16px;">Toshiba</a>
                                             <h3 class="pro-name"><a href="#" >Skytech Blaze Gaming PC Intel Core i5
                                                     15700F 5.1
                                                     GH</a>z</h3>
@@ -2374,7 +2374,7 @@
                                             </div>
                                         </div>
                                         <div class="pro-info">
-                                            <a href="#"style="color: #999;font-size: 16px;">Toshiba</a>
+                                            <a href="#"style="color: rgba(141, 151, 158, 1);font-size: 16px;">Toshiba</a>
                                             <h3 class="pro-name"><a href="#" >Skytech Blaze Gaming PC Intel Core i5
                                                     15700F 5.1
                                                     GH</a>z</h3>
@@ -2452,7 +2452,7 @@
                                             </div>
                                         </div>
                                         <div class="pro-info">
-                                            <a href="#"style="color: #999;font-size: 16px;">Toshiba</a>
+                                            <a href="#"style="color: rgba(141, 151, 158, 1);font-size: 16px;">Toshiba</a>
                                             <h3 class="pro-name"><a href="#" >Skytech Blaze Gaming PC Intel Core i5
                                                     15700F 5.1
                                                     GH</a>z</h3>
@@ -2530,7 +2530,7 @@
                                             </div>
                                         </div>
                                         <div class="pro-info">
-                                            <a href="#"style="color: #999;font-size: 16px;">Toshiba</a>
+                                            <a href="#"style="color: rgba(141, 151, 158, 1);font-size: 16px;">Toshiba</a>
                                             <h3 class="pro-name"><a href="#" >Skytech Blaze Gaming PC Intel Core i5
                                                     15700F 5.1
                                                     GH</a>z</h3>
@@ -2575,9 +2575,9 @@
                     </div>
                     <div class="row flex-nowrap pt-4 overflow-hidden">
                         <div class="pro-banner d-none d-xl-block">
-                            <div class="pro-banner-img overflow-hidden">
-                                <a href="#" >
-                                    <img src="Images/selling_1.webp" alt="Product banner selling 1" width="510px" height="380px" loading="lazy">
+                            <div class="pro-banner-img overflow-hidden" >
+                                <a href="#" style="aspect-ratio: 0.57;">
+                                    <img src="Images/selling_1.webp" alt="Product banner selling 1" width="552" height="377" loading="lazy" >
                                 </a>
                             </div>
                             <div class="banner-text">
@@ -2643,7 +2643,7 @@
                                             </div>
                                         </div>
                                         <div class="pro-info">
-                                            <a href="#"style="color: #999;font-size: 16px;">Toshiba</a>
+                                            <a href="#"style="color: rgba(141, 151, 158, 1);font-size: 16px;">Toshiba</a>
                                             <h3 class="pro-name"><a href="#" >Skytech Blaze Gaming PC Intel Core i5 15700F
                                                     5.1
                                                     GH</a>z</h3>
@@ -2721,7 +2721,7 @@
                                             </div>
                                         </div>
                                         <div class="pro-info">
-                                            <a href="#"style="color: #999;font-size: 16px;">Toshiba</a>
+                                            <a href="#"style="color: rgba(141, 151, 158, 1);font-size: 16px;">Toshiba</a>
                                             <h3 class="pro-name"><a href="#" >Skytech Blaze Gaming PC Intel Core i5 15700F
                                                     5.1
                                                     GH</a>z</h3>
@@ -2799,7 +2799,7 @@
                                             </div>
                                         </div>
                                         <div class="pro-info">
-                                            <a href="#"style="color: #999;font-size: 16px;">Toshiba</a>
+                                            <a href="#"style="color: rgba(141, 151, 158, 1);font-size: 16px;">Toshiba</a>
                                             <h3 class="pro-name"><a href="#" >Skytech Blaze Gaming PC Intel Core i5 15700F
                                                     5.1
                                                     GH</a>z</h3>
@@ -2841,7 +2841,7 @@
                             <div class="banner-item">
                                 <div class="banner-image banner-image-2 overflow-hidden">
                                     <a href="#" >
-                                        <img src="Images/banner_bottom_2.webp" alt="Banner Bottom" width="100%" height="200" loading="lazy">
+                                        <img src="Images/banner_bottom_2.webp" alt="Banner Bottom" width="695" height="200" loading="lazy">
                                     </a>
                                 </div>
                                 <div class="banner-text">
@@ -2861,7 +2861,7 @@
                             <div class="banner-item">
                                 <div class="banner-image banner-image-2 overflow-hidden">
                                     <a href="#" >
-                                        <img src="Images/banner_bottom_1.webp" alt="Banner Bottom" width="100%" height="200" loading="lazy">
+                                        <img src="Images/banner_bottom_1.webp" alt="Banner Bottom" width="695" height="200" loading="lazy">
                                     </a>
                                 </div>
                                 <div class="banner-text">
@@ -2941,7 +2941,7 @@
                                             </div>
                                         </div>
                                         <div class="pro-info">
-                                            <a href="#"style="color: #999;font-size: 16px;">Toshiba</a>
+                                            <a href="#"style="color: rgba(141, 151, 158, 1);font-size: 16px;">Toshiba</a>
                                             <h3 class="pro-name"><a href="#" >Skytech Blaze Gaming PC Intel Core i5
                                                     15700F 5.1
                                                     GH</a>z</h3>
@@ -3019,7 +3019,7 @@
                                             </div>
                                         </div>
                                         <div class="pro-info">
-                                            <a href="#"style="color: #999;font-size: 16px;">Toshiba</a>
+                                            <a href="#"style="color: rgba(141, 151, 158, 1);font-size: 16px;">Toshiba</a>
                                             <h3 class="pro-name"><a href="#" >Skytech Blaze Gaming PC Intel Core i5
                                                     15700F 5.1
                                                     GH</a>z</h3>
@@ -3097,7 +3097,7 @@
                                             </div>
                                         </div>
                                         <div class="pro-info">
-                                            <a href="#"style="color: #999;font-size: 16px;">Toshiba</a>
+                                            <a href="#"style="color: rgba(141, 151, 158, 1);font-size: 16px;">Toshiba</a>
                                             <h3 class="pro-name"><a href="#" >Skytech Blaze Gaming PC Intel Core i5
                                                     15700F 5.1
                                                     GH</a>z</h3>
@@ -3175,7 +3175,7 @@
                                             </div>
                                         </div>
                                         <div class="pro-info">
-                                            <a href="#"style="color: #999;font-size: 16px;">Toshiba</a>
+                                            <a href="#"style="color: rgba(141, 151, 158, 1);font-size: 16px;">Toshiba</a>
                                             <h3 class="pro-name"><a href="#" >Skytech Blaze Gaming PC Intel Core i5
                                                     15700F 5.1
                                                     GH</a>z</h3>
@@ -3253,7 +3253,7 @@
                                             </div>
                                         </div>
                                         <div class="pro-info">
-                                            <a href="#"style="color: #999;font-size: 16px;">Toshiba</a>
+                                            <a href="#" style="color: rgba(141, 151, 158, 1);font-size: 16px;">Toshiba</a>
                                             <h3 class="pro-name"><a href="#" >Skytech Blaze Gaming PC Intel Core i5
                                                     15700F 5.1
                                                     GH</a>z</h3>
@@ -3303,7 +3303,7 @@
                                 <div class="d-flex collection-items">
                                     <img src="Images/collection_1.webp" loading="lazy" width="120" height="104" alt="Product selling 1">
                                     <div>
-                                        <h4>Smart Phones</h4>
+                                        <div class="title-collection">Smart Phones</div>
                                         <ul class="mt-2">
                                             <li class="mb-2 links"><a href="#" >iPhone</a></li>
                                             <li class="mb-2 links"><a href="#" >Phone Accessories</a></li>
@@ -3321,7 +3321,7 @@
                                 <div class="d-flex collection-items ">
                                     <img src="Images/collection_2.webp" loading="lazy" width="120" height="104" alt="Product selling 1" >
                                     <div>
-                                        <h4>Tablets & iPads</h4>
+                                        <div class="title-collection">Smart Phones</div>
                                         <ul class="mt-2">
                                             <li class="mb-2 links"><a href="#" >Tablets</a></li>
                                             <li class="mb-2 links"><a href="#" >iPads</a></li>
@@ -3339,7 +3339,7 @@
                                 <div class="d-flex collection-items">
                                     <img src="Images/collection_3.webp" loading="lazy" width="120" height="104" alt="Product selling 1">
                                     <div>
-                                        <h4>Smart Watch</h4>
+                                        <div class="title-collection">Smart Phones</div>
                                         <ul class="mt-2">
                                             <li class="mb-2 links"><a href="#" >Sport Watches</a></li>
                                             <li class="mb-2 links"><a href="#" >Timex Watches</a></li>
@@ -3357,7 +3357,7 @@
                                 <div class="d-flex collection-items">
                                     <img src="Images/collection_4.webp" loading="lazy" width="120" height="104" alt="Product selling 1">
                                     <div>
-                                        <h4>Accessories</h4>
+                                        <div class="title-collection">Smart Phones</div>
                                         <ul class="mt-2">
                                             <li class="mb-2 links"><a href="#" >Accessories</a></li>
                                             <li class="mb-2 links"><a href="#" >Chargers</a></li>
@@ -3392,7 +3392,7 @@
                                     <a href="#" ><img src="Images/pic_1.webp" loading="lazy" width="100%" height="" alt="Product selling 1"></a>
                                 </div>
                                 <div class="banner-desc">
-                                    <h4 class="pb-2 fw-bold"><a href="#" >Cyber Monday - Save $599 On Speaker</a></h4>
+                                    <div class="pb-2 banner-title"><a href="#" >Cyber Monday - Save $599 On Speaker</a></div>
                                     <p>Save 50% on order more than $99. Delivery in 1 days. Apply for the first 1k
                                         Customers.</p>
                                 </div>
@@ -3404,7 +3404,7 @@
                                     <a href="#" ><img src="Images/pic_2.webp" loading="lazy" width="100%" height="" alt="Product selling 1"></a>
                                 </div>
                                 <div class="banner-desc">
-                                    <h4 class="pb-2 fw-bold"><a href="#" >Sale Off Unlimited - Buy 1 Get 2 </a></h4>
+                                    <div class="pb-2 banner-title"><a href="#" >Sale Off Unlimited - Buy 1 Get 2 </a></div>
                                     <p>Save 80% on order more than $599. Delivery in 1 days. Apply for the first 1k
                                         Customers.</p>
                                 </div>
@@ -3416,7 +3416,7 @@
                                     <a href="#" ><img src="Images/pic_3.webp" loading="lazy" width="100%" height="" alt="Product selling 1"></a>
                                 </div>
                                 <div class="banner-desc">
-                                    <h4 class="pb-2 fw-bold"><a href="#" >Hurry Up - Smartphone Only $299</a></h4>
+                                    <div class="pb-2 banner-title"><a href="#" >Hurry Up - Smartphone Only $299</a></div>
                                     <p>All smartphone products at the same price $299. Delivery in 1 days. Apply for the
                                         first 1k Customers.</p>
                                 </div>
@@ -3495,8 +3495,7 @@
                         
                             <ul class="social-link d-flex flex-row mb-3">
                                 <li>
-                                    <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                        data-bs-title="Tooltip on bottom">
+                                    <a href="#" aria-label="Instagram">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
                                             fill="none">
                                             <circle cx="18" cy="18" r="17.5" stroke="#555555" />
@@ -3508,7 +3507,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" >
+                                    <a href="#" aria-label="Tiktok">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
                                             fill="none">
                                             <circle cx="18" cy="18" r="17.5" stroke="#555555" />
@@ -3520,7 +3519,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" >
+                                    <a href="#" aria-label="Youtube">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
                                             fill="none">
                                             <circle cx="18" cy="18" r="17.5" stroke="#555555" />
@@ -3532,7 +3531,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="#" aria-label="Twitter">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
                                             fill="none">
                                             <circle cx="18" cy="18" r="17.5" stroke="#555555" />
@@ -3544,7 +3543,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="#" aria-label="Facebook">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
                                             fill="none">
                                             <circle cx="18" cy="18" r="17.5" stroke="#555555" />
@@ -3665,11 +3664,13 @@
             <div class="footer-bottom">
                 <div class="d-flex flex-lg-row flex-column align-items-center justify-content-center">
                     <div class="d-flex flex-row justify-content-lg-start justify-content-center col-lg-4 col-12 my-1 my-lg-0" style="font-size: 14px;">
-                        <div class="language d-none d-lg-block">
-                            <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="language d-none d-lg-block position-relative">
+                            <input type="checkbox" id="btn-language" style="display: none;">
+                            <label for="btn-language" type="button" class="btn btn-secondary" data-bs-toggle="dropdown" aria-expanded="false">
                                 English <i class="fa fa-angle-down"></i>
-                            </button>
-                            <ul class="dropdown-menu">
+                            </label>
+                            
+                            <ul class="dropdown-menu position-absolute">
                                 <li><a href="#" class="dropdown-item" href="#">Vietnamese</a></li>
                                 <li><a href="#" class="dropdown-item" href="#">French</a></li>
                                 <li><a href="#" class="dropdown-item" href="#">Korean</a></li>
@@ -3677,12 +3678,13 @@
                                 <li><a href="#" class="dropdown-item" href="#">Janpanese</a></li>
                             </ul>
                         </div>
-                        <div class="currency d-none d-lg-block">
-                            <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="currency d-none d-lg-block position-relative">
+                            <input type="checkbox" id="btn-currency" style="display: none;">
+                            <label for="btn-currency" type="button" class="btn btn-secondary" data-bs-toggle="dropdown" aria-expanded="false">
                                 United States (USD $) <i class="fa fa-angle-down"></i>
-                            </button>
+                            </label>
 
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu position-absolute">
                                 <li><a href="#" class="dropdown-item" href="#">Viet Nam(VND)</a></li>
                                 <li><a href="#" class="dropdown-item" href="#">England (GBP)</a></li>
                             </ul>
@@ -3693,13 +3695,13 @@
                     </div>
                     <div
                         class="d-flex flex-row my-1 my-lg-0 justify-content-lg-end justify-content-center col-12 col-lg-4">
-                        <img src="Images/1.webp" loading="lazy" width="35" height="18" alt="Visa">
-                        <img src="Images/2.webp" loading="lazy" width="35" height="18" alt="Master Card">
-                        <img src="Images/3.webp" loading="lazy" width="35" height="18" alt="Discover">
-                        <img src="Images/4.webp" loading="lazy" width="35" height="18" alt="Western Union">
-                        <img src="Images/5.webp" loading="lazy" width="35" height="18" alt="Amex">
-                        <img src="Images/6.webp" loading="lazy" width="35" height="18" alt="Cirrus">
-                        <img src="Images/7.webp" loading="lazy" width="35" height="18" alt="PayPal">
+                        <img src="Images/1.webp" loading="lazy" width="43" height="26" alt="Visa">
+                        <img src="Images/2.webp" loading="lazy" width="43" height="26" alt="Master Card">
+                        <img src="Images/3.webp" loading="lazy" width="43" height="26" alt="Discover">
+                        <img src="Images/4.webp" loading="lazy" width="43" height="26" alt="Western Union">
+                        <img src="Images/5.webp" loading="lazy" width="43" height="26" alt="Amex">
+                        <img src="Images/6.webp" loading="lazy" width="43" height="26" alt="Cirrus">
+                        <img src="Images/7.webp" loading="lazy" width="43" height="26" alt="PayPal">
                     </div>
                 </div>
             </div>
@@ -3769,12 +3771,6 @@
       </div>
 
     <!---JS-->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="slide.js"></script>
 </body>
