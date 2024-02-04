@@ -818,7 +818,7 @@ button[type="commit"]{
     padding-top: 60px;
     margin-bottom: 60px;
 }
-.footer-link h4 span{
+.footer-link div span{
     display: none;
 }
 ul.social-link li a{
