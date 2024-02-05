@@ -3,7 +3,7 @@
     --background-col: #fff;
     --grey-color: rgba(85,85,85);
     --heading-color:#ffffff;
-    --header-color: rgba(17, 17, 17, 0.5);
+    --header-color: #111111;
     --bls-transition: all 0.4s;
     --title-fashion: rgba(17, 17, 17, 1);
     --background: rgba(255, 255, 255, 1);
@@ -245,6 +245,7 @@ button[type="commit"]{
 .text-icons-top{
     font-size: 11px;
     color: var(--header-color);
+    opacity: 0.5;
 }
 .header-wishlist-wrap{  
     position: relative;
@@ -491,6 +492,8 @@ button[type="commit"]{
     padding: 15px 30px;
     border-radius: 50px;
     cursor: pointer;
+    background-color: var(--key-digital);
+    color: #FFF;
 }
 .menu-slide{
     font-size: var(--base-font-size);
