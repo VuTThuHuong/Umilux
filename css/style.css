@@ -1,5 +1,9 @@
 /* Root */
 :root{
+    --background-col: #fff;
+    --grey-color: rgba(85,85,85);
+    --heading-color:#ffffff;
+    --header-color:#111111;
     --bls-transition: all 0.4s;
     --title-fashion: rgba(17, 17, 17, 1);
     --background: rgba(255, 255, 255, 1);
@@ -85,6 +89,7 @@ p {
 
 img {
 	max-width: 100%;
+    vertical-align: middle;
 }
 svg {
     vertical-align: middle
@@ -239,7 +244,7 @@ button[type="commit"]{
 }
 .text-icons-top{
     font-size: 11px;
-    color: var(--title-fashion);
+    color: var(--header-color);
     opacity: 0.5;
 }
 .header-wishlist-wrap{  
@@ -553,7 +558,12 @@ button[type="commit"]{
     color: var(--title-fashion);
     padding: 20px;
     border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: var(--background-col);
+}
+.name_brand {
+    color: var(--grey-color);
+    font-size: 16px;
+    font-weight: var(--base-font-weight);
 }
 .pro-discount a{
     color: #fff;
@@ -655,6 +665,8 @@ button[type="commit"]{
 .top-selling-products .pro-banner{
     width: 40%;
     position: relative;
+    margin-right: 20px;
+    border-radius: 20px;
 }
 .pro-banner .banner-text{
     text-align: end;
@@ -976,9 +988,9 @@ ul li.links a:hover{
 }
 
 .aspect-ratio-container img {
+    border-radius: 15px;
     position: absolute;
-    top: 0;
-    left: 0;
+    top:0;
     width: 100%;
     height: 100%;
     object-fit: cover; 
