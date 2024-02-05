@@ -244,8 +244,8 @@ button[type="commit"]{
 }
 .text-icons-top{
     font-size: 11px;
-    color: var(--header-color);
-    opacity: 0.5;
+    color: var(--body-fashion);
+    opacity: 0.6;
 }
 .header-wishlist-wrap{  
     position: relative;
