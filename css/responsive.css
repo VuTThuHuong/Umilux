@@ -17,7 +17,7 @@
         height: 100%;
         background: #fff;
         box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
-        left: 0%;
+        left: -120%;
         top: 0;
         z-index: 2;
         overflow-y: scroll;
