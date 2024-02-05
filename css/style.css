@@ -3,7 +3,7 @@
     --background-col: #fff;
     --grey-color: rgba(85,85,85);
     --heading-color:#ffffff;
-    --header-color: #111111;
+    --header-color: #555;
     --bls-transition: all 0.4s;
     --title-fashion: rgba(17, 17, 17, 1);
     --background: rgba(255, 255, 255, 1);
@@ -244,8 +244,8 @@ button[type="commit"]{
 }
 .text-icons-top{
     font-size: 11px;
-    color: var(--body-fashion);
-    opacity: 0.6;
+    color: var(--header-color);
+    opacity: 0.7;
 }
 .header-wishlist-wrap{  
     position: relative;
