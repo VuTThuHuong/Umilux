@@ -3,7 +3,7 @@
     --background-col: #fff;
     --grey-color: rgba(85,85,85);
     --heading-color:#ffffff;
-    --header-color:#111111;
+    --header-color: rgba(17, 17, 17, 0.5);
     --bls-transition: all 0.4s;
     --title-fashion: rgba(17, 17, 17, 1);
     --background: rgba(255, 255, 255, 1);
@@ -245,7 +245,6 @@ button[type="commit"]{
 .text-icons-top{
     font-size: 11px;
     color: var(--header-color);
-    opacity: 0.5;
 }
 .header-wishlist-wrap{  
     position: relative;
@@ -290,10 +289,12 @@ button[type="commit"]{
     font-weight: var(--font-weight-bold);
     padding: 0 20px;
 }
-.menu-vertical-horizontal  li.menu-parent > a::after{
-    content: "\f107";
-    font: normal normal normal 14px/1 FontAwesome;
-    margin-left: 5px;
+.menu-vertical-horizontal  li.menu-parent > a > span{
+    float: left;
+    padding-left: 5px;
+}
+.menu-vertical-horizontal  li.menu-parent > a > span:last-child {
+    display: none;
 }
 .menu-vertical-horizontal > li{
    margin-left: 30px;
@@ -506,12 +507,8 @@ button[type="commit"]{
 .menu-slide .verticalmenu-list li a span{
     padding-left: 10px;
 }
-.menu-slide .dropdown-with-custom > a::after{ 
-    content: "\f105";
-    font: normal normal normal 14px/1 FontAwesome;
+.menu-slide .dropdown-with-custom > a > span:last-child{ 
     float: right;
-    margin-left: 5px;
-    padding: 5px;
 }
 .menu-slide .other-link{
     padding-top: 10px;
