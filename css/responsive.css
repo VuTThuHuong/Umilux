@@ -1,7 +1,4 @@
 @media only screen and (max-width: 992px) {
-    .slide-position img{
-        height: 450px;
-    }
     .form-search {
         margin-top: 10px;
     }
@@ -116,6 +113,9 @@
     }
     .submenu .dropdown > li:not(:last-child){
         border-bottom: 1px solid var(--border-color-base);
+    }
+    .home-item .home-image{
+        display: none;
     }
 }
 
