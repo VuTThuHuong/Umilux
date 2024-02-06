@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 /*===== Swiper Slide =====*/
-const swiper = new Swiper('.slide-collection', {
+const SwiperSlide = new Swiper('.slide-collection', {
     slidesPerView: 4,
     spaceBetween : 20,
     loop: true,
@@ -114,7 +114,7 @@ const swiper = new Swiper('.slide-collection', {
   });
 
 
-  const swiperPro = new Swiper('.slide-production', {
+  const SwiperPro = new Swiper('.slide-production', {
     slidesPerView: 5,
     loop: true,
     centerSlide: 'true',
