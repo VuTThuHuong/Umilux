@@ -290,14 +290,14 @@ button[name="commit"]{
     font-weight: var(--font-weight-bold);
     padding: 0 20px;
 }
-.menu-vertical-horizontal  li.menu-parent > a > span{
+.main-menu  li.menu-parent > a > span{
     float: left;
     padding-left: 5px;
 }
-.menu-vertical-horizontal  li.menu-parent > a > span:last-child {
+.main-menu  li.menu-parent > a > span:last-child {
     display: none;
 }
-.menu-vertical-horizontal > li{
+.main-menu > li{
    margin-left: 30px;
    white-space: nowrap;
 }
@@ -430,7 +430,7 @@ button[name="commit"]{
     object-fit: cover;
 }
 /*Menu*/
-.slider .vertical-menu{
+.slider .col-left{
    width: 22%;
 }
 .menu-width-custom .menu-custom-width-center{
@@ -480,7 +480,7 @@ button[name="commit"]{
     border-radius: 10px;
 }
 
-.type_home .home-item .home-title{
+.type_home .home-item .home-infor{
     padding-top: 10px;
     font-weight: var(--font-weight-bold);
     color: var(--title-fashion);
@@ -495,34 +495,34 @@ button[name="commit"]{
     background-color: var(--key-digital);
     color: #FFF;
 }
-.menu-slide{
+.vertical-menu{
     font-size: var(--base-font-size);
     font-weight: var(--base-font-weight);
     background: #fff;
     border-radius: 10px;
     padding: 20px;
 }
-.menu-slide .verticalmenu-list > li:not(:last-child){
+.vertical-menu > li:not(:last-child){
     padding: 10px 0;
     position: relative;
     border-bottom: 1px solid var(--border-digital);
 }
-.menu-slide .verticalmenu-list li a span{
+.vertical-menu li a span{
     padding-left: 10px;
 }
-.menu-slide .dropdown-with-custom > a > span:last-child{ 
+.dropdown-with-custom > a > span:last-child{ 
     float: right;
 }
-.menu-slide .other-link{
+.other-link{
     padding-top: 10px;
 }
-.menu-slide .other-link a{ 
+.other-link a{ 
     font-size: var(--base-font-size);
     font-weight: var(--font-weight-bold);
 }
 
 /*===== SubMenu ===*/
-.verticalmenu-list .submenu {
+.vertical-menu .submenu {
     top: 0;
     transform: translateY(-20px);
     left: 110%;
