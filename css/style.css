@@ -835,7 +835,7 @@ button[name="commit"]{
     padding-top: 60px;
     margin-bottom: 60px;
 }
-.footer-link div span{
+.footer-link div.title-links span{
     display: none;
 }
 ul.social-link li a{
