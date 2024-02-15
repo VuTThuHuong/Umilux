@@ -486,6 +486,7 @@ button[name="commit"]{
     color: #FFF;
 }
 .vertical-menu{
+    height: 475px;
     font-size: var(--base-font-size);
     font-weight: var(--base-font-weight);
     background: #fff;
@@ -493,7 +494,7 @@ button[name="commit"]{
     padding: 20px;
 }
 .vertical-menu > li:not(:last-child){
-    padding: 10px 0;
+    padding: 12px 0;
     position: relative;
     border-bottom: 1px solid var(--border-digital);
 }
