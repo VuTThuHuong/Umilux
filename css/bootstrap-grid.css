@@ -162,6 +162,9 @@
     flex: 0 0 auto;
     width: 58.33333333%;
   }
+  .ms-lg-0{
+    margin-left: 0!important ;
+  }
 }
 @media (min-width: 1200px) {
   .col-xl-2 {
