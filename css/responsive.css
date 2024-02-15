@@ -134,10 +134,11 @@
     .hidden {
       display: none; 
     }
-    .footer-link h4 span.toggleIcon1{
-        display: inline-block;
+    .footer-link div.title-links span{
         float: right;
-        text-align: end;
+    }
+    .footer-link div.title-links span.toggleIcon1{
+        display: inline-block;
     }
     .col-item{
         border-bottom: 1px solid var(--border-digital);

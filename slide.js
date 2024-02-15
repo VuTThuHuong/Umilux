@@ -154,5 +154,21 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+function toggleContent(elementId) {
+  var element = document.getElementById(elementId);
+  var toggleIcon1 = element.previousElementSibling.querySelector('.toggleIcon1');
+  var toggleIcon2 = element.previousElementSibling.querySelector('.toggleIcon2');
 
+  if (element.classList.contains('hidden')) {
+      // Nếu đang ẩn, hiển thị
+      element.classList.remove('hidden');
+      toggleIcon1.style.display = 'none';
+      toggleIcon2.style.display = 'inline-block';
+  } else {
+      // Nếu đang hiển thị, ẩn
+      element.classList.add('hidden');
+      toggleIcon1.style.display = 'inline-block';
+      toggleIcon2.style.display = 'none';
+  }
+}
 
