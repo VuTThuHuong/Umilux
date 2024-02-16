@@ -153,8 +153,6 @@ var Swiper = (function ()
 			{
 				curTransform = curTransform.split(', ').map(a => a.replace(',', '.')).join(', ');
 			}
-			// Some old versions of Webkit choke when 'none' is passed; pass
-			// empty string instead in this case
 			transformMatrix = new window.WebKitCSSMatrix(curTransform === 'none' ? '' : curTransform);
 		}
 		else
@@ -164,33 +162,24 @@ var Swiper = (function ()
 		}
 		if (axis === 'x')
 		{
-			// Latest Chrome and webkits Fix
 			if (window.WebKitCSSMatrix) curTransform = transformMatrix.m41;
-			// Crazy IE10 Matrix
 			else if (matrix.length === 16) curTransform = parseFloat(matrix[12]);
-			// Normal Browsers
 			else curTransform = parseFloat(matrix[4]);
 		}
 		if (axis === 'y')
 		{
-			// Latest Chrome and webkits Fix
 			if (window.WebKitCSSMatrix) curTransform = transformMatrix.m42;
-			// Crazy IE10 Matrix
 			else if (matrix.length === 16) curTransform = parseFloat(matrix[13]);
-			// Normal Browsers
 			else curTransform = parseFloat(matrix[5]);
 		}
 		return curTransform || 0;
 	}
-
 	function isObject(o)
 	{
 		return typeof o === 'object' && o !== null && o.constructor && Object.prototype.toString.call(o).slice(8, -1) === 'Object';
 	}
-
 	function isNode(node)
 	{
-		// eslint-disable-next-line
 		if (typeof window !== 'undefined' && typeof window.HTMLElement !== 'undefined')
 		{
 			return node instanceof HTMLElement;
@@ -247,7 +236,6 @@ var Swiper = (function ()
 		}
 		return to;
 	}
-
 	function elementChildren(element, selector)
 	{
 		if (selector === void 0)
@@ -256,7 +244,6 @@ var Swiper = (function ()
 		}
 		return [...element.children].filter(el => el.matches(selector));
 	}
-
 	function showWarning(text)
 	{
 		try
@@ -268,7 +255,6 @@ var Swiper = (function ()
 		{
 		}
 	}
-
 	function createElement(tag, classes)
 	{
 		if (classes === void 0)
@@ -279,7 +265,6 @@ var Swiper = (function ()
 		el.classList.add(...(Array.isArray(classes) ? classes : classesToTokens(classes)));
 		return el;
 	}
-
 	function elementPrevAll(el, selector)
 	{
 		const prevEls = [];
@@ -295,7 +280,6 @@ var Swiper = (function ()
 		}
 		return prevEls;
 	}
-
 	function elementNextAll(el, selector)
 	{
 		const nextEls = [];
@@ -311,13 +295,11 @@ var Swiper = (function ()
 		}
 		return nextEls;
 	}
-
 	function elementStyle(el, prop)
 	{
 		const window = getWindow();
 		return window.getComputedStyle(el, null).getPropertyValue(prop);
 	}
-
 	function elementIndex(el)
 	{
 		let child = el;
@@ -334,9 +316,7 @@ var Swiper = (function ()
 		}
 		return undefined;
 	}
-
 	let support;
-
 	function calcSupport()
 	{
 		const window = getWindow();
@@ -346,7 +326,6 @@ var Swiper = (function ()
 			touch: !!('ontouchstart' in window || window.DocumentTouch && document instanceof window.DocumentTouch)
 		};
 	}
-
 	function getSupport()
 	{
 		if (!support)
@@ -355,9 +334,7 @@ var Swiper = (function ()
 		}
 		return support;
 	}
-
 	let deviceCached;
-
 	function calcDevice(_temp)
 	{
 		let
@@ -381,7 +358,6 @@ var Swiper = (function ()
 		const iphone = !ipad && ua.match(/(iPhone\sOS|iOS)\s([\d_]+)/);
 		const windows = platform === 'Win32';
 		let macos = platform === 'MacIntel';
-
 		// iPadOs 13 fix
 		const iPadScreens = ['1024x1366', '1366x1024', '834x1194', '1194x834', '834x1112', '1112x834', '768x1024', '1024x768', '820x1180', '1180x820', '810x1080', '1080x810'];
 		if (!ipad && macos && support.touch && iPadScreens.indexOf(`${screenWidth}x${screenHeight}`) >= 0)
@@ -390,7 +366,6 @@ var Swiper = (function ()
 			if (!ipad) ipad = [0, 1, '13_0_0'];
 			macos = false;
 		}
-
 		// Android
 		if (android && !windows)
 		{
@@ -402,11 +377,9 @@ var Swiper = (function ()
 			device.os = 'ios';
 			device.ios = true;
 		}
-
 		// Export object
 		return device;
 	}
-
 	function getDevice(overrides)
 	{
 		if (overrides === void 0)
@@ -419,9 +392,7 @@ var Swiper = (function ()
 		}
 		return deviceCached;
 	}
-
 	let browser;
-
 	function calcBrowser()
 	{
 		const window = getWindow();
@@ -447,7 +418,6 @@ var Swiper = (function ()
 			isWebView: /(iPhone|iPod|iPad).*AppleWebKit(?!.*Safari)/i.test(window.navigator.userAgent)
 		};
 	}
-
 	function getBrowser()
 	{
 		if (!browser)

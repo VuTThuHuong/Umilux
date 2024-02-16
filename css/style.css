@@ -393,7 +393,6 @@ button[name="commit"]{
 .slide-button{
     background-color: var(--background);   
     color: var(--title-fashion);
-
 }
 .slide-button:hover{
     background-color: var(--key-digital);
