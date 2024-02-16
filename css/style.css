@@ -526,7 +526,9 @@ button[name="commit"]{
     font-size: var(--base-font-size);
     font-weight: var(--font-weight-bold);
 }
-
+.active{
+    color: #FFF;
+}
 /*===== SubMenu ===*/
 .vertical-menu .submenu {
     top: 0;

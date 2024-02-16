@@ -89,9 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
     startAutoSlide();
   });
   
-  /*============ Footer Bottom =============*/
-
-
+ 
 /*===== Swiper Slide =====*/
 const SwiperSlide = new Swiper('.slide-collection', {
     slidesPerView: 4,
@@ -139,21 +137,36 @@ const SwiperSlide = new Swiper('.slide-collection', {
 
 
 /*========== Menu ===========*/
-document.addEventListener("DOMContentLoaded", function () {
+function showMainMenu() {
+  document.querySelector(".main-menu-list").classList.add("active");
+  document.querySelector(".categories").classList.remove("active");
+  document.querySelector(".verticalmenu").style.display = "none";
+}
+
+function showCategories() {
+  document.querySelector(".categories").classList.add("active");
+  document.querySelector(".main-menu-list").classList.remove("active");
+  document.querySelector(".main-menu").style.display = "none";
+  document.querySelector(".verticalmenu").style.display = "block";
+}
+
+function closeMenu() {
+  document.querySelector(".main-menu-list").classList.remove("active");
+  document.querySelector(".categories").classList.remove("active");
+  document.querySelector(".mobile-menu").style.left = "-120%";
+}
+
+document.getElementById("mobile_menu_toggle").addEventListener("click", function () {
   const mobileMenu = document.querySelector(".mobile-menu");
-  const menuToggle = document.getElementById("moblie_menu_toggle");
-
-  if (menuToggle) {
-    menuToggle.addEventListener("click", () => {
-      toggleMenu();
-    });
-  }
-
-  function toggleMenu() {
-    mobileMenu.classList.toggle("active");
+  if (mobileMenu.style.left === "-120%") {
+      mobileMenu.style.left = "0px";
+      showMainMenu();
+  } else {
+      closeMenu();
   }
 });
 
+ /*============ Footer Bottom =============*/
 function toggleContent(elementId) {
   var element = document.getElementById(elementId);
   var toggleIcon1 = element.previousElementSibling.querySelector('.toggleIcon1');
