@@ -1,4 +1,7 @@
 @media only screen and (max-width: 992px) {
+    div > section {
+        padding-bottom: 50px;
+    }
     .slide-subtitle{
         font-size: 12px;
         text-transform: uppercase;
@@ -142,6 +145,9 @@
     }
   }
 @media only screen and (max-width: 768px) {
+    div > section {
+        padding-bottom: 40px;
+    }
     .slide-subtitle{
         display: none;
     }
@@ -219,6 +225,9 @@
 }
 
 @media only screen and (max-width: 576px){
+    div > section {
+        padding-bottom: 30px;
+    }
     h2{
         font-size: 24px;
     }
@@ -227,10 +236,13 @@
     }
     .banner-item p {
         line-height: 1.5;
-        font-size: 18px; 
+        font-size: 17px; 
         color: rgb(255,255,255,0.9);
         font-weight: 600;
-        margin-bottom: 20px
+        margin-bottom: 15px
+    }
+    .banner-button a{
+        font-size: 12px;
     }
     .pro-price{
         font-size: 16px;
