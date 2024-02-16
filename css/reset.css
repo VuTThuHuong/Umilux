@@ -108,8 +108,3 @@ button,
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
-
-[type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
-}
