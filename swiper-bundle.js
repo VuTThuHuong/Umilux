@@ -266,7 +266,6 @@ var Swiper = (function ()
 		}
 		catch (err)
 		{
-			// err
 		}
 	}
 
