@@ -94,16 +94,18 @@
         width: 0.6rem;
         height: 0.6rem;
         top: 50%;
-        margin-left: 1rem;
+        right: 0;
+        opacity: 1;
         border: solid currentColor;
-        opacity: 0.5;
         border-width: 0 0.1rem 0.1rem 0;
         transform: translateY(-50%) rotate(-45deg);
         -webkit-transform: translateY(-50%) rotate(-45deg); 
     }
+
     .menu-slide .verticalmenu-menu {
         width: 100%;
     }
+
     .menu-slide .verticalmenu-menu > li:not(:last-child){
         font-weight: var(--font-weight-bold);
         padding: 20px 0;
@@ -140,7 +142,7 @@
         display: none;
     }
 }
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
     .slide-position img{
         height: 475px;
     }

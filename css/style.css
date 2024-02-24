@@ -304,9 +304,9 @@ button.action:hover{
 }
 
 .main-menu > li.menu-parent > a{
-    position: relative; 
     padding-right: 2rem;
 }
+
 .main-menu > li.menu-parent > a:after{
     content: '';
     position: absolute;
