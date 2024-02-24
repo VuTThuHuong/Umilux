@@ -70,27 +70,23 @@
     .mobile-menu .menu-mobile-title a:hover{
         opacity: 1;
     }
-   
+    .mobile-menu .levelmobile {
+        padding: 20px 0;
+        position: relative;
+    }
     .mobile-menu .levelmobile:not(:last-child){
         border-bottom: 1px solid var(--border-color-base);
     }
     .mobile-menu .levelmobile > a{
         color: var(--title-fashion);
         cursor: pointer;
+        margin: 0;
     }
-    .mobile-menu .levelmobile.menu-parent > a > span:last-child{
-        float: right;
-        display: block;
-    }
-    .mobile-menu .main-menu .levelmobile.menu-parent > a > span:nth-child(2){
-        display: none;
-    }
+
     .mobile-menu .levelmobile.single > a span{
         margin-left: 10px;
     }
-    .main-menu > li.menu-parent > a{
-        padding: 0;
-    }
+
     .main-menu > li.menu-parent > a::after{
         content: '';
         position: absolute;
