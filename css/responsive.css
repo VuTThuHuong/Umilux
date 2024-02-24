@@ -40,6 +40,7 @@
         z-index: 2;
         overflow-y: scroll;
         transition: var(--bls-transition);
+        font-weight: var(--font-weight-bold);
     }
     .vertical-menu, .main-menu{
         position: absolute;

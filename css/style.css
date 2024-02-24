@@ -82,6 +82,10 @@ body {
     color: var(--title-fashion);
 }
 
+main{
+    background-color: rgba(241, 243, 247, 1);;
+}
+
 h1,
 h2,
 h3,
@@ -243,6 +247,11 @@ button[name="commit"]{
     border: none;
     background-color: #0D53BB;
 }
+
+button.action:hover{
+    color: var(--key-digital);
+}  
+
 .action-login{
     border: none;
     background-color: transparent;
@@ -482,17 +491,22 @@ button[name="commit"]{
 .submenu .type_home{
     width: 20%;
     margin-bottom: 2rem;
-}
-.type_home .home-item{
     padding: 2rem ;
     border-radius: 2rem;
     box-shadow: var(--box-shadow);
 }
-.type_home .home-item .home-img{
+
+.type_home .home-img{
     border-radius: 1rem;
 }
 
-.type_home .home-item .home-infor{
+.type_home img{
+    transition: var(--bls-transition);
+}
+.type_home:hover img{
+    transform: scale(1.1);
+}
+.type_home .home-infor{
     padding-top: 1rem;
     font-weight: var(--font-weight-bold);
     color: var(--title-fashion);
