@@ -1,14 +1,12 @@
 /* Document
    ========================================================================== */
 
- * {
-  margin: 0;
-  padding: 0;
+ *,::before,::after {
   box-sizing: border-box;
 }
 html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+  font-size: 62.5%;
+  -webkit-text-size-adjust: 100%;
 }
 
 /* Sections
@@ -51,12 +49,6 @@ body {
 main {
   display: block;
 }
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
 /* Grouping content
    ========================================================================== */
 
@@ -100,7 +92,7 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button;
+  appearance: button;
 }
 
 [type="checkbox"],

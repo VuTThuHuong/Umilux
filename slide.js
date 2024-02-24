@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function hideHeaderTop() {
-        document.querySelector('.slider-header-top').style.display = 'none';
+        document.querySelector('.header-top').style.display = 'none';
     }
 
     function startIntervalAfterDelay() {
@@ -173,7 +173,6 @@ function toggleContent(elementId) {
   var toggleIcon2 = element.previousElementSibling.querySelector('.toggleIcon2');
 
   if (element.classList.contains('hidden')) {
-      // Nếu đang ẩn, hiển thị
       element.classList.remove('hidden');
       toggleIcon1.style.display = 'none';
       toggleIcon2.style.display = 'inline-block';
