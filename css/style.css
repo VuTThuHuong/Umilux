@@ -55,18 +55,21 @@
 }*/
 @font-face {
     font-family: "General Sans";
-    src: url("../fonts/GeneralSans-Medium.otf") format("truetype");
+    src: url("../fonts/GeneralSans-Medium.otf") format("woff2");
     font-weight: 500;
+    font-display: swap;
 } 
 @font-face {
     font-family: "General Sans";
-    src: url("../fonts/GeneralSans-Regular.otf") format("truetype");
+    src: url("../fonts/GeneralSans-Regular.otf") format("woff2");
     font-weight: 400;
+    font-display: swap;
 } 
 @font-face {
     font-family: "General Sans";
-    src: url("../fonts/GeneralSans-Semibold.otf") format("truetype");
+    src: url("../fonts/GeneralSans-Semibold.otf") format("woff2");
     font-weight: 600;
+    font-display: swap;
 } 
 
 body {
@@ -125,6 +128,11 @@ a:focus {
 ul,
 ol,li {
     list-style: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
 }
 
 div > section{
@@ -261,7 +269,7 @@ button[name="commit"]{
     font-size: 1rem;
     position: absolute;
     top: -20%;
-    left: 1.5rem;
+    left: 1.8rem;
     background-color: var(--key-digital);
     color: var(--background);
 }
@@ -733,9 +741,13 @@ button[name="commit"]{
     transform: translateY(-50%);
     font-weight: var(--font-weight-bold);
 }
-
-.pro-banner .banner-text .bannner-subtitle{
-    font-size: var(--font-size-small);
+.pro-banner .banner-text .banner-subtitle{
+     font-size: var(--font-size-small);
+}
+.pro-banner .banner-text .banner-price span{
+    font-size: 22px;
+}
+.pro-banner .banner-text .banner-subtitle, .pro-banner .banner-text .banner-price span{
     color: var(--color-timer);
     text-transform: uppercase;
 }

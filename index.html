@@ -103,8 +103,8 @@
                                 <span class="wishlist-count h-count">0</span>
                             </a>
                         </div>
-                        <div class="header_minicart d-none d-lg-block position-relative">
-                            <a href="#" class="minicart-action d-inline-flex align-items-center">
+                        <div class="header_minicart d-none d-lg-block position-relative d-inline-flex align-items-center">
+                            <button aria-label="minicart icon cart" class="d-inline-flex align-items-center minicart-action">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23" fill="none">
                                     <path
                                         d="M19.3593 20.7192C19.064 20.7192 18.7807 20.6017 18.5719 20.3924C18.3631 20.1832 18.2458 19.8994 18.2458 19.6035H16.0187C16.0187 20.4912 16.3706 21.3426 16.9971 21.9703C17.6236 22.598 18.4733 22.9506 19.3593 22.9506C20.2453 22.9506 21.095 22.598 21.7215 21.9703C22.348 21.3426 22.7 20.4912 22.7 19.6035H20.4729C20.4729 19.8994 20.3555 20.1832 20.1467 20.3924C19.9379 20.6017 19.6546 20.7192 19.3593 20.7192Z"
@@ -117,13 +117,11 @@
                                         fill="#111111" />
                                 </svg>
                                 <div class="text-icons d-flex flex-column text-start">
-                                    <span class="text-icons-top">Cart</span>
-                                    <span class="menu-cart">
-                                        $0.00
-                                    </span>
+                                    <a href="#" class="text-icons-top">Cart</a>
+                                    <a href="#">$0.00</a>
                                 </div>
                                 <div class="cart-count h-count">0</div>
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -1933,12 +1931,13 @@
                             <div class="slide-list">
                                 <div class="slide-items">
                                     <div class="slide-position">
-                                        <picture loading="eager" style="aspect-ratio: 1120/475">
-                                            <source srcset="images/slide_3.webp 100vw" media="(max-width: 992px)" type="image/webp">
-                                            <source srcset="images/slide_3.webp 1120w" media="(min-width: 1200px)" type="image/webp">
-                                            <source srcset="images/slide_3.webp" type="image/webp">
-                                            <img src="images/slide_3.jpg" alt="Product Image" width="1120" height="475" loading="eager">                                          
-                                       </picture>
+                                        <picture>
+                                            <source srcset="images/slide_3_576.webp 576ww" media="(max-width: 675px)" type="image/webp" width="576" height="244">
+                                            <source srcset="images/slide_3_768.webp 768w" media="(max-width: 768px)" type="image/webp" width="768" height="326">
+                                            <source srcset="images/slide_3_992.webp 992w" media="(min-width: 992px)" type="image/webp" width="992" height="421">
+                                            <source srcset="images/slide_3.webp" media="(min-width: 1200px)" type="image/webp">
+                                            <img src="images/slide_3.jpg" alt="Slide" width="1120" height="475" loading="eager" decoding="async">
+                                        </picture>
                                         <div class="slide-text">
                                             <p class="slide-subtitle">Best selling</p>
                                             <h2 class="slide-title">Top Quality
@@ -1950,22 +1949,13 @@
                                 </div>
                                 <div class="slide-items">
                                     <div class="slide-position">
-                                        <picture loading="eager" style="--aspect-ratio: 1120/475">
-                                            <source srcset="images/slide_2.webp 100vw" media="(max-width: 992px)" type="image/webp">
-                                            <source srcset="images/slide_2.webp 1120w" media="(min-width: 1200px)" type="image/webp">
-                                            <source srcset="images/slide_2.webp" type="image/webp">
-                                            <img src="images/slide_2.jpg" alt="Product Image" width="1120" height="475" loading="eager">                                          
-                                       </picture>
-                                        <!-- <picture loading="eager">
-                                            <source srcset="images/slide_2.webp" type="image/webp">
-                                            <img srcset="images/slide_2.webp 1120w,
-                                                    images/slide_2.webp 100vw"
-                                                    sizes="(max-width: 992px) 100vw,
-                                                    (min-width: 1200px) 1120px, 475px" 
-                                            src="images/slide_1.webp"
-                                            alt="Product Image"
-                                            loading="eager">
-                                       </picture> -->
+                                        <picture>
+                                            <source srcset="images/slide_2_576.webp 576ww" media="(max-width: 675px)" type="image/webp" width="576" height="244">
+                                            <source srcset="images/slide_2_768.webp 768w" media="(max-width: 768px)" type="image/webp" width="768" height="326">
+                                            <source srcset="images/slide_2_992.webp 992w" media="(min-width: 992px)" type="image/webp" width="992" height="421">
+                                            <source srcset="images/slide_2.webp" media="(min-width: 1200px)" type="image/webp">
+                                            <img src="images/slide_2.jpg" alt="Slide" width="1120" height="475" loading="eager" decoding="async">
+                                        </picture>
                                         <div class="slide-text">
                                             <p class="slide-subtitle">Best selling</p>
                                             <h2 class="slide-title">Top Quality
@@ -1977,12 +1967,13 @@
                                 </div>
                                 <div class="slide-items">
                                     <div class="slide-position">
-                                        <picture loading="eager" style="aspect-ratio: 1120/475">
-                                            <source srcset="images/slide_1.webp 100vw" media="(max-width: 992px)" type="image/webp">
-                                            <source srcset="images/slide_1.webp 1120w" media="(min-width: 1200px)" type="image/webp">
-                                            <source srcset="images/slide_1.webp" type="image/webp">
-                                            <img src="images/slide_1.jpg" alt="Product Image" width="1120" height="475" loading="eager">                                          
-                                       </picture>
+                                        <picture>
+                                            <source srcset="images/slide_1_576.webp 576ww" media="(max-width: 675px)" type="image/webp" width="576" height="244">
+                                            <source srcset="images/slide_1_768.webp 768w" media="(max-width: 768px)" type="image/webp" width="768" height="326">
+                                            <source srcset="images/slide_1_992.webp 992w" media="(min-width: 992px)" type="image/webp" width="992" height="421">
+                                            <source srcset="images/slide_1.webp" media="(min-width: 1200px)" type="image/webp">
+                                            <img src="images/slide_1.jpg" alt="Slide" width="1120" height="475" loading="eager" decoding="async">
+                                        </picture>
                                         <div class="slide-text">
                                             <p class="slide-subtitle">Best selling</p>
                                             <h2 class="slide-title">Top Quality
@@ -2018,7 +2009,7 @@
                                             <source srcset="images/banner_1_768.webp 768w" media="(min-width: 768px)" type="image/webp">
                                             <source srcset="images/banner_1_992.webp 992w" media="(min-width: 992px)" type="image/webp">
                                             <source srcset="images/banner_bottom_1.webp" media="(min-width: 1200px)" type="image/webp">
-                                            <img src="images/banner_2.jpgs" alt="Banner 2" width="456" height="200" loading="eager">
+                                            <img src="images/banner_2.jpg" alt="Banner 2" width="456" height="200" loading="eager">
                                        </picture>
                                         <!-- <picture>
                                             <source srcset="images/banner_2.webp" type="image/webp">
@@ -2054,7 +2045,7 @@
                                             <source srcset="images/banner_2_768.webp 768w" media="(min-width: 768px)" type="image/webp">
                                             <source srcset="images/banner_2_992.webp 992w" media="(min-width: 992px)" type="image/webp">
                                             <source srcset="images/banner_2.webp" media="(min-width: 1200px)" type="image/webp">
-                                            <img src="images/banner_2.jpgs" alt="Banner 2" width="456" height="200" loading="eager">
+                                            <img src="images/banner_2.jpg" alt="Banner 2" width="456" height="200" loading="eager">
                                        </picture>
                                     </a>
                                 </div>
@@ -2078,7 +2069,7 @@
                                             <source srcset="images/banner_3_768.webp 768w" media="(min-width: 768px)" type="image/webp">
                                             <source srcset="images/banner_3_992.webp 992w" media="(min-width: 992px)" type="image/webp">
                                             <source srcset="images/banner_3.webp" media="(min-width: 1200px)" type="image/webp">
-                                            <img src="images/banner_3.jpgs" alt="Banner 2" width="456" height="200" loading="eager">
+                                            <img src="images/banner_3.jpg" alt="Banner 2" width="456" height="200" loading="eager">
                                        </picture>
                                     </a>
                                 </div>
@@ -2199,7 +2190,7 @@
                                             </a>
                                             <span href="#" class="pro-discount">-50%</span>
                                         </div>
-                                        <div class="d-flex flex-column position-absolute list-btn">
+                                        <div class="d-sm-flex flex-column position-absolute list-btn">
                                             <button class="btn-wishlist btn-add btn-secondary" name="add" type="button" aria-label="Add to Wishlist">
                                                 <span class="product-icon">
                                                     <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2278,7 +2269,7 @@
                                                 <img src="images/trending-3-hover.webp" width="360" height="360" alt="Product trending hover 1" loading="lazy">
                                             </a>
                                         </div>
-                                        <div class="d-flex flex-column position-absolute list-btn">
+                                        <div class="d-sm-flex flex-column position-absolute list-btn">
                                             <button class="btn-wishlist btn-add btn-secondary" name="add" type="button" aria-label="Add to Wishlist">
                                                 <span class="product-icon">
                                                     <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2355,7 +2346,7 @@
                                             </a>
                                             <span href="#" class="pro-discount">-50%</span>
                                         </div>
-                                        <div class="d-flex flex-column position-absolute list-btn">
+                                        <div class="d-sm-flex flex-column position-absolute list-btn">
                                             <button class="btn-wishlist btn-add btn-secondary" name="add" type="button" aria-label="Add to Wishlist">
                                                 <span class="product-icon">
                                                     <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2434,7 +2425,7 @@
                                                 <img src="images/trending-5-hover.webp" width="360" height="360" alt="Product trending hover 1" loading="lazy">
                                             </a>
                                         </div>
-                                        <div class="d-flex flex-column position-absolute list-btn">
+                                        <div class="d-sm-flex flex-column position-absolute list-btn">
                                             <button class="btn-wishlist btn-add btn-secondary" name="add" type="button" aria-label="Add to Wishlist">
                                                 <span class="product-icon">
                                                     <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2526,7 +2517,7 @@
                                 <img src="images/selling_1.webp" alt="Product banner selling 1" width="552" height="393" loading="lazy">
                             </a>
                             <div class="banner-text">
-                                <p class="bannner-subtitle">
+                                <p class="banner-subtitle">
                                     Best promotion
                                 </p>
                                 <h2 class="banner-heading">
@@ -2534,7 +2525,7 @@
                                     <br><strong>Air Care Solution</strong>
                                 </h2>
                                 <p class="banner-price" style="margin-bottom:40px">
-                                    From : <span style="color:#DD3327;font-size: 22px;" class="banner-price">$599.00</span>
+                                    From : <span class="banner-price">$599.00</span>
                                 </p>
                                 <a href="#" class="button-hover btn-banner">Shop Now</a>
                             </div>
@@ -2552,7 +2543,7 @@
                                             </a>
                                             <span href="#" class="pro-discount">-50%</span>
                                         </div>
-                                        <div class="d-flex flex-column position-absolute list-btn">
+                                        <div class="d-sm-flex flex-column position-absolute list-btn">
                                             <button class="btn-wishlist btn-add btn-secondary" name="add" type="button" aria-label="Add to Wishlist">
                                                 <span class="product-icon">
                                                     <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2619,7 +2610,7 @@
                                                 <img src="images/trending-1-hover.webp" width="360" height="360" alt="Product trending hover 1" loading="lazy">
                                             </a>
                                         </div>
-                                        <div class="d-flex flex-column position-absolute list-btn">
+                                        <div class="d-sm-flex flex-column position-absolute list-btn">
                                             <button class="btn-wishlist btn-add btn-secondary" name="add" type="button" aria-label="Add to Wishlist">
                                                 <span class="product-icon">
                                                     <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2682,7 +2673,7 @@
                                             </a>
                                             <span href="#" class="pro-discount">-50%</span>
                                         </div>
-                                        <div class="d-flex flex-column position-absolute list-btn">
+                                        <div class="d-sm-flex flex-column position-absolute list-btn">
                                             <button class="btn-wishlist btn-add btn-secondary" name="add" type="button" aria-label="Add to Wishlist">
                                                 <span class="product-icon">
                                                     <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2829,7 +2820,7 @@
                                                 <img src="images/trending-1-hover.webp" width="360" height="360" alt="Product trending hover 1" loading="lazy">
                                             </a>
                                         </div>
-                                        <div class="d-flex flex-column position-absolute list-btn">
+                                        <div class="d-sm-flex flex-column position-absolute list-btn">
                                             <button class="btn-wishlist btn-add btn-secondary" name="add" type="button" aria-label="Add to Wishlist">
                                                 <span class="product-icon">
                                                     <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2908,7 +2899,7 @@
                                             </a>
                                             <span href="#" class="pro-discount">-50%</span>
                                         </div>
-                                        <div class="d-flex flex-column position-absolute list-btn">
+                                        <div class="d-sm-flex flex-column position-absolute list-btn">
                                             <button class="btn-wishlist btn-add btn-secondary" name="add" type="button" aria-label="Add to Wishlist">
                                                 <span class="product-icon">
                                                     <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2987,7 +2978,7 @@
                                                 <img src="images/trending-1-hover.webp" width="360" height="360" alt="Product trending hover 1" loading="lazy">
                                             </a>
                                         </div>
-                                        <div class="d-flex flex-column position-absolute list-btn">
+                                        <div class="d-sm-flex flex-column position-absolute list-btn">
                                             <button class="btn-wishlist btn-add btn-secondary" name="add" type="button" aria-label="Add to Wishlist">
                                                 <span class="product-icon">
                                                     <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -3066,7 +3057,7 @@
                                             </a>
                                             <span href="#" class="pro-discount">-50%</span>
                                         </div>
-                                        <div class="d-flex flex-column position-absolute list-btn">
+                                        <div class="d-sm-flex flex-column position-absolute list-btn">
                                             <button class="btn-wishlist btn-add btn-secondary" name="add" type="button" aria-label="Add to Wishlist">
                                                 <span class="product-icon">
                                                     <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -3145,7 +3136,7 @@
                                                 <img src="images/trending-1-hover.webp" width="360" height="360" alt="Product trending hover 1" loading="lazy">
                                             </a>
                                         </div>
-                                        <div class="d-flex flex-column position-absolute list-btn">
+                                        <div class="d-sm-flex flex-column position-absolute list-btn">
                                             <button class="btn-wishlist btn-add btn-secondary" name="add" type="button" aria-label="Add to Wishlist">
                                                 <span class="product-icon">
                                                     <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">

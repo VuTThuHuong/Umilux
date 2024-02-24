@@ -387,6 +387,9 @@
     .mb-sm-6 {
       margin-bottom: 3rem!important;
     }
+    .d-sm-flex {
+      display: flex !important;
+    }
 }
 @media (min-width: 768px) {
   .d-md-none {
