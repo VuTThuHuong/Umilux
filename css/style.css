@@ -29,38 +29,13 @@
     --rating-star: #ffb800;
 }
 
-/* @font-face {
-    font-family: "General Sans";
-    font-style: normal;
-    font-weight: 400;
-    src:
-      url("fonts/GeneralSans-Medium.otf") format('woff2');
-    font-display: swap;
-} 
-@font-face {
-    font-family: "General Sans";
-    font-style: normal;
-    font-weight: 500;
-    src:
-      url("../fonts/GeneralSans-Medium.otf")
-        format('woff2');
-    font-display: swap;
-}
-@font-face {
-    font-family: "General Sans";
-    font-style: normal;
-    font-weight: 600;
-    src:
-      url("../fonts/GeneralSans-Semibold.otf")
-    format('woff2');
-    font-display: swap;
-}*/
 @font-face {
     font-family: "General Sans";
     src: url("../fonts/GeneralSans-Medium.otf") format("woff2");
     font-weight: 500;
     font-display: swap;
 } 
+
 @font-face {
     font-family: "General Sans";
     src: url("../fonts/GeneralSans-Regular.otf") format("woff2");
@@ -278,8 +253,8 @@ button.action:hover{
     margin: 0 1.5rem;
 }
 .h-count{
-    width: 1.7rem;
-    height: 1.7rem;
+    min-width: 1.7rem;
+    min-height: 1.7rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -846,6 +821,7 @@ button.action:hover{
     top: 50%;
     transform: translateY(-50%);
     left: 4rem;
+    min-height: max-content;
 }
 .banner-image img{
     transition: var(--bls-transition);
