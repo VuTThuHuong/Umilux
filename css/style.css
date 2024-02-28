@@ -213,9 +213,8 @@ div > section{
     left: 3rem;
     z-index:1;
 }
-
 .btn-search {
-    height: 5rem;
+    height: 4.5rem;
     width: min-content;
 }
 input[type="search"] {
@@ -230,6 +229,7 @@ button[name="commit"]{
     color: var(--background);
     border: none;
     background-color: #0D53BB;
+    font-size: var(--base-font-size);
 }
 
 button.action:hover{
