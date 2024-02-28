@@ -25,6 +25,8 @@
     --border-color-base: #ebebeb;
     --border-radius: 3rem;
     --heading-title-h4: 1.6rem;
+    --padding-section: 6rem;
+    --rating-star: #ffb800;
 }
 
 /* @font-face {
@@ -65,12 +67,20 @@
     font-weight: 400;
     font-display: swap;
 } 
+
 @font-face {
     font-family: "General Sans";
     src: url("../fonts/GeneralSans-Semibold.otf") format("woff2");
     font-weight: 600;
     font-display: swap;
 } 
+
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-display: block;
+    font-weight: 900;
+    src: url("../fonts/fa-solid-900.woff2") format("woff2"), url("../fonts//fa-solid-900.ttf") format("truetype"); 
+}
 
 body {
     box-sizing: border-box;
@@ -141,7 +151,7 @@ button {
 }
 
 div > section{
-    padding-bottom: 6rem;
+    padding-bottom: var(--padding-section);
 }
 .container-fluid{
     max-width: calc(var(--bls-container-fluid-width) + var(--bs-gutter-x));
@@ -183,8 +193,11 @@ div > section{
     width : max-content;
     transition: 1s;
 }
+.position-header-top
+
 .list-paragraph {
     text-align: center;
+    transition: var(--bls-transition);
 }
 
 .list-paragraph .items {
@@ -202,11 +215,6 @@ div > section{
     width: 50%;
     display: flex;
     justify-content: space-between;
-}
-.buttons-slider div {
-    width: 1.6rem;
-    height: 1.6rem;
-    color: var(--background);
 }
 .close-button {
     top: 50%;
@@ -270,8 +278,8 @@ button.action:hover{
     margin: 0 1.5rem;
 }
 .h-count{
-    width: 1.8rem;
-    height: 1.8rem;
+    width: 1.7rem;
+    height: 1.7rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -279,29 +287,26 @@ button.action:hover{
     font-size: 1rem;
     position: absolute;
     top: -20%;
-    left: 1.8rem;
+    left: 2rem;
     background-color: var(--key-digital);
     color: var(--background);
 }
+
 /* Header-Bottom*/
-.header-bottom{
-    padding: 1rem 0;
+.header-bottom {
     border-top: 0.1rem solid var(--border-digital);
     border-bottom: 0.1rem solid var(--border-digital);
     position: relative;
 }
-.header-bottom .col-left{
+
+.menu-title {
     border-right: 0.1rem solid var(--border-digital);
-}
-.menu-title{
     font-weight: var(--font-weight-bold);
     white-space: nowrap;
 }
-.text-menu{
+
+.text-menu {
     margin-left: 0.5rem;
-}
-.main-menu{
-    padding: 0 2rem;
 }
 
 .main-menu > li.menu-parent > a{
@@ -369,7 +374,7 @@ button.action:hover{
 .slide-position{
     color: var(--background);
     position: relative;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     overflow: hidden;
 }
 .slide-position .slide-text{
@@ -454,7 +459,7 @@ button.action:hover{
 }
 /*Menu*/
 .slider .col-left{
-   width: 22%;
+   width: 27%;
 }
 .menu-width-custom .menu-custom-width-center{
     width: 120rem;
@@ -527,12 +532,12 @@ button.action:hover{
 
 .vertical-menu{
     background: #fff;
-    border-radius: 1rem;
-    padding: 0.3rem 2rem;
+    border-radius: 1.5rem;
+    padding: 1.2rem 3rem;
 }
 
 .vertical-menu > li {
-    padding: 1.2rem 0;
+    padding: 1.1rem 0;
     position: relative;
     transition: opacity .2s, visibility .2s, transform .2s, -webkit-transform .2s;
 }
@@ -568,12 +573,13 @@ button.action:hover{
 /*===== SubMenu ===*/
 .vertical-menu .submenu {
     top: 0;
-    left: 110%;
+    left: 115%;
     border-radius: 2rem;
+    box-shadow: var(--box-shadow);
 }
 .vertical-menu .dropdown-with-custom .submenu {
     width: 85rem;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 .vertical-menu .default_dropdown .submenu {
     width: 25rem;
@@ -614,8 +620,9 @@ button.action:hover{
     background-color: var(--background-col);
 }
 .name_brand {
+    text-transform: uppercase;
     color: var(--grey-color);
-    font-size: var(--heading-title-h4);
+    font-size: var(--font-size-small);
 }
 
 .pro-image {
@@ -717,11 +724,7 @@ button.action:hover{
  } 
 
  .rating {
-    display: inline-block;
-    unicode-bidi: bidi-override;
-    color: #FFB800;
-    font-size: 20px;
-    height: 1em;
+    unicode-bidi: bidi-override;;
     position: relative;
 }
 
@@ -729,12 +732,15 @@ button.action:hover{
     display: inline-block;
     margin-right: 10px;
     cursor: pointer;
+    color: var(--rating-star);
+    font-size: 12px;
   }
 
 .star:before {
     top: 0;
-    content: '\2605';
+    content: '\f005';
     position: absolute;
+    font-family: 'Font Awesome 5 Free';
 }
 
 .btn-add:hover .product-icon path {
@@ -745,7 +751,6 @@ button.action:hover{
 .top-selling-products .pro-banner{
     width: 40%;
     position: relative;
-    margin-right: 0.5rem;
     border-radius: 2rem;
 }
 .pro-banner .banner-text{
@@ -840,7 +845,7 @@ button.action:hover{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 3rem;
+    left: 4rem;
 }
 .banner-image img{
     transition: var(--bls-transition);
@@ -869,7 +874,6 @@ button.action:hover{
 }
 
 .collection-items img{
-   width: 100%;
    margin-right: 10px; 
 }
 
@@ -934,8 +938,8 @@ ul li.links a.all-pro-links:hover {
 /* Footer-Link */
 .footer-link{
     border-top: 1px solid var(--border-digital);
-    padding-top: 6rem;
-    margin-bottom: 6rem;
+    padding-top: var(--padding-section);
+    padding-bottom: 3rem;
 }
 
 .toggleIcon1, .toggleIcon2{
@@ -1109,6 +1113,6 @@ ul li.links a:hover{
     position: absolute;
     top:0;
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover; 
 }
