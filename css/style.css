@@ -27,6 +27,7 @@
     --heading-title-h4: 1.6rem;
     --padding-section: 6rem;
     --rating-star: #ffb800;
+    --light-grey-color: #f5f5f5;
     --animation-slide-in: slideIn 600ms cubic-bezier(0, 0, 0.3, 1) forwards;
 }
 
@@ -188,7 +189,7 @@ div > section{
    color: var(--background);
 }
 .buttons-slider{
-    width: 50%;
+    width: 40%;
     display: flex;
     justify-content: space-between;
 }
@@ -215,7 +216,6 @@ div > section{
     z-index:1;
 }
 .btn-search {
-    height: 4.5rem;
     width: min-content;
 }
 input[type="search"] {
@@ -225,7 +225,7 @@ input[type="search"] {
     font-size: var(--font-size-small);
 }
 button[name="commit"]{
-    padding: 1.4rem 2rem;
+    padding: 1.5rem 2rem;
     border-radius: 0 30rem 30rem 0rem;
     color: var(--background);
     border: none;
@@ -270,6 +270,7 @@ button.action:hover{
 
 /* Header-Bottom*/
 .header-bottom {
+    padding: 1.5rem 0;
     border-top: 0.1rem solid var(--border-digital);
     border-bottom: 0.1rem solid var(--border-digital);
     position: relative;
@@ -315,12 +316,13 @@ button.action:hover{
     opacity: 0;
     z-index: 1;
     position: absolute;
-    transition: opacity .2s, visibility .2s, transform .2s, -webkit-transform .2s;
+    transition: opacity .4s, visibility .4s, transform .4s, -webkit-transform .4s;
 }
 
 .default_dropdown ul.dropdown{
-    width: 20rem;
+    width: 70%;
 }
+
 .default_dropdown ul.dropdown li:not(:last-child){
    padding-bottom: 1.5rem;
 }
@@ -541,7 +543,8 @@ button.action:hover{
     left: 115%;
     border-radius: 2rem;
     box-shadow: var(--box-shadow);
-}
+}   
+
 .vertical-menu .dropdown-with-custom .submenu {
     width: 85rem;
     overflow-y: auto;
@@ -559,11 +562,11 @@ button.action:hover{
 .submenu .subchildmenu .menu-item{
     padding-bottom: 1.5rem;
 }
-.submenu-mobile-title{
-    display: none;
-}
+
 .type_collection {
-    padding-right: 25px;
+    padding-right: 2.5rem;
+    margin-bottom: 2rem;
+
 }
 .collection-item img{
     border-radius: var(--border-radius);
@@ -706,6 +709,7 @@ button.action:hover{
     content: '\f005';
     position: absolute;
     font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
 }
 
 .btn-add:hover .product-icon path {
@@ -945,7 +949,7 @@ ul.social-link a:hover .tooltip-content-bottom{
 }
 
 .newsletter-form .btn{
-    height: 5rem;
+    height: 5rem; 
     border-radius: 5rem;
 }
 

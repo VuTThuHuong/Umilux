@@ -37,7 +37,7 @@
 @keyframes animateDownToUp {
     0% {
         opacity: 0;
-        transform: translateY(1.5rem)
+        transform: translateY(10rem)
     }
 
     to {

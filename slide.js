@@ -156,6 +156,11 @@ function closeMenu() {
   document.querySelector(".mobile-menu").style.left = "-120%";
 }
 
+function toggleSubmenu(item) {
+  var submenu = item.querySelector('.submenu');
+  submenu.classList.toggle('active');
+}
+
 document.getElementById("mobile_menu_toggle").addEventListener("click", function () {
   const mobileMenu = document.querySelector(".mobile-menu");
   if (mobileMenu.style.left === "-120%") {

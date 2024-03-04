@@ -392,6 +392,7 @@
 .text-center {
   text-align: center !important;
 }
+
 @media (min-width: 576px) {
     .mb-sm-5 {
       margin-bottom: 2.5rem!important;
@@ -452,14 +453,23 @@
   }
 }
 @media (min-width: 1200px) {
+  .text-xl-center {
+    text-align: center !important;
+  }
   .d-xl-block {
     display: block !important;
   }
   .flex-xl-row {
     flex-direction: row !important;
   }
+  .flex-xl-column {
+    flex-direction: column !important;
+  }
   .p-xl-0 {
     padding: 0 !important;
+  }
+  .gap-xl-3 {
+    gap: 1.5rem !important;
   }
   .gap-xl-4 {
     gap: 2rem !important;
