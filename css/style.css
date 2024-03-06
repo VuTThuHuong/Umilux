@@ -848,10 +848,17 @@ button.action:hover{
     padding: 3rem;
     border-radius: 1.5rem;
 }
+.collection-menu-image {
+    position: relative;
+    width: 12rem;
+    max-width: 85%;
+}
 
 .collection-items img{
    margin-right: 10px; 
 }
+
+
 
 ul li.links a.all-pro-links {
     color: var(--key-digital); 
@@ -1076,6 +1083,7 @@ ul li.links a:hover{
 
 .aspect-ratio-container {
     width: 100%;
+    overflow: hidden;
     position: relative; 
 }
 
@@ -1105,3 +1113,10 @@ ul li.links a:hover{
     height: 100%;
     object-fit: cover; 
 }
+
+  .aspect-ratio-boxes img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    position: inherit;
+  }
