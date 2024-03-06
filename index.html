@@ -9,12 +9,12 @@
     making it an excellent choice for businesses of all types.">
     <meta name="title" content="Umino - Umilux">
     <meta property="og:type" content="website">
-    <title>Umilux</title>
-    <link rel="stylesheet" href="css/style.css" media="all">    
-    <link rel="stylesheet" href="css/responsive.css" media="all">
-    <link rel="stylesheet" href="css/bootstrap-grid.css" media="all">
+    <title>Umilux</title>  
+    <link rel="stylesheet" href="css/style.css" media="all">
+    <link rel="stylesheet" href="css/bootstrap-grid.css" media="all">  
     <link rel="stylesheet" href="css/bootstrap-utilities.css" media="all">
     <link rel="stylesheet" href="css/reset.css" media="all">
+    <link rel="stylesheet" href="css/responsive.css" media="all">
     <link rel="stylesheet" href="css/swiper-bundle.css" media="all">
     <link rel="stylesheet" href="css/amination.css" media="all">
     <link rel="stylesheet" href="css/all.min.css" media="all">
@@ -179,10 +179,9 @@
                                             <div class="container-fluid flex-column submenu-container">
                                                 <div class="d-xl-flex flex-xl-row flex-column gap-xl-3">
                                                     <div class="type_home">
-                                                        <div class="home-img aspect-ratio-container overflow-hidden" style="--aspect-ratio: 410/300">
+                                                        <div class="home-img aspect-ratio-container overflow-hidden" style="aspect-ratio: 410/300">
                                                             <a aria-label="menu bannner load" class="d-block menu-banner-loaded" href="#">
-                                                                <img src="images/1-main-demo.webp" alt="Menu banner" class="image-banner-loaded" loading="lazy" width="410"
-                                                                    height="300">
+                                                                <img src="images/1-main-demo.webp" alt="Menu banner" class="image-banner-loaded" loading="lazy" width="410" height="300">
                                                             </a>
                                                         </div>
                                                         <div class="home-infor text-xl-center">
@@ -1238,7 +1237,7 @@
                                                             </div>
                                                             <div class="bls-menu-item type_link col-xl-6">
                                                                 <div class="subchildmenu-title" data-menu-level2="">
-                                                                    <a aria-label="subchildmenu title"class="d-block toggle-submenu-mb capitalize not-links" role="link">
+                                                                    <a aria-label="subchildmenu title" class="d-block toggle-submenu-mb capitalize not-links" role="link">
                                                                         Smartphone
                                                                     </a>
                                                                 </div>
@@ -1676,7 +1675,7 @@
                                                             </a>
                                                         </li>
                                                         <li class="menu-item links">
-                                                            <a aria-label="subchildmenu links"href="#">
+                                                            <a aria-label="subchildmenu links" href="#">
                                                                 Hard Drives &amp; Memory Cards
                                                             </a>
                                                         </li>
@@ -1704,7 +1703,7 @@
                                                 </div>
                                                 <div class="menu-item type_link col-sm-6">
                                                     <div class="subchildmenu-title" data-menu-level2="">
-                                                        <a aria-label="subchildmenu tilte"class="d-block toggle-submenu-mb capitalize not-links" role="link">
+                                                        <a aria-label="subchildmenu tilte" class="d-block toggle-submenu-mb capitalize not-links" role="link">
                                                             Home Audio
                                                         </a>
                                                     </div>
@@ -3395,8 +3394,14 @@
                         <div class="overflow-hidden col-12 col-lg-4 col-items">
                             <div class="card-item">
                                 <div class="banner-image overflow-hidden">
-                                    <a aria-label="card images" href="#" style="--aspect-ratio: 457/250;">
-                                        <img src="images/pic_1.webp" loading="lazy" width="457" height="250" alt="Product selling 1">
+                                    <a aria-label="card images" href="#">
+                                        <picture>
+                                            <source srcset="images/pic_1.webp" type="image/webp" media="(max-width: 475px)" width="457" height="250">
+                                            <source srcset="images/pic_1_768.webp" media="(max-width: 768px)" type="image/webp" width="768" height="420">
+                                            <source srcset="images/pic_1_992.webp" media="(max-width: 991px)" type="image/webp" width="992" height="543">
+                                            <source srcset="images/pic_1.webp" type="image/webp" media=" (min-width: 992px)" width="457" height="250">
+                                            <img src="images/pic_1.webp" loading="lazy" width="457" height="250" alt="Product selling 1">
+                                        </picture>
                                     </a>
                                 </div>
                                 <div class="banner-desc">
@@ -3409,8 +3414,14 @@
                         <div class="overflow-hidden col-12 col-lg-4 col-items">
                             <div class="card-item">
                                 <div class="banner-image overflow-hidden">
-                                    <a aria-label="card images" href="#" style="--aspect-ratio: 457/250;">
-                                        <img src="images/pic_2.webp" loading="lazy" width="457" height="250" alt="Product selling 1">
+                                    <a aria-label="card images" href="#">
+                                        <picture>
+                                            <source srcset="images/pic_2_576.webp" type="image/webp" media="(max-width: 576px)" width="576" height="316">
+                                            <source srcset="images/pic_2_768.webp" media="(max-width: 768px)" type="image/webp" width="768" height="421">
+                                            <source srcset="images/pic_2.webp" type="image/webp" media="(max-width: 991px)" width="912" height="500">
+                                            <source srcset="images/pic_2.webp" type="image/webp" media=" (min-width: 992px)" width="576" height="316">
+                                            <img src="images/pic_2.webp" loading="lazy" width="912" height="500" alt="Product selling 1">
+                                        </picture>
                                     </a>
                                 </div>
                                 <div class="banner-desc">
@@ -3423,8 +3434,14 @@
                         <div class="overflow-hidden col-12 col-lg-4 col-items">
                             <div class="card-item">
                                 <div class="banner-image overflow-hidden" >
-                                    <a aria-label="card images" href="#" style="--aspect-ratio: 457/250;">
-                                        <img src="images/pic_3.webp" loading="lazy" width="457" height="250" alt="Product selling 1">
+                                    <a aria-label="card images" href="#">
+                                        <picture>
+                                            <source srcset="images/pic_3.webp" type="image/webp" media="(max-width: 475px)" width="457" height="250">
+                                            <source srcset="images/pic_3_768.webp" media="(max-width: 768px)" type="image/webp" width="768" height="420">
+                                            <source srcset="images/pic_3_992.webp" media="(max-width: 991px)" type="image/webp" width="992" height="543">
+                                            <source srcset="images/pic_3.webp" type="image/webp" media=" (min-width: 992px)" width="457" height="250">
+                                            <img src="images/pic_3.jpg" loading="lazy" width="457" height="250" alt="Product selling 1">
+                                        </picture>
                                     </a>
                                 </div>
                                 <div class="banner-desc">
@@ -3725,7 +3742,7 @@
                     </a>
                 </li>
                 <li>
-                    <a aria-label="Account"href="#" class="header__icon header__icon--account action-login">
+                    <a aria-label="Account" href="#" class="header__icon header__icon--account action-login">
                         <svg width="17" height="17" viewBox="0 0 17 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path d="M16.8927 15.7682C16.0329 14.3137 14.8061 13.1078 13.3338 12.27C11.8614 11.4322 10.1946 10.9914 8.49845 10.9914C6.80225 10.9914 5.13546 11.4322 3.66314 12.27C2.19082 13.1078 0.964024 14.3137 0.104236 15.7682C-0.00102398 15.9568 -0.027822 16.179 0.0295835 16.387C0.0566587 16.493 0.106188 16.592 0.174854 16.6774C0.243521 16.7627 0.329737 16.8325 0.427728 16.8821C0.554141 16.9534 0.697158 16.9903 0.842462 16.9894C0.986554 16.9954 1.12952 16.9616 1.25545 16.8917C1.38138 16.8218 1.48536 16.7185 1.5558 16.5933C2.26752 15.3886 3.2833 14.3898 4.50251 13.6958C5.72172 13.0018 7.10204 12.6367 8.50674 12.6367C9.91144 12.6367 11.2918 13.0018 12.511 13.6958C13.7302 14.3898 14.746 15.3886 15.4577 16.5933C15.5685 16.7806 15.7491 16.9169 15.9603 16.9725C16.1715 17.0281 16.3963 16.9986 16.5858 16.8903C16.6801 16.8403 16.7628 16.7711 16.8285 16.6872C16.8943 16.6034 16.9415 16.5067 16.9673 16.4035C16.998 16.298 17.0072 16.1874 16.9944 16.0783C16.9816 15.9692 16.947 15.8638 16.8927 15.7682Z"></path>
                             <path d="M8.49966 10.2C9.83622 10.2002 11.1195 9.67091 12.0732 8.72594C13.027 7.78097 13.5752 6.49588 13.5997 5.14718C13.5997 3.78206 13.0623 2.47286 12.1059 1.50757C11.1495 0.542291 9.85226 0 8.49966 0C7.14705 0 5.84985 0.542291 4.89341 1.50757C3.93698 2.47286 3.39966 3.78206 3.39966 5.14718C3.42416 6.49588 3.97228 7.78097 4.92607 8.72594C5.87987 9.67091 7.1631 10.2002 8.49966 10.2ZM5.09966 5.14718C5.09966 4.2371 5.45787 3.3643 6.09549 2.72078C6.73312 2.07725 7.59792 1.71573 8.49966 1.71573C9.40139 1.71573 10.2662 2.07725 10.9038 2.72078C11.5414 3.3643 11.8997 4.2371 11.8997 5.14718C11.8997 6.05726 11.5414 6.93006 10.9038 7.57359C10.2662 8.21711 9.40139 8.57864 8.49966 8.57864C7.59792 8.57864 6.73312 8.21711 6.09549 7.57359C5.45787 6.93006 5.09966 6.05726 5.09966 5.14718Z"></path>

@@ -152,6 +152,9 @@
   }
 }
 @media (min-width: 768px) {
+  .d-md-block {
+    display: block !important;
+  }
   .col-md-3 {
     flex: 0 0 auto;
     width: 25%;
