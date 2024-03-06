@@ -456,6 +456,9 @@
   .text-xl-center {
     text-align: center !important;
   }
+  .d-xl-flex {
+    display: flex !important;
+  }
   .d-xl-block {
     display: block !important;
   }

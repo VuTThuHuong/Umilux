@@ -140,6 +140,7 @@ const SwiperSlide = new Swiper('.slide-collection', {
 function showMainMenu() {
   document.querySelector(".main-menu-list").classList.add("active");
   document.querySelector(".categories").classList.remove("active");
+  document.querySelector(".main-menu").style.display = "block";
   document.querySelector(".verticalmenu").style.display = "none";
 }
 
@@ -154,17 +155,30 @@ function closeMenu() {
   document.querySelector(".main-menu-list").classList.remove("active");
   document.querySelector(".categories").classList.remove("active");
   document.querySelector(".mobile-menu").style.left = "-120%";
+  document.body.classList.remove('overlay-active');
 }
 
 function toggleSubmenu(item) {
   var submenu = item.querySelector('.submenu');
   submenu.classList.toggle('active');
+  // if(submenu.classList.add('active')){
+  //   toggleSubchildmenu(item);
+  // }
+  // else {
+  //   submenu.classList.toggle('active');
+  // }
+}
+
+function toggleSubchildmenu(item) {
+  var subchildmenu = item.nextElementSibling; // Assuming subchildmenu is the next sibling
+  subchildmenu.classList.toggle('active');
 }
 
 document.getElementById("mobile_menu_toggle").addEventListener("click", function () {
   const mobileMenu = document.querySelector(".mobile-menu");
   if (mobileMenu.style.left === "-120%") {
       mobileMenu.style.left = "0px";
+      document.body.classList.toggle('overlay-active');
       showMainMenu();
   } else {
       closeMenu();

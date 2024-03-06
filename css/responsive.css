@@ -35,7 +35,31 @@
     .col-middle-center {
         margin-top: 20px;
     }
-    
+
+    .overlay-active {
+        overflow: hidden;
+    }
+
+    .overlay-active .nav-toggle:after {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .nav-toggle:after {
+        content: "";
+        display: block;
+        position: fixed;
+        z-index: 4;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        opacity: 0;
+        pointer-events: none;
+        background-color: var(--overlay-bg);
+        transition: var(--bls-transition);
+    }
+
     .mobile-menu {
         position: fixed;
         background: var(--background);
@@ -46,6 +70,7 @@
         max-width: 85%;
         width: 40rem;
         z-index: 5;
+        opacity: 1;;
         transition: var(--bls-transition);
     }
         
@@ -56,16 +81,21 @@
     
     .vertical-menu, .main-menu {
         padding: 0 3rem;
-        position: absolute;
         width: 100%;
         z-index: -1;
         height: auto;
         overflow-x: hidden;
         overflow-y: auto;
+        display: flex;
+        flex-direction: column;
     }
 
     .mobile-menu .container-fluid {
         padding: 0;
+    }
+
+    .mobile-menu .submenu-container{
+        padding: 0 3rem;
     }
 
     .mobile-menu ul li.links a:hover{
@@ -73,6 +103,7 @@
     }
 
     .mobile-menu-content > ul > li {
+        display: block;
         margin: 0;
         font-weight: var(--font-weight-bold);
     }
@@ -83,7 +114,7 @@
         color: #fff;
         background-color: var(--color-timer);
         padding: 1.5rem 0px;
-        
+        display: block;
     }
 
     .mobile-menu .menu-mobile-title a {
@@ -145,30 +176,37 @@
         left: -120%;
         top: 0;
         background-color: var(--background);
-        padding: 0 3rem;
+        padding: 0;
         position: fixed;
-        opacity: 1;
-        visibility: visible;
+        opacity: 0;
+        visibility: hidden;
         width: 40rem;
         height: 100%;
+        transition: all 0.6s ease;
         transform: translate3d(-120%,0,0);
         z-index: 1111;
+        overflow-x: hidden;
+        overflow-y: auto;
     }
 
     .mobile-menu-content > ul > li .submenu.active {
-        left: 0; 
-        transition: var(--bls-transition);
+        left: 0;
+        opacity: 1; 
+        visibility: visible;
         transform: translate3d(0,0,0);
         z-index: 1111;
+        pointer-events: auto;
     }
 
     .vertical-menu .dropdown-with-custom .submenu {
         width: 100%;
         overflow-y: auto;
     }
+
     .vertical-menu .submenu {
         display: none;
     }
+
     .default_dropdown ul.dropdown {
         padding: 0 3rem;
         width: 100%;
@@ -176,12 +214,16 @@
     }
     
     .submenu .submenu-mobile-title {
+        display: block;
         background-color: var(--light-grey-color);
         padding: 1.5rem 3rem;
         border-bottom: 1px solid var(--border-color-base);
         font-weight: var(--font-weight-bold);
         cursor: pointer;
         display: flex;
+        position: sticky;
+        top: 0;
+        z-index: 6666;
     }
 
     .submenu .submenu-mobile-title i {
@@ -190,13 +232,46 @@
     }
 
     .submenu .subchildmenu-title {
+        display: block;
         padding: 1.5rem 0;
         font-weight: var(--font-weight-bold);
         margin-bottom: 0rem;
         border-bottom: 1px solid var(--border-color-base);
-        position: relative;
+        position: sticky;
+        top: 0;
+        z-index: 2223;
     }
 
+     .subchildmenu {
+        left: -120%;
+        top: 0;
+        background-color: var(--background);
+        position: fixed;
+        opacity: 1;
+        visibility: visible;
+        width: 40rem;
+        height: 100%;
+    }
+
+    .subchildmenu.active {
+        left: 0;
+        top: 0;
+        background-color: var(--background);
+        position: fixed;
+        opacity: 1;
+        visibility: visible;
+        width: 40rem;
+        height: 100%;
+        z-index: 66666;
+    }
+     
+    .mobile-menu-content > ul > li .submenu .subchildmenu > * + * {
+        padding: 1.5rem 3rem;
+        display: block;
+    }
+    .type_collection {
+        padding: 1.5rem 0;
+    }
     .submenu .subchildmenu-title > a:after{
         content: '';
         position: absolute;
@@ -210,7 +285,7 @@
         transform: translateY(-50%) rotate(-45deg);
         -webkit-transform: translateY(-50%) rotate(-45deg); 
     }
-
+   
     .submenu .subchildmenu .menu-item {
         font-weight: var(--base-font-weight);
     }
@@ -225,7 +300,9 @@
 
     .submenu .type_home {
         width: 100%;
+        display: block;
         padding: 1.5rem 0;
+        margin: 0 3rem;
         box-shadow: none;
         margin: 0;
         border-radius: 0;

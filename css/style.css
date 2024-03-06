@@ -1,15 +1,17 @@
 /* Root */
 :root{
+    --overlay-bg: rgba(0, 0, 0, 0.5);
     --background-col: rgb(255, 255, 255);
     --grey-color: rgba(85,85,85);
     --heading-color:#ffffff;
     --header-color: #555;
     --bls-transition: all 0.4s;
-    --title-fashion: rgba(17, 17, 17, 1);
+    --title-fashion: #111111;
+    --title-fashion-opacity: rgba(17, 17, 17, 0.5);
     --background: rgba(255, 255, 255, 1);
     --key-digital: #0D53BB;
     --body-second: rgba(141, 151, 158, 1);
-    --color-timer: #D73F0F;
+    --color-banner-pro: #D73F0F;
     --body-fashion: #555;
     --base-font-size: 1.4rem;
     --base-font-weight: 500;
@@ -106,6 +108,7 @@ img {
 }
 
 a {
+    cursor: pointer;
     text-decoration: none;
 	outline: none;
     color: var(--title-fashion);
@@ -188,11 +191,13 @@ div > section{
    font-size: var(--font-size-small);
    color: var(--background);
 }
+
 .buttons-slider{
-    width: 40%;
+    width: 45%;
     display: flex;
     justify-content: space-between;
 }
+
 .close-button {
     top: 50%;
     right:0 ;
@@ -246,8 +251,8 @@ button.action:hover{
     margin-left: 1.5rem;
 }
 .text-icons-top{
+    color: var(--title-fashion-opacity);
     font-size: 1.1rem;
-    opacity: 0.5;
 }
 .header-wishlist{  
     position: relative; 
@@ -319,8 +324,8 @@ button.action:hover{
     transition: opacity .4s, visibility .4s, transform .4s, -webkit-transform .4s;
 }
 
-.default_dropdown ul.dropdown{
-    width: 70%;
+.default_dropdown .submenu{
+    width: 20%;
 }
 
 .default_dropdown ul.dropdown li:not(:last-child){
@@ -456,7 +461,7 @@ button.action:hover{
     color: var(--background);
 }
 .label1{
-    background-color: var(--color-timer);
+    background-color: var(--color-banner-pro);
 }
 .label2{
     background-color: var(--key-digital);
@@ -565,8 +570,6 @@ button.action:hover{
 
 .type_collection {
     padding-right: 2.5rem;
-    margin-bottom: 2rem;
-
 }
 .collection-item img{
     border-radius: var(--border-radius);
@@ -733,12 +736,13 @@ button.action:hover{
 }
 .pro-banner .banner-text .banner-subtitle{
      font-size: var(--font-size-small);
+     color: var(--color-banner-pro);
 }
 .pro-banner .banner-text .banner-price span{
     font-size: 22px;
 }
 .pro-banner .banner-text .banner-subtitle, .pro-banner .banner-text .banner-price span{
-    color: var(--color-timer);
+    color: var(--color-banner-pro);
     text-transform: uppercase;
 }
 .pro-banner .banner-text .banner-heading{
