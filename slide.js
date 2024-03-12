@@ -194,15 +194,19 @@ function toggleContent(elementId) {
 
   if (element.classList.contains('hidden')) {
       element.classList.remove('hidden');
-      toggleIcon1.style.display = 'none';
-      toggleIcon2.style.display = 'inline-block';
-      element.style.animation = "animateUpToDown 0.4s ease";
+      element.classList.add('visible');
+      toggleIcon1.style.opacity = 0;
+      toggleIcon2.style.opacity = 1;
+      
   } else {
-      // Nếu đang hiển thị, ẩn
+      element.classList.remove('visible');
       element.classList.add('hidden');
-      toggleIcon1.style.display = 'inline-block';
-      toggleIcon2.style.display = 'none';
-      element.style.animation = "animateCloseUpToDown 0.4s ease";
+      toggleIcon1.style.opacity = 1;
+      toggleIcon2.style.opacity = 0;
+     
+      element.addEventListener('transitionend', function () {
+        element.style.maxHeight = null;
+      }, { once: true });
   }
 }
 
