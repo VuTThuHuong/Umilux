@@ -496,7 +496,7 @@
         padding-bottom: 3rem;
     }
 
-    h2 {
+    h2,.slide-title {
         font-size: 2rem
     }
 
@@ -530,3 +530,8 @@
     }
 }
 
+@media only screen and (max-width: 350px) {
+    h2,.slide-title {
+        font-size: 1.7rem;
+    }
+}
