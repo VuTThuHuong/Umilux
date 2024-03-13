@@ -115,6 +115,10 @@ a {
 	outline: none;
     color: var(--title-fashion);
 }
+button {
+    cursor: pointer;
+}
+
 a:hover,
 a:focus {
 	text-decoration: none;
@@ -346,7 +350,6 @@ button.action:hover{
     white-space: nowrap;
 }
 .menu-parent .submenu{
-    top: 100%;
     background-color: var(--background);
     padding: 3rem;
     visibility: hidden;
@@ -357,12 +360,28 @@ button.action:hover{
 }
 
 .default_dropdown .submenu{
-    width: 20%;
+    width: 20%
 }
 
 .default_dropdown ul.dropdown li:not(:last-child){
    padding-bottom: 1.5rem;
 }
+
+.menu-parent::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: transparent; 
+    display: none;
+}
+
+.menu-parent:hover::after {
+    display: block;
+} 
+
 .menu-parent:hover .submenu{
     visibility: visible;
     opacity: 1;
@@ -607,8 +626,7 @@ button.action:hover{
 }
 
 .verticalmenu .default_dropdown .submenu {
-    width: 25rem;
-    max-width: 85%;
+    min-width: 25rem;
 }
 .subchildmenu-title{
     font-weight: var(--font-weight-bold);
@@ -632,7 +650,7 @@ button.action:hover{
 }
 
 .collection-item a:hover img{
-    transform: none;
+    transform: scale(1.1);
 }
 /* Product */
 .pro-items-lists{
@@ -1080,7 +1098,8 @@ ul li.links a:hover {
     bottom: 100%;
 }
 
-#btn-language:checked ~ .dropdown-menu, #btn-currency:checked ~ .dropdown-menu {
+#btn-language:checked ~ .language .dropdown-menu,
+ #btn-currency:checked ~ .currency .dropdown-menu {
     display: block;
 }
 

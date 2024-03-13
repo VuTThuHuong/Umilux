@@ -363,6 +363,7 @@
     }
     .cart-count {
         left: 2.5rem;
+        top: -15%;
     }
     .submenu .submenu-mobile-title {
         display: none;
@@ -484,6 +485,9 @@
 
     .mobile-stickybar .wishlist-count {
         left: 2.5rem;
+    }
+    .col-shipping-items {
+        margin: 20px 0;
     }
 }
 

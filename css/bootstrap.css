@@ -565,6 +565,9 @@
         flex: 0 0 auto;
         width: 50%;
     }
+    .gap-md-0 {
+      gap: 0 !important;
+    }
     .mb-md-0 {
         margin-bottom: 0rem !important;
     }
