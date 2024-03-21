@@ -1,7 +1,8 @@
+
 document.addEventListener("DOMContentLoaded", function () {
+    // Slide Text Header
     const items = document.querySelectorAll('.list-paragraph .items');
     let currentIndex = 0;
-    let intervalId;
 
     function showItem(index) {
         items.forEach((item, i) => {
@@ -22,74 +23,105 @@ document.addEventListener("DOMContentLoaded", function () {
     function hideHeaderTop() {
         document.querySelector('.header-top').style.display = 'none';
     }
-
-    function startIntervalAfterDelay() {
-        clearInterval(intervalId);
-        setTimeout(() => {
-            intervalId = setInterval(showNext, 1000);
-        }, 3000);
+        function startAutoSlide() {
+        intervalId = setInterval(showNext, 1000); 
     }
 
-    document.getElementById('next').addEventListener('click', showNext);
-    document.getElementById('prev').addEventListener('click', showPrev);
+    function stopAutoSlide() {
+        clearInterval(intervalId);
+    }
+
+    document.getElementById('next').addEventListener('click', function () {
+        stopAutoSlide();
+        showNext();
+        startAutoSlide(); 
+    });
+
+    document.getElementById('prev').addEventListener('click', function () {
+        stopAutoSlide(); 
+        showPrev();
+        startAutoSlide(); 
+    });
+
     document.querySelector('.close-button').addEventListener('click', hideHeaderTop);
 
-    // Khởi động interval ban đầu
-    startIntervalAfterDelay();
+    startAutoSlide();
+
+    // PopUp Search 
+    const searchInput = document.getElementById('search-form');
+    const popupSearch = document.querySelector('.popup-search');
+
+    searchInput.addEventListener('click', function(){
+        popupSearch.classList.add('popup-search-show');
+    });
+
+    document.addEventListener('click', function(event){
+        const isClickSearch = searchInput.contains(event.target);
+        const isClickPopUp = popupSearch.contains(event.target);
+
+        if(!isClickSearch && !isClickPopUp){
+            popupSearch.classList.remove('popup-search-show');
+        }
+    });
+
+    // View All Demo 
+    const viewAllDemo = document.querySelector('.loadmore-menu');
+    const dlgViewAllDemo = document.querySelector('.dlg-demo-feature-full');
+    const exitDialogView = document.querySelector('.close-button-dlg');
+
+    viewAllDemo.addEventListener('click', function(){
+        dlgViewAllDemo.classList.add('dlg');
+    })
+
+    exitDialogView.addEventListener('click', function(){
+        dlgViewAllDemo.classList.remove('dlg');
+    })
+   
 });
 
-
+    // Slide Text Header
 document.addEventListener("DOMContentLoaded", function () {
-    let slideIndex = 1;
+    const slides = document.querySelectorAll('.slide-items');
+    const dots = document.querySelectorAll('.dots li');
+    let currentIndex = 0;
     let intervalId;
-  
-    function showSlides(n) {
-      const slides = document.querySelector('.slide-list');
-      const dots = document.querySelectorAll('.dots li');
-  
-      if (n > slides.children.length) {
-        slideIndex = 1;
-      }
-  
-      if (n < 1) {
-        slideIndex = slides.children.length;
-      }
-  
-      for (let i = 0; i < slides.children.length; i++) {
-        slides.children[i].style.display = 'none';
-      }
-  
-      for (let i = 0; i < dots.length; i++) {
-        dots[i].classList.remove('active');
-      }
-  
-      slides.children[slideIndex - 1].style.display = 'flex';
-      dots[slideIndex - 1].classList.add('active');
-    }
-  
-    function currentSlide(n) {
-      clearInterval(intervalId);
-      showSlides(slideIndex = n);
-      startAutoSlide();
-    }
-  
-    function startAutoSlide() {
-      intervalId = setInterval(() => {
-        showSlides(slideIndex += 1);
-      }, 5000);
-    }
-  
-    document.querySelectorAll('.dots li').forEach((dot, index) => {
-      dot.addEventListener('click', () => {
-        clearInterval(intervalId);
-        currentSlide(index + 1);
-      });
-    });
-  
-    startAutoSlide();
-  });
-  
- 
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.display = i === index ? 'flex' : 'none';
+            });
+        }
+
+        function showDot(index) {
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+        }
+
+        function startAutoSlide() {
+            intervalId = setInterval(() => {
+                currentIndex = (currentIndex + 1) % slides.length;
+                showSlide(currentIndex);
+                showDot(currentIndex);
+            }, 3000);
+        }
+
+        function stopAutoSlide() {
+            clearInterval(intervalId);
+        }
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentIndex = index;
+                stopAutoSlide();
+                showSlide(currentIndex);
+                showDot(currentIndex); 
+                startAutoSlide(); 
+            });
+        });
+        startAutoSlide(); 
+});
+
 /*===== Swiper Slide =====*/
 const SwiperSlide = new Swiper('.slide-collection', {
     slidesPerView: 4,
@@ -186,27 +218,10 @@ document.getElementById("mobile_menu_toggle").addEventListener("click", function
 });
 
  /*============ Footer Bottom =============*/
-function toggleContent(elementId) {
-  var element = document.getElementById(elementId);
-  var toggleIcon1 = element.previousElementSibling.querySelector('.toggleIcon1');
-  var toggleIcon2 = element.previousElementSibling.querySelector('.toggleIcon2');
-  
+var toggleContent = document.getElementsByClassName('col-footer-item');
 
-  if (element.classList.contains('hidden')) {
-      element.classList.remove('hidden');
-      element.classList.add('visible');
-      toggleIcon1.style.opacity = 0;
-      toggleIcon2.style.opacity = 1;
-      
-  } else {
-      element.classList.remove('visible');
-      element.classList.add('hidden');
-      toggleIcon1.style.opacity = 1;
-      toggleIcon2.style.opacity = 0;
-     
-      element.addEventListener('transitionend', function () {
-        element.style.maxHeight = null;
-      }, { once: true });
-  }
+for(i=0; i<toggleContent.length; i++) {
+  toggleContent[i].addEventListener('click', function(){
+    this.classList.toggle('visible');
+  })
 }
-
