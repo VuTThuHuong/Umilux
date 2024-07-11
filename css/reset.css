@@ -104,3 +104,26 @@ button,
 [type="search"]{
   outline: none;
 }
+
+input[class="form-control"],select, textarea {
+  padding: var(--input-padding);
+  border: 1px solid var(--border-color-base);
+  background: var(--input-bg);
+  color: var(--input-color);
+  border-radius: var(--input-border-radius);
+  font-weight: var(--base-font-weight);
+  font-size: 13px;
+  transition: var(--bls-transition);
+}
+
+select,input[class="form-control"] {
+  cursor: pointer;
+  padding: 5px 30px 5px 20px;
+  height: 50px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url('../images/down.svg');
+  background-repeat: no-repeat;
+  background-position: right 20px center; 
+}

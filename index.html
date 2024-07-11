@@ -25,7 +25,7 @@
 
 <body>
     <!--Header-->
-    <header>
+    <header id="scrollHeader">
         <!--Header-Top-->
         <div class="header-top">
             <div class="slider-header-top position-relative d-none d-md-block">
@@ -80,155 +80,157 @@
                                 </button>
                             </div>
                         </form>
-                        <div class="popup-search"> 
-                            <div class = "container-fluid">
-                                <div class="content-search">
-                                    <div class="quick-keywords-search">
-                                        <p class="quick-search-title">Quick search: </p>
-                                        <ul class="list-quick-search">
-                                            <li>
-                                                <a href="#" aria-label="keywords search quick">Apple</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" aria-label="keywords search quick">SamSung</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" aria-label="keywords search quick">Iphone</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="popular-search-products">
-                                        <h5 class="title-pro-search">Popular Product</h5>
-                                        <div class="product-grid">
-                                            <div class="pro-items">
-                                                <div class="col-pro-items">
-                                                    <a aria-label="product image 1" href="#" class="aspect-ratio-container position-relative" style="--aspect-ratio: 1/1;">
-                                                        <img src="images/trending_4.webp" loading="lazy" width="226" height="226" alt="Product trending 1">
-                                                    </a>
-                                                    <div class="pro-info">
-                                                        <span class="name_brand">Toshiba</span>
-                                                        <h3 class="pro-name">
-                                                            <a aria-label="Name product" href="#">Skytech Blaze Gaming PC Intel Core i5 15700F 5.1 GHz</a>
-                                                        </h3>
-                                                        <div class="rating">
-                                                            <i class="fa-solid fa-star star"></i>
-                                                            <i class="fa-solid fa-star star"></i>
-                                                            <i class="fa-solid fa-star star"></i>
-                                                            <i class="fa-solid fa-star star"></i>
-                                                            <i class="fa-solid fa-star star"></i>
+                        <div class="popup-search-container"> 
+                            <div class="popup-search">
+                                <div class = "container-fluid">
+                                    <div class="content-search">
+                                        <div class="quick-keywords-search">
+                                            <p class="quick-search-title m-2">Quick search: </p>
+                                            <ul class="list-quick-search m-2">
+                                                <li>
+                                                    <a href="#" aria-label="keywords search quick">Apple</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" aria-label="keywords search quick">SamSung</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" aria-label="keywords search quick">Iphone</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="popular-search-products">
+                                            <h5 class="title-pro-search">Popular Product</h5>
+                                            <div class="product-grid">
+                                                <div class="pro-items">
+                                                    <div class="col-pro-items">
+                                                        <a aria-label="product image 1" href="#" class="aspect-ratio-container position-relative" style="--aspect-ratio: 1/1;">
+                                                            <img src="images/trending_4.webp" loading="lazy" width="226" height="226" alt="Product trending 1">
+                                                        </a>
+                                                        <div class="pro-info">
+                                                            <span class="name_brand">Toshiba</span>
+                                                            <h3 class="pro-name">
+                                                                <a aria-label="Name product" href="#">Skytech Blaze Gaming PC Intel Core i5 15700F 5.1 GHz</a>
+                                                            </h3>
+                                                            <div class="rating">
+                                                                <i class="fa-solid fa-star star"></i>
+                                                                <i class="fa-solid fa-star star"></i>
+                                                                <i class="fa-solid fa-star star"></i>
+                                                                <i class="fa-solid fa-star star"></i>
+                                                                <i class="fa-solid fa-star star"></i>
+                                                            </div>
+                                                            <p class="pro-price">
+                                                                <span class="pro-price-new">$569.00</span>
+                                                                <span class="pro-price-del"><del>$156.00</del></span>
+                                                            </p>
                                                         </div>
-                                                        <p class="pro-price">
-                                                            <span class="pro-price-regular">$569.00</span>
-                                                            <span class="pro-price-new"><del>$156.00</del></span>
-                                                        </p>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="pro-items">
-                                                <div class="col-pro-items">
-                                                    <a aria-label="image product 1" href="#" class="aspect-ratio-container position-relative" style="--aspect-ratio: 1/1;">
-                                                        <img src="images/trending_1.webp" loading="lazy" width="226" height="226" alt="Product trending 1">
-                                                    </a>
-                                                    <div class="pro-info">
-                                                        <span class="name_brand">Toshiba</span>
-                                                        <h3 class="pro-name">
-                                                            <a aria-label="Name product" href="#" >Skytech Blaze Gaming PC Intel Core i5 15700F 5.1 GHz</a></h3>
-                                                        <div class="rating">
-                                                            <i class="fa-solid fa-star star"></i>
-                                                            <i class="fa-solid fa-star star"></i>
-                                                            <i class="fa-solid fa-star star"></i>
-                                                            <i class="fa-solid fa-star star"></i>
-                                                            <i class="fa-solid fa-star star"></i>
+                                                <div class="pro-items">
+                                                    <div class="col-pro-items">
+                                                        <a aria-label="image product 1" href="#" class="aspect-ratio-container position-relative" style="--aspect-ratio: 1/1;">
+                                                            <img src="images/trending_1.webp" loading="lazy" width="226" height="226" alt="Product trending 1">
+                                                        </a>
+                                                        <div class="pro-info">
+                                                            <span class="name_brand">Toshiba</span>
+                                                            <h3 class="pro-name">
+                                                                <a aria-label="Name product" href="#" >Skytech Blaze Gaming PC Intel Core i5 15700F 5.1 GHz</a></h3>
+                                                            <div class="rating">
+                                                                <i class="fa-solid fa-star star"></i>
+                                                                <i class="fa-solid fa-star star"></i>
+                                                                <i class="fa-solid fa-star star"></i>
+                                                                <i class="fa-solid fa-star star"></i>
+                                                                <i class="fa-solid fa-star star"></i>
+                                                            </div>
+                                                            <p class="pro-price-regular pro-price">$569.00</p>
                                                         </div>
-                                                        <p class="pro-price">$569.00</p>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="pro-items">
-                                                <div class="col-pro-items">
-                                                    <a aria-label="product image 1" href="#" class="aspect-ratio-container position-relative" style="--aspect-ratio: 1/1;">
-                                                        <img src="images/trending_4.webp" loading="lazy" width="226" height="226" alt="Product trending 1">
-                                                    </a>
-                                                    <div class="pro-info">
-                                                        <span class="name_brand">Toshiba</span>
-                                                        <h3 class="pro-name">
-                                                            <a aria-label="Name product" href="#">Skytech Blaze Gaming PC Intel Core i5 15700F 5.1 GHz</a>
-                                                        </h3>
-                                                        <div class="rating">
-                                                            <i class="fa-solid fa-star star"></i>
-                                                            <i class="fa-solid fa-star star"></i>
-                                                            <i class="fa-solid fa-star star"></i>
-                                                            <i class="fa-solid fa-star star"></i>
-                                                            <i class="fa-solid fa-star star"></i>
+                                                <div class="pro-items">
+                                                    <div class="col-pro-items">
+                                                        <a aria-label="product image 1" href="#" class="aspect-ratio-container position-relative" style="--aspect-ratio: 1/1;">
+                                                            <img src="images/trending_4.webp" loading="lazy" width="226" height="226" alt="Product trending 1">
+                                                        </a>
+                                                        <div class="pro-info">
+                                                            <span class="name_brand">Toshiba</span>
+                                                            <h3 class="pro-name">
+                                                                <a aria-label="Name product" href="#">Skytech Blaze Gaming PC Intel Core i5 15700F 5.1 GHz</a>
+                                                            </h3>
+                                                            <div class="rating">
+                                                                <i class="fa-solid fa-star star"></i>
+                                                                <i class="fa-solid fa-star star"></i>
+                                                                <i class="fa-solid fa-star star"></i>
+                                                                <i class="fa-solid fa-star star"></i>
+                                                                <i class="fa-solid fa-star star"></i>
+                                                            </div>
+                                                            <p class="pro-price">
+                                                                <span class="pro-price-new">$569.00</span>
+                                                                <span class="pro-price-del"><del>$156.00</del></span>
+                                                            </p>
                                                         </div>
-                                                        <p class="pro-price">
-                                                            <span class="pro-price-regular">$569.00</span>
-                                                            <span class="pro-price-new"><del>$156.00</del></span>
-                                                        </p>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="pro-items">
-                                                <div class="col-pro-items">
-                                                    <a aria-label="image product 1" href="#" class="aspect-ratio-container position-relative" style="--aspect-ratio: 1/1;">
-                                                        <img src="images/trending_1.webp" loading="lazy" width="226" height="226" alt="Product trending 1">
-                                                    </a>
-                                                    <div class="pro-info">
-                                                        <span class="name_brand">Toshiba</span>
-                                                        <h3 class="pro-name">
-                                                            <a aria-label="Name product" href="#" >Skytech Blaze Gaming PC Intel Core i5 15700F 5.1 GHz</a></h3>
-                                                        <div class="rating">
-                                                            <i class="fa-solid fa-star star"></i>
-                                                            <i class="fa-solid fa-star star"></i>
-                                                            <i class="fa-solid fa-star star"></i>
-                                                            <i class="fa-solid fa-star star"></i>
-                                                            <i class="fa-solid fa-star star"></i>
+                                                <div class="pro-items">
+                                                    <div class="col-pro-items">
+                                                        <a aria-label="image product 1" href="#" class="aspect-ratio-container position-relative" style="--aspect-ratio: 1/1;">
+                                                            <img src="images/trending_1.webp" loading="lazy" width="226" height="226" alt="Product trending 1">
+                                                        </a>
+                                                        <div class="pro-info">
+                                                            <span class="name_brand">Toshiba</span>
+                                                            <h3 class="pro-name">
+                                                                <a aria-label="Name product" href="#" >Skytech Blaze Gaming PC Intel Core i5 15700F 5.1 GHz</a></h3>
+                                                            <div class="rating">
+                                                                <i class="fa-solid fa-star star"></i>
+                                                                <i class="fa-solid fa-star star"></i>
+                                                                <i class="fa-solid fa-star star"></i>
+                                                                <i class="fa-solid fa-star star"></i>
+                                                                <i class="fa-solid fa-star star"></i>
+                                                            </div>
+                                                            <p class="pro-price pro-price-regular">$569.00</p>
                                                         </div>
-                                                        <p class="pro-price">$569.00</p>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="pro-items">
-                                                <div class="col-pro-items">
-                                                    <a aria-label="product image 1" href="#" class="aspect-ratio-container position-relative" style="--aspect-ratio: 1/1;">
-                                                        <img src="images/trending_4.webp" loading="lazy" width="226" height="226" alt="Product trending 1">
-                                                    </a>
-                                                    <div class="pro-info">
-                                                        <span class="name_brand">Toshiba</span>
-                                                        <h3 class="pro-name">
-                                                            <a aria-label="Name product" href="#">Skytech Blaze Gaming PC Intel Core i5 15700F 5.1 GHz</a>
-                                                        </h3>
-                                                        <div class="rating">
-                                                            <i class="fa-solid fa-star star"></i>
-                                                            <i class="fa-solid fa-star star"></i>
-                                                            <i class="fa-solid fa-star star"></i>
-                                                            <i class="fa-solid fa-star star"></i>
-                                                            <i class="fa-solid fa-star star"></i>
+                                                <div class="pro-items">
+                                                    <div class="col-pro-items">
+                                                        <a aria-label="product image 1" href="#" class="aspect-ratio-container position-relative" style="--aspect-ratio: 1/1;">
+                                                            <img src="images/trending_4.webp" loading="lazy" width="226" height="226" alt="Product trending 1">
+                                                        </a>
+                                                        <div class="pro-info">
+                                                            <span class="name_brand">Toshiba</span>
+                                                            <h3 class="pro-name">
+                                                                <a aria-label="Name product" href="#">Skytech Blaze Gaming PC Intel Core i5 15700F 5.1 GHz</a>
+                                                            </h3>
+                                                            <div class="rating">
+                                                                <i class="fa-solid fa-star star"></i>
+                                                                <i class="fa-solid fa-star star"></i>
+                                                                <i class="fa-solid fa-star star"></i>
+                                                                <i class="fa-solid fa-star star"></i>
+                                                                <i class="fa-solid fa-star star"></i>
+                                                            </div>
+                                                            <p class="pro-price">
+                                                                <span class="pro-price-new">$569.00</span>
+                                                                <span class="pro-price-del"><del>$156.00</del></span>
+                                                            </p>
                                                         </div>
-                                                        <p class="pro-price">
-                                                            <span class="pro-price-regular">$569.00</span>
-                                                            <span class="pro-price-new"><del>$156.00</del></span>
-                                                        </p>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="pro-items">
-                                                <div class="col-pro-items">
-                                                    <a aria-label="image product 1" href="#" class="aspect-ratio-container position-relative" style="--aspect-ratio: 1/1;">
-                                                        <img src="images/trending_1.webp" loading="lazy" width="226" height="226" alt="Product trending 1">
-                                                    </a>
-                                                    <div class="pro-info">
-                                                        <span class="name_brand">Toshiba</span>
-                                                        <h3 class="pro-name">
-                                                            <a aria-label="Name product" href="#" >Skytech Blaze Gaming PC Intel Core i5 15700F 5.1 GHz</a></h3>
-                                                        <div class="rating">
-                                                            <i class="fa-solid fa-star star"></i>
-                                                            <i class="fa-solid fa-star star"></i>
-                                                            <i class="fa-solid fa-star star"></i>
-                                                            <i class="fa-solid fa-star star"></i>
-                                                            <i class="fa-solid fa-star star"></i>
+                                                <div class="pro-items">
+                                                    <div class="col-pro-items">
+                                                        <a aria-label="image product 1" href="#" class="aspect-ratio-container position-relative" style="--aspect-ratio: 1/1;">
+                                                            <img src="images/trending_1.webp" loading="lazy" width="226" height="226" alt="Product trending 1">
+                                                        </a>
+                                                        <div class="pro-info">
+                                                            <span class="name_brand">Toshiba</span>
+                                                            <h3 class="pro-name">
+                                                                <a aria-label="Name product" href="#" >Skytech Blaze Gaming PC Intel Core i5 15700F 5.1 GHz</a></h3>
+                                                            <div class="rating">
+                                                                <i class="fa-solid fa-star star"></i>
+                                                                <i class="fa-solid fa-star star"></i>
+                                                                <i class="fa-solid fa-star star"></i>
+                                                                <i class="fa-solid fa-star star"></i>
+                                                                <i class="fa-solid fa-star star"></i>
+                                                            </div>
+                                                            <p class="pro-price pro-price-regular">$569.00</p>
                                                         </div>
-                                                        <p class="pro-price">$569.00</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -259,31 +261,32 @@
                             </a>
                         </div>
                         <div class="header_minicart position-relative align-items-center">
-                            <button aria-label="minicart cart" class="d-inline-flex align-items-center action minicart-action">
+                            <button aria-label="minicart cart" class="d-inline-flex align-items-center minicart-action">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23" fill="currentColor">
                                     <use xlink:href="sprite.svg#cart-header"></use>
                                 </svg>
                                 <span class="cart-count h-count">0</span>
-                                <span class="text-icons d-lg-flex flex-lg-column text-start d-none d-lg-block">
+                                <span class="text-icons text-icons-total d-lg-flex flex-lg-column text-start d-none d-lg-block">
                                     <span class="text-icons-top">Cart</span>
                                     <span>$0.00</span>
                                 </span>
                             </button>
+                            <div class="overlay_cart"></div>
                             <div class="minicart-wrapper canvas canvas-right">
                                 <div class="minicart-content">
                                     <div class="minicart-header d-flex align-items-center justify-content-between"> 
                                         <div class="minicart-title d-flex">
                                             <h4 class="minicart-heading m-0">Shopping Cart 
-                                                <span class="cart-count"> (0)</span>
+                                                (<span class="cart-count"></span>)
                                             </h4>
                                         </div>
                                         <button aria-label="Close Menu" class="close-button close-button-minicart">
-                                            <svg class="icon-close-" width="14" height="15">
+                                            <svg class="icon-close-minicart" width="14" height="15">
                                                 <use xlink:href="sprite.svg#exit"></use>
                                             </svg>
                                         </button>
                                     </div>
-                                    <div class="cart_shipping cart_threshold">
+                                    <div class="cart_shipping cart_shipping_free cart_threshold mb-4">
                                         <div class="progress-bar cart_bar_w">
                                             <span class="progress percent_shipping_bar">
                                                 <i class="freeshipping-icon">
@@ -293,12 +296,12 @@
                                                 </i>    
                                             </span>
                                         </div>
-                                        <div class="free-shipping-message mb-10 cart-thres">Spend <span class="price">$100.00</span> more to enjoy <span class="bold">FREE SHIPPING!</span></div>
-                                        <!-- <div class="free-shipping-message mb-10 bls__cart-thres cart_thres_1">Congratulations! You've got free shipping!</div> -->
+                                        <div class="free-shipping-message mb-10 cart-thres">
+                                        </div>
                                     </div>
-                                    <div class="checkout-form">
+                                    <div class="checkout-form pt-4">
                                         <div class="cart-body">
-                                            <div class="cart-empty text-center d-flex flex-column">
+                                            <div class="cart-empty align-items-center text-center d-flex flex-column">
                                                 <p class="empty description">
                                                     <svg width="62" height="69">
                                                         <use xlink:href="sprite.svg#empty"></use>
@@ -306,13 +309,190 @@
                                                     <span class="empty-des">Your cart is empty.</span>
                                                     You may check out all the available products and buy some in the shop.
                                                 </p>
-                                                <a class="button-close-cart mt-30 pt-10">
-                                                    <button type="button" class="bls-minicart-action close-cart btn-primary">
+                                                <button class="button-close-cart mt-6 pt-2">
                                                         <span>Return to shop</span>
-                                                    </button>
-                                                </a>
+                                                </button>
                                             </div>
-                                          </div>
+                                        </div>
+                                        <div id="form-mini-cart">
+                                            <div class="product-minicart">
+                                                <div class="product-list-cart">
+                                                    <div class="cart-item d-flex flex-row">
+                                                        <div class="cart-image">
+                                                            <a aria-label="product image 1" href="#" class="aspect-ratio-container aspect-ratio-boxes" style="--aspect-ratio: 1/1;">
+                                                                <img src="images/selling_7.webp" loading="lazy" width="226" height="226" alt="Product trending 1">
+                                                            </a>
+                                                        </div>
+                                                        <div class="pro-info m-0">
+                                                            <h4 class="pro-name">
+                                                                <a aria-label="Name product" href="#">Skytech Blaze Gaming PC Intel Core i5 15700F 5.1 GHz</a>
+                                                            </h4>
+                                                            <p class="pro-price">
+                                                                <span class="pro-price-new">$569.00</span>
+                                                                <span class="pro-price-del"><del>$156.00</del></span>
+                                                            </p>
+                                                            <div class="minicart-actions">
+                                                                <div class="quality">
+                                                                    <button class="quantity_button btn-reset d-flex justify-content-center align-items-center" name="minus" type="button">
+                                                                        <svg width="11" height="12" viewBox="0 0 11 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M11 0.5L11 1.5L-4.37114e-08 1.5L0 0.5L11 0.5Z" fill="#111111"></path>
+                                                                        </svg>
+                                                                    </button>
+                                                                    <input class="quantity-input text-center p-0-important" type="text" name="updates[]" value="3" data-value="3" min="0">
+                                                                    <button class="quantity_button btn-reset d-flex justify-content-center align-items-center" name="plus" type="button">
+                                                                        <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5 11.5H6L6 6.5H11V5.5H6L6 0.5H5L5 5.5H0V6.5H5L5 11.5Z" fill="#111111"></path>
+                                                                        </svg>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item-edit d-flex flex-column align-items-center gap-2">
+                                                            <button class="icon-edit" aria-label="remove item">
+                                                                <svg width="20px" height="20px">
+                                                                    <use xlink:href="sprite.svg#remove"></use>
+                                                                </svg> 
+                                                            </button>
+                                                            <button class="icon-edit" aria-label="edit item notes">
+                                                                <svg width="20px" height="20px">
+                                                                    <use xlink:href="sprite.svg#edit"></use>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cart-footer">
+                                                <div class="cart-addons">
+                                                    <div class="mini_cart_note">
+                                                        <button type="button" data-open="note" class="mini_cart_addon_btn note">
+                                                            <svg width="15" height="16">
+                                                                <use xlink:href="sprite.svg#note"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <div class="mini_cart_gift bls_tooltip">
+                                                        <button type="button" data-open="gift" class="mini_cart_addon_btn gift">
+                                                            <svg width="17" height="16">
+                                                                <use xlink:href="sprite.svg#gift"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <div class="mini_cart_shipping bls_tooltip">
+                                                        <button type="button" data-open="shipping" class="mini_cart_addon_btn cart-shipping">
+                                                            <svg width="20" height="16">
+                                                                <use xlink:href="sprite.svg#shipping"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="addon" id="note">
+                                                    <div class="addon-title mb-2">
+                                                        <svg width="16" height="19">
+                                                            <use xlink:href="sprite.svg#note-2"></use>
+                                                        </svg>
+                                                        <span class="label-cart">Add order note</span>
+                                                    </div>
+                                                    <div class="addon-content mb-4">
+                                                        <textarea name="note" class="cart-note form-control" placeholder="Add order note"></textarea>
+                                                    </div>
+                                                    <div class="addon-actions">
+                                                        <button type="button" class="btn-save btn-cart" data-action="note">Save</button>
+                                                        <button type="button" class="btn-cancel btn-cart">Cancel</button>
+                                                    </div>
+                                                </div>
+                                                <div class="addon" id="gift">
+                                                    <div class="mini_cart-tool text-center">
+                                                        <svg width="30" height="30">
+                                                            <use xlink:href="sprite.svg#gift-2"></use>   
+                                                        </svg>
+                                                        <div class="field mt-2 mb-4">
+                                                            Please wrap the product carefully. Fee is only <span class="price">$5.00</span>. (You can choose or not)
+                                                        </div>
+                                                        <div class="addon-actions">
+                                                            <a href="#" class="add-giftwrap btn-save btn-cart" aria-label="add-gift">
+                                                                <span>Add A Gift Wrap</span>
+                                                            </a>
+                                                            <button type="button" class="btn-cancel btn-cart">Cancel</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="addon" id="shipping">
+                                                    <div class="addon-title mb-2">
+                                                        <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M15.6076 3.1571L11.0506 0.516616C9.79747 -0.172205 7.97468 -0.172205 6.83544 0.516616L2.27848 3.1571C1.02532 3.84592 0 5.56798 0 7.06042V11.997C0 13.4894 1.02532 15.0967 2.27848 15.9003L6.83544 18.5408C7.40506 18.8852 8.20253 19 9 19C9.79747 19 10.481 18.8852 11.1646 18.5408L15.7215 15.9003C16.9747 15.2115 18 13.4894 18 11.997V6.94562C17.8861 5.56798 16.8608 3.84592 15.6076 3.1571ZM7.40506 1.77946C7.74684 1.54985 8.31646 1.43505 8.88608 1.43505C9.4557 1.43505 9.91139 1.54985 10.3671 1.77946L14.9241 4.41994C15.2658 4.53474 15.4937 4.87915 15.7215 5.22357L13.2152 6.71601L6.1519 2.46828L7.40506 1.77946ZM2.8481 4.30514L4.78481 3.1571L11.8481 7.29003L8.88608 9.12689L1.93671 5.10876C2.16456 4.76435 2.50633 4.53474 2.8481 4.30514ZM2.8481 14.5227C2.05063 14.0634 1.25316 12.8006 1.25316 11.8822V6.94562C1.25316 6.71601 1.25316 6.48641 1.36709 6.2568L8.20253 10.2749V17.3927C7.86076 17.3927 7.63291 17.2779 7.40506 17.1631L2.8481 14.5227ZM16.519 11.8822C16.519 12.8006 15.8354 14.0634 14.9241 14.5227L10.3671 17.0483C10.1392 17.1631 9.91139 17.2779 9.56962 17.2779V10.2749L12.5316 8.55287V10.5045C12.5316 10.8489 12.8734 11.1934 13.2152 11.1934C13.557 11.1934 13.8987 10.8489 13.8987 10.5045V7.74925L16.4051 6.2568C16.4051 6.60121 16.519 6.83082 16.519 6.94562V11.8822Z"
+                                                                fill="#111111">
+                                                            </path>
+                                                        </svg>
+                                                        <span class="label-cart">Estimate shipping</span>
+                                                    </div>
+                                                    <div class="addon-content">
+                                                        <div data-address="root">
+                                                            <div class="form-group mb-3 d-flex flex-column">
+                                                                <label class="mb-1" for="address_country">Country/region</label>
+                                                                <select id="address_country" class="form-control" name="address[country]" data-default="United States">
+                                                                    <option value="---"></option>
+                                                                    <option value="United States">United States</option>
+                                                                    <option value="Australia">Australia</option>
+                                                                    <option value="Austria">Austria</option>
+                                                                    <option value="Belgium">Belgium</option>
+                                                                    <option value="Canada">Canada</option>
+                                                                    <option value="Czech Republic">Czechia</option>
+                                                                </select>
+                                                            </div>
+                                                            <div id="address_province_container" class="address_province_container mb-3 d-flex flex-column">
+                                                                <label class="mb-1" for="address_province">Province</label>
+                                                                <select id="address_province" class="form-control" name="address[province]" data-default="">
+                                                                    <option value="---"></option>
+                                                                    <option value="United States">United States</option>
+                                                                    <option value="Australia">Australia</option>
+                                                                    <option value="Austria">Austria</option>
+                                                                    <option value="Belgium">Belgium</option>
+                                                                    <option value="Canada">Canada</option>
+                                                                    <option value="Czech Republic">Czechia</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="form-group mb-3 d-flex flex-column">
+                                                                <label class="mb-1" for="AddressZip">Postal/ZIP code</label>
+                                                                <input type="text" class="form-control" id="AddressZip" name="address[zip]" value=""
+                                                                    autocapitalize="characters">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="addon-actions">
+                                                        <button type="button" class="btn-save btn-cart" data-action="shipping">
+                                                            Estimate
+                                                        </button>
+                                                        <button type="button" class="btn-cancel btn-cart">Cancel</button>
+                                                    </div>
+                                                </div>
+                                                <div class="cart-summary">
+                                                    <div class="subtotal">
+                                                        <span class="heading-color">Subtotal</span>
+                                                        <span class="bls-subtotal-price heading-color" data-cart-subtotal-price="">
+                                                            $378.00
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="drawer-bottom">
+                                                    <div class="terms-conditions d-flex mb-3">
+                                                        <input class="input m-0 conditions_form_minicart pointer" type="checkbox" name="conditions" id="conditions_form_minicart">
+                                                        <label class="label-cart pointer" for="conditions_form_minicart">
+                                                            <p> I agree with 
+                                                                <a aria-label="Terms and Conditions" href="#" title="Term &amp; Condition">Terms &amp; Conditions </a>
+                                                            </p>
+                                                        </label>
+                                                    </div>
+                                                    <a class="btn-cart action viewcart pointer" href="#" aria-label="view cart">
+                                                        <span>View Cart</span>
+                                                    </a>
+                                                    <button type="submit" class="btn-cart btn-checkout pointer" name="checkout"  disabled>
+                                                        <span>Checkout</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -337,29 +517,30 @@
                         </div>
                     </div>
                     <div class="col-center">
+                        <div class="overlay_menu"></div>
                         <nav class="mobile-menu">
                             <div class="mobile-menu-content">
                                 <div class="d-desktop-none menu-mobile-title">
-                                    <a aria-label="main menu" class="main-menu-list" href="#" onclick="showMainMenu()"> Menu</a>
-                                    <a aria-label="categories menu" href="#" class="categories" onclick="showCategories()">Categories</a>
-                                    <button aria-label="Close Menu" class="close-button" onclick="closeMenu()">
+                                    <a aria-label="main menu" class="main-menu-list" href="#">Menu</a>
+                                    <a aria-label="categories menu" href="#" class="categories-menu">Categories</a>
+                                    <button aria-label="Close Menu" class="close-button">
                                         <svg class="icon-close-first" width="14" height="15">
                                             <use xlink:href="sprite.svg#exit"></use>
                                         </svg>
                                     </button>
                                 </div>
                                 <ul class="p-desktop-0 my-0 main-menu d-desktop-flex flex-desktop-row flex-column">
-                                    <li class="levelmobile menu-parent menu-width-full-width" onclick="toggleSubmenu(this)">
-                                        <a href="#" aria-label="Home">
+                                    <li class="levelmobile menu-parent menu-width-full-width menu-level">
+                                        <a href="#" aria-label="Home" data-target=".level-2-home">
                                             Home
                                         </a>
-                                        <div class="submenu menu-custom-width-center">
-                                            <div class="submenu-mobile-title justify-content-between">
+                                        <div class="submenu menu-custom-width-center level-2-home level">
+                                            <div class="submenu-mobile-title justify-content-between menu-level">
                                                 <a role="link" class="back-main-menu pointer" aria-label="Back Menu">
                                                     <i class="fa-solid fa-chevron-left"></i>
                                                     Home
                                                 </a>
-                                                <button aria-label="Close Menu" class="close-button" onclick="closeMenu()">
+                                                <button aria-label="Close Menu" class="close-button">
                                                     <svg class="icon-close" width="14" height="15">
                                                         <use xlink:href="sprite.svg#exit"></use>
                                                     </svg>
@@ -508,17 +689,17 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="levelmobile menu-parent menu-width-custom" onclick="toggleSubmenu(this)">
-                                        <a href="#" aria-label="Move To Shop">
+                                    <li class="levelmobile menu-parent menu-width-custom menu-level">
+                                        <a href="#" aria-label="Move To Shop" data-target=".level-2-shop">
                                             Shop
                                         </a>
-                                        <div class="submenu menu-custom-width-center">
+                                        <div class="submenu menu-custom-width-center level-2-shop level">
                                             <div class="submenu-mobile-title justify-content-between">
                                                 <a role="link" class="back-main-menu pointer" aria-label="Back Menu">
                                                     <i class="fa-solid fa-chevron-left"></i>
                                                     Shop
                                                 </a>
-                                                <button aria-label="Close Menu" class="close-button" onclick="closeMenu()">
+                                                <button aria-label="Close Menu" class="close-button">
                                                     <svg class="icon-close" width="14" height="15">
                                                         <use xlink:href="sprite.svg#exit"></use>
                                                     </svg>
@@ -526,17 +707,17 @@
                                             </div>
                                             <div class="d-flex flex-desktop-row flex-column submenu-container">
                                                 <div class="type_link col-desktop-3">
-                                                    <div class="subchildmenu-title" data-menu-level2="" >
-                                                        <a aria-label="Title" role="link">
+                                                    <div class="subchildmenu-title menu-level">
+                                                        <a aria-label="Title" role="link" data-target=".level-3-shop">
                                                             Shop Layout </a>
                                                     </div>
-                                                    <ul class="subchildmenu sub-column p-0">
+                                                    <ul class="subchildmenu p-0 level-3-shop level">
                                                         <li class="submenu-mobile-title justify-content-between">
-                                                            <a role="link" class="back-main-menu-lv1 pointer" aria-label="Back Menu">
+                                                            <a role="link" class="back-main-menu pointer" aria-label="Back Menu">
                                                                 <i class="fa-solid fa-chevron-left"></i>
                                                                 Shop Layout
                                                             </a>
-                                                            <button aria-label="Close Menu" class="close-button" onclick="closeMenu()">
+                                                            <button aria-label="Close Menu" class="close-button">
                                                                 <svg class="icon-close" width="14" height="15">
                                                                     <use xlink:href="sprite.svg#exit"></use>
                                                                 </svg>
@@ -566,17 +747,17 @@
                                                     </ul>
                                                 </div>
                                                 <div class="type_link col-desktop-3">
-                                                    <div class="subchildmenu-title" data-menu-level2="">
-                                                        <a aria-label="Title" class="d-block" role="link">
+                                                    <div class="subchildmenu-title menu-level">
+                                                        <a aria-label="Title" class="d-block" role="link"  data-target=".level-3-shop-2">
                                                             Shop Layout </a>
                                                     </div>
-                                                    <ul class="subchildmenu sub-column p-0">
+                                                    <ul class="subchildmenu level p-0 level-3-shop-2">
                                                         <li class="submenu-mobile-title justify-content-between">
-                                                            <a role="link" class="back-main-menu-lv1 pointer" aria-label="Back Menu">
+                                                            <a role="link" class="back-main-menu pointer" aria-label="Back Menu">
                                                                 <i class="fa-solid fa-chevron-left"></i>
                                                                 Shop Layout
                                                             </a>
-                                                            <button aria-label="Close Menu" class="close-button" onclick="closeMenu()">
+                                                            <button aria-label="Close Menu" class="close-button">
                                                                 <svg class="icon-close" width="14" height="15">
                                                                     <use xlink:href="sprite.svg#exit"></use>
                                                                 </svg>
@@ -630,17 +811,17 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="levelmobile menu-parent menu-width-full-width" onclick="toggleSubmenu(this)">
-                                        <a href="#" aria-label="Product links">
+                                    <li class="levelmobile menu-parent menu-width-full-width menu-level">
+                                        <a href="#" aria-label="Product links" data-target=".level-2-product">
                                             Product
                                         </a>
-                                        <div class="submenu menu-custom-width-center">
+                                        <div class="submenu menu-custom-width-center level-2-product level">
                                             <div class="submenu-mobile-title justify-content-between">
                                                 <a role="link" class="back-main-menu pointer" aria-label="Back Menu">
                                                     <i class="fa-solid fa-chevron-left"></i>
                                                     Product
                                                 </a>
-                                                <button aria-label="Close Menu" class="close-button" onclick="closeMenu()">
+                                                <button aria-label="Close Menu" class="close-button">
                                                     <svg class="icon-close" width="14" height="15">
                                                         <use xlink:href="sprite.svg#exit"></use>
                                                     </svg>
@@ -649,17 +830,17 @@
                                             <div class="container-fluid">
                                                 <div class="d-flex flex-desktop-row flex-column submenu-container">
                                                     <div class="menu-item-cols col-desktop-2">
-                                                        <div class="subchildmenu-title" data-menu-level2="" onclick="toggleSubchildmenu(this)">
-                                                            <a aria-label="Title" class="d-block" role="link">
+                                                        <div class="subchildmenu-title menu-level">
+                                                            <a aria-label="Title" class="d-block" role="link" data-target=".level-3-product-1">
                                                                 Shop Layout </a>
                                                         </div>
-                                                        <ul class="p-0 subchildmenu sub-column">
+                                                        <ul class="p-0 subchildmenu level-3-product-1 level">
                                                             <li class="submenu-mobile-title justify-content-between">
-                                                                <a role="link" class="back-main-menu-lv1 pointer" aria-label="Back menu">
+                                                                <a role="link" class="back-main-menu pointer" aria-label="Back menu">
                                                                     <i class="fa-solid fa-chevron-left"></i>
                                                                     Shop Layout
                                                                 </a>
-                                                                <button aria-label="Close Menu" class="close-button" onclick="closeMenu()">
+                                                                <button aria-label="Close Menu" class="close-button">
                                                                     <svg class="icon-close" width="14" height="15">
                                                                         <use xlink:href="sprite.svg#exit"></use>
                                                                     </svg>
@@ -688,18 +869,18 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class="menu-item-cols type_link col-desktop-2">
-                                                        <div class="subchildmenu-title" data-menu-level2="">
-                                                            <a aria-label="Title" class="d-block" role="link">
+                                                    <div class="menu-item-cols col-desktop-2">
+                                                        <div class="subchildmenu-title menu-level">
+                                                            <a aria-label="Title" class="d-block" role="link" data-target=".level-3-product-1">
                                                                 Shop Layout </a>
                                                         </div>
-                                                        <ul class="subchildmenu sub-column p-0">
+                                                        <ul class="subchildmenu p-0 level-3-product-1 level">
                                                             <li class="submenu-mobile-title justify-content-between">
-                                                                <a role="link" class="back-main-menu-lv1 pointer" aria-label="Back Menu">
+                                                                <a role="link" class="back-main-menu pointer" aria-label="Back Menu">
                                                                     <i class="fa-solid fa-chevron-left"></i>
                                                                     Shop Layout
                                                                 </a>
-                                                                <button aria-label="Close Menu" class="close-button" onclick="closeMenu()">
+                                                                <button aria-label="Close Menu" class="close-button">
                                                                     <svg class="icon-close" width="14" height="15">
                                                                         <use xlink:href="sprite.svg#exit"></use>
                                                                     </svg>
@@ -728,18 +909,18 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class="menu-item-cols type_link col-desktop-2">
-                                                        <div class="subchildmenu-title" data-menu-level2="">
-                                                            <a aria-label="Title" class="d-block" role="link">
+                                                    <div class="menu-item-cols col-desktop-2">
+                                                        <div class="subchildmenu-title menu-level">
+                                                            <a aria-label="Title" class="d-block" role="link" data-target=".level-3-product-2">
                                                                 Shop Layout </a>
                                                         </div>
-                                                        <ul class="subchildmenu sub-column p-0">
+                                                        <ul class="subchildmenu p-0 level level-3-product-2">
                                                             <li class="submenu-mobile-title justify-content-between">
-                                                                <a role="link" class="back-main-menu-lv1 pointer" aria-label="Back Menu">
+                                                                <a role="link" class="back-main-menu pointer" aria-label="Back Menu">
                                                                     <i class="fa-solid fa-chevron-left"></i>
                                                                     Shop Layout
                                                                 </a>
-                                                                <button aria-label="Close Menu" class="close-button" onclick="closeMenu()">
+                                                                <button aria-label="Close Menu" class="close-button">
                                                                     <svg class="icon-close" width="14" height="15">
                                                                         <use xlink:href="sprite.svg#exit"></use>
                                                                     </svg>
@@ -780,18 +961,18 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class="menu-item-cols type_link col-desktop-2">
-                                                        <div class="subchildmenu-title" data-menu-level2="">
-                                                            <a aria-label="Title" class="d-block" role="link">
+                                                    <div class="menu-item-cols col-desktop-2">
+                                                        <div class="subchildmenu-title menu-level">
+                                                            <a aria-label="Title" class="d-block" role="link" data-target=".level-3-product-3">
                                                                 Shop Layout </a>
                                                         </div>
-                                                        <ul class="subchildmenu sub-column p-0">
+                                                        <ul class="subchildmenu p-0 level level-3-product-3">
                                                             <li class="submenu-mobile-title justify-content-between">
-                                                                <a role="link" class="back-main-menu-lv1 pointer" aria-label="Back Menu">
+                                                                <a role="link" class="back-main-menu pointer" aria-label="Back Menu">
                                                                     <i class="fa-solid fa-chevron-left"></i>
                                                                     Shop Layout
                                                                 </a>
-                                                                <button aria-label="Close Menu" class="close-button" onclick="closeMenu()">
+                                                                <button aria-label="Close Menu" class="close-button">
                                                                     <svg class="icon-close" width="14" height="15">
                                                                         <use xlink:href="sprite.svg#exit"></use>
                                                                     </svg>
@@ -820,18 +1001,18 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class="menu-item-cols type_link col-desktop-2">
-                                                        <div class="subchildmenu-title" data-menu-level2="">
-                                                            <a aria-label="Title" class="d-block" role="link">
+                                                    <div class="menu-item-cols col-desktop-2">
+                                                        <div class="subchildmenu-title menu-level">
+                                                            <a aria-label="Title" class="d-block" role="link" data-target=".level-3-product-4">
                                                                 Shop Layout </a>
                                                         </div>
-                                                        <ul class="subchildmenu sub-column p-0">
+                                                        <ul class="subchildmenu level level-3-product-4 p-0">
                                                             <li class="submenu-mobile-title justify-content-between">
-                                                                <a role="link" class="back-main-menu-lv1 pointer" aria-label="Back Menu">
+                                                                <a role="link" class="back-main-menu pointer" aria-label="Back Menu">
                                                                     <i class="fa-solid fa-chevron-left"></i>
                                                                     Shop Layout
                                                                 </a>
-                                                                <button aria-label="Close Menu" class="close-button" onclick="closeMenu()">
+                                                                <button aria-label="Close Menu" class="close-button">
                                                                     <svg class="icon-close" width="14" height="15">
                                                                         <use xlink:href="sprite.svg#exit"></use>
                                                                     </svg>
@@ -868,18 +1049,18 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class="menu-item-cols type_link col-desktop-2">
-                                                        <div class="subchildmenu-title" data-menu-level2="">
-                                                            <a aria-label="Title" class="d-block" role="link">
+                                                    <div class="menu-item-cols col-desktop-2">
+                                                        <div class="subchildmenu-title">
+                                                            <a aria-label="Title" class="d-block" role="link" data-target=".level-3-product-5">
                                                                 Shop Layout </a>
                                                         </div>
-                                                        <ul class="subchildmenu sub-column p-0">
+                                                        <ul class="subchildmenu level level-3-product-5 p-0">
                                                             <li class="submenu-mobile-title justify-content-between">
-                                                                <a role="link" class="back-main-menu-lv1 pointer" aria-label="Back Menu">
+                                                                <a role="link" class="back-main-menu pointer" aria-label="Back Menu">
                                                                     <i class="fa-solid fa-chevron-left"></i>
                                                                     Shop Layout
                                                                 </a>
-                                                                <button aria-label="Close Menu" class="close-button" onclick="closeMenu()">
+                                                                <button aria-label="Close Menu" class="close-button">
                                                                     <svg class="icon-close" width="14" height="15">
                                                                         <use xlink:href="sprite.svg#exit"></use>
                                                                     </svg>
@@ -920,17 +1101,17 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="levelmobile menu-parent default_dropdown" onclick="toggleSubmenu(this)">
-                                        <a href="#" aria-label="Blog link">
+                                    <li class="levelmobile menu-parent default_dropdown menu-level">
+                                        <a href="#" aria-label="Blog link" data-target=".level-2-blog">
                                             Blog
                                         </a>
-                                        <div class="submenu">
+                                        <div class="submenu level level-2-blog">
                                             <div class="submenu-mobile-title justify-content-between">
                                                 <a role="link" class="back-main-menu pointer" aria-label="Back Menu">
                                                     <i class="fa-solid fa-chevron-left"></i>
                                                     Blog
                                                 </a>
-                                                <button aria-label="Close Menu" class="close-button" onclick="closeMenu()">
+                                                <button aria-label="Close Menu" class="close-button">
                                                     <svg class="icon-close" width="14" height="15">
                                                         <use xlink:href="sprite.svg#exit"></use>
                                                     </svg>
@@ -980,17 +1161,17 @@
                                             </ul>
                                         </div>
                                     </li>
-                                    <li class="levelmobile menu-parent default_dropdown" onclick="toggleSubmenu(this)">
-                                        <a href="#" aria-label="Page links">
+                                    <li class="levelmobile menu-parent default_dropdown menu-level">
+                                        <a href="#" aria-label="Page links" data-target=".level-2-page">
                                             Page
                                         </a>
-                                        <div class="submenu">
+                                        <div class="submenu level level-2-page">
                                             <div class="submenu-mobile-title justify-content-between">
                                                 <a role="link" class="back-main-menu pointer" aria-label="Back Menu">
                                                     <i class="fa-solid fa-chevron-left"></i>
                                                     Page
                                                 </a>
-                                                <button aria-label="Close Menu" class="close-button" onclick="closeMenu()">
+                                                <button aria-label="Close Menu" class="close-button">
                                                     <svg class="icon-close" width="14" height="15">
                                                         <use xlink:href="sprite.svg#exit"></use>
                                                     </svg>
@@ -1110,18 +1291,18 @@
                                     </li>
                                 </ul>
                                 <ul class="my-0 menu-slide verticalmenu d-desktop-none">
-                                    <li class="levelmobile menu-parent dropdown-with-custom position-relative" onclick="toggleSubmenu(this)">
-                                        <a href="#" aria-label="Computer & Laptop link">
+                                    <li class="levelmobile menu-parent dropdown-with-custom position-relative menu-level">
+                                        <a href="#" aria-label="Computer & Laptop link" data-target=".level-2-comlap"> 
                                             <img src="images/icon_1_1.webp" alt="Icon 1-1" width="20" height="20" loading="lazy">
                                             <span>Computer & Laptop</span>
                                         </a>
-                                        <div class="submenu">
+                                        <div class="submenu level level-2-comlap">
                                             <div class="submenu-mobile-title justify-content-between">
                                                 <a role="link" class="back-main-menu pointer" aria-label="Back Menu">
                                                     <i class="fa-solid fa-chevron-left"></i>
                                                     Computer & Laptop
                                                 </a>
-                                                <button aria-label="Close Menu" class="close-button" onclick="closeMenu()">
+                                                <button aria-label="Close Menu" class="close-button">
                                                     <svg class="icon-close" width="14" height="15">
                                                         <use xlink:href="sprite.svg#exit"></use>
                                                     </svg>
@@ -1131,18 +1312,18 @@
                                                 <div class="col-desktop-7 col-12">
                                                     <div class="row">
                                                         <div class="menu-item type_link col-desktop-6 col-12">
-                                                            <div class="subchildmenu-title position-relative">
-                                                                <a aria-label="Laptop &amp; Computers links" class="d-block not-links" role="link">
+                                                            <div class="subchildmenu-title position-relative menu-level">
+                                                                <a aria-label="Laptop &amp; Computers links" class="d-block not-links" role="link" data-target=".level-3-comlap">
                                                                     Laptop &amp; Computers
                                                                 </a>
                                                             </div>
-                                                            <ul class="subchildmenu p-0">
+                                                            <ul class="subchildmenu level level-3-comlap p-0">
                                                                 <li class="submenu-mobile-title justify-content-between">
-                                                                    <a role="link" class="back-main-menu-lv1 pointer" aria-label="Back Menu">
+                                                                    <a role="link" class="back-main-menu pointer" aria-label="Back Menu">
                                                                         <i class="fa-solid fa-chevron-left"></i>
                                                                         Laptop &amp; Computers
                                                                     </a>
-                                                                    <button aria-label="Close Menu" class="close-button" onclick="closeMenu()">
+                                                                    <button aria-label="Close Menu" class="close-button">
                                                                         <svg class="icon-close" width="14" height="15">
                                                                             <use xlink:href="sprite.svg#exit"></use>
                                                                         </svg>
@@ -1186,18 +1367,18 @@
                                                             </ul>
                                                         </div>
                                                         <div class="menu-item type_link col-desktop-6 col-12">
-                                                            <div class="subchildmenu-title">
-                                                                <a aria-label="Home Audio title" class="toggle-submenu-mb" role="link">
+                                                            <div class="subchildmenu-title menu-level">
+                                                                <a aria-label="Home Audio title" class="toggle-submenu-mb" role="link" data-target=".level-3-comlap-2">
                                                                     Home Audio
                                                                 </a>
                                                             </div>
-                                                            <ul class="subchildmenu p-0">
+                                                            <ul class="subchildmenu level level-3-comlap-2 p-0">
                                                                 <li class="submenu-mobile-title justify-content-between">
-                                                                    <a role="link" class="back-main-menu-lv1 pointer" aria-label="Back Menu">
+                                                                    <a role="link" class="back-main-menu pointer" aria-label="Back Menu">
                                                                         <i class="fa-solid fa-chevron-left"></i>
                                                                         Home Audio
                                                                     </a>
-                                                                    <button aria-label="Close Menu" class="close-button" onclick="closeMenu()">
+                                                                    <button aria-label="Close Menu" class="close-button">
                                                                         <svg class="icon-close" width="14" height="15">
                                                                             <use xlink:href="sprite.svg#exit"></use>
                                                                         </svg>
@@ -1241,18 +1422,18 @@
                                                             </ul>
                                                         </div>
                                                         <div class="menu-item type_link col-desktop-6 col-12">
-                                                            <div class="subchildmenu-title relative" data-menu-level2="">
-                                                                <a href="#" aria-label="Cameras link" class="d-block toggle-submenu-mb" >
+                                                            <div class="subchildmenu-title relative menu-level">
+                                                                <a href="#" aria-label="Cameras link" class="d-block toggle-submenu-mb" data-target=".level-3-comlap-3">
                                                                     Cameras
                                                                 </a>
                                                             </div>
-                                                            <ul class="subchildmenu p-0">
+                                                            <ul class="subchildmenu level level-3-comlap-3 p-0">
                                                                 <li class="submenu-mobile-title justify-content-between">
-                                                                    <a role="link" class="back-main-menu-lv1 pointer" aria-label="Back Menu">
+                                                                    <a role="link" class="back-main-menu pointer" aria-label="Back Menu">
                                                                         <i class="fa-solid fa-chevron-left"></i>
                                                                         Cameras
                                                                     </a>
-                                                                    <button aria-label="Close Menu" class="close-button" onclick="closeMenu()">
+                                                                    <button aria-label="Close Menu" class="close-button">
                                                                         <svg class="icon-close" width="14" height="15">
                                                                             <use xlink:href="sprite.svg#exit"></use>
                                                                         </svg>
@@ -1291,19 +1472,19 @@
                                                             </ul>
                                                         </div>
                                                         <div class="menu-item type_link col-desktop-6 col-12">
-                                                            <div class="subchildmenu-title" data-menu-level2="">
+                                                            <div class="subchildmenu-title menu-level">
                                                                 <a href="#" aria-label="Smartphone link"
-                                                                    class="d-block toggle-submenu-mb">
+                                                                    class="d-block toggle-submenu-mb" data-target=".level-3-comlap-4">
                                                                     Smartphone
                                                                 </a>
                                                             </div>
-                                                            <ul class="subchildmenu p-0">
+                                                            <ul class="subchildmenu level level-3-comlap-4 p-0">
                                                                 <li class="submenu-mobile-title justify-content-between">
-                                                                    <a role="link" class="back-main-menu-lv1 pointer" aria-label="Back Menu">
+                                                                    <a role="link" class="back-main-menu pointer" aria-label="Back Menu">
                                                                         <i class="fa-solid fa-chevron-left"></i>
                                                                         Smartphone
                                                                     </a>
-                                                                    <button aria-label="Close Menu" class="close-button" onclick="closeMenu()">
+                                                                    <button aria-label="Close Menu" class="close-button">
                                                                         <svg class="icon-close" width="14" height="15">
                                                                             <use xlink:href="sprite.svg#exit"></use>
                                                                         </svg>
@@ -1354,18 +1535,18 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="levelmobile menu-parent dropdown-with-custom position-relative" onclick="toggleSubmenu(this)">
-                                        <a href="#" aria-label="Tablets & iPad link">
+                                    <li class="levelmobile menu-parent dropdown-with-custom position-relative menu-level">
+                                        <a href="#" aria-label="Tablets & iPad link" data-target=".level-2-tabipad">
                                             <img src="images/icon_1_2.webp" alt="Icon 1-2" width="20" height="20" loading="lazy">
                                             <span>Tablets & iPad</span>
                                         </a>
-                                        <div class="submenu">
+                                        <div class="submenu level level-2-tabipad">
                                             <div class="submenu-mobile-title justify-content-between">
                                                 <a role="link" class="back-main-menu pointer" aria-label="Back Menu">
                                                     <i class="fa-solid fa-chevron-left"></i>
                                                     Tablets & iPad
                                                 </a>
-                                                <button aria-label="Close Menu" class="close-button" onclick="closeMenu()">
+                                                <button aria-label="Close Menu" class="close-button">
                                                     <svg class="icon-close" width="14" height="15">
                                                         <use xlink:href="sprite.svg#exit"></use>
                                                     </svg>
@@ -1375,18 +1556,18 @@
                                                 <div class="col-desktop-7 col-12">
                                                     <div class="row">
                                                         <div class="menu-item type_link col-desktop-6 col-12">
-                                                            <div class="subchildmenu-title position-relative">
-                                                                <a aria-label="Laptop &amp; Computers links" class="d-block not-links" role="link">
+                                                            <div class="subchildmenu-title position-relative menu-level">
+                                                                <a aria-label="Laptop &amp; Computers links" class="d-block not-links" role="link" data-target=".level-3-tabipad">
                                                                     Laptop &amp; Computers
                                                                 </a>
                                                             </div>
-                                                            <ul class="subchildmenu p-0">
+                                                            <ul class="subchildmenu level level-3-tabipad p-0">
                                                                 <li class="submenu-mobile-title justify-content-between">
-                                                                    <a role="link" class="back-main-menu-lv1 pointer" aria-label="Back Menu">
+                                                                    <a role="link" class="back-main-menu pointer" aria-label="Back Menu">
                                                                         <i class="fa-solid fa-chevron-left"></i>
                                                                         Laptop &amp; Computers
                                                                     </a>
-                                                                    <button aria-label="Close Menu" class="close-button" onclick="closeMenu()">
+                                                                    <button aria-label="Close Menu" class="close-button">
                                                                         <svg class="icon-close" width="14" height="15">
                                                                             <use xlink:href="sprite.svg#exit"></use>
                                                                         </svg>
@@ -1430,18 +1611,18 @@
                                                             </ul>
                                                         </div>
                                                         <div class="menu-item type_link col-desktop-6 col-12">
-                                                            <div class="subchildmenu-title">
-                                                                <a aria-label="Home Audio title" class="toggle-submenu-mb" role="link">
+                                                            <div class="subchildmenu-title menu-level">
+                                                                <a aria-label="Home Audio title" class="toggle-submenu-mb" role="link" data-target=".level-3-tabipad-2">
                                                                     Home Audio
                                                                 </a>
                                                             </div>
-                                                            <ul class="subchildmenu p-0">
+                                                            <ul class="subchildmenu level level-3-tabipad-2 p-0">
                                                                 <li class="submenu-mobile-title justify-content-between">
-                                                                    <a role="link" class="back-main-menu-lv1 pointer" aria-label="Back Menu">
+                                                                    <a role="link" class="back-main-menu pointer" aria-label="Back Menu">
                                                                         <i class="fa-solid fa-chevron-left"></i>
                                                                         Home Audio
                                                                     </a>
-                                                                    <button aria-label="Close Menu" class="close-button" onclick="closeMenu()">
+                                                                    <button aria-label="Close Menu" class="close-button">
                                                                         <svg class="icon-close" width="14" height="15">
                                                                             <use xlink:href="sprite.svg#exit"></use>
                                                                         </svg>
@@ -1485,18 +1666,18 @@
                                                             </ul>
                                                         </div>
                                                         <div class="menu-item type_link col-desktop-6 col-12">
-                                                            <div class="subchildmenu-title relative" data-menu-level2="">
-                                                                <a href="#" aria-label="Cameras link" class="d-block toggle-submenu-mb" >
+                                                            <div class="subchildmenu-title relative menu-level">
+                                                                <a href="#" aria-label="Cameras link" class="d-block toggle-submenu-mb" data-target=".level-3-tabipad-3">
                                                                     Cameras
                                                                 </a>
                                                             </div>
-                                                            <ul class="subchildmenu p-0">
+                                                            <ul class="subchildmenu level level-3-tabipad-3 p-0">
                                                                 <li class="submenu-mobile-title justify-content-between">
-                                                                    <a role="link" class="back-main-menu-lv1 pointer" aria-label="Back Menu">
+                                                                    <a role="link" class="back-main-menu pointer" aria-label="Back Menu">
                                                                         <i class="fa-solid fa-chevron-left"></i>
                                                                         Cameras
                                                                     </a>
-                                                                    <button aria-label="Close Menu" class="close-button" onclick="closeMenu()">
+                                                                    <button aria-label="Close Menu" class="close-button">
                                                                         <svg class="icon-close" width="14" height="15">
                                                                             <use xlink:href="sprite.svg#exit"></use>
                                                                         </svg>
@@ -1535,19 +1716,19 @@
                                                             </ul>
                                                         </div>
                                                         <div class="menu-item type_link col-desktop-6 col-12">
-                                                            <div class="subchildmenu-title" data-menu-level2="">
+                                                            <div class="subchildmenu-title menu-level">
                                                                 <a href="#" aria-label="Smartphone link"
-                                                                    class="d-block toggle-submenu-mb">
+                                                                    class="d-block toggle-submenu-mb" data-target=".level-3-tabipad-4">
                                                                     Smartphone
                                                                 </a>
                                                             </div>
-                                                            <ul class="subchildmenu p-0">
+                                                            <ul class="subchildmenu level level-3-tabipad-4 p-0">
                                                                 <li class="submenu-mobile-title justify-content-between">
-                                                                    <a role="link" class="back-main-menu-lv1 pointer" aria-label="Back Menu">
+                                                                    <a role="link" class="back-main-menu pointer" aria-label="Back Menu">
                                                                         <i class="fa-solid fa-chevron-left"></i>
                                                                         Smartphone
                                                                     </a>
-                                                                    <button aria-label="Close Menu" class="close-button" onclick="closeMenu()">
+                                                                    <button aria-label="Close Menu" class="close-button">
                                                                         <svg class="icon-close" width="14" height="15">
                                                                             <use xlink:href="sprite.svg#exit"></use>
                                                                         </svg>
@@ -1598,18 +1779,18 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="levelmobile menu-parent default_dropdown position-relative" onclick="toggleSubmenu(this)">
-                                        <a href="#" aria-label="Printer & Cameras link">
+                                    <li class="levelmobile menu-parent default_dropdown position-relative menu-level">
+                                        <a href="#" aria-label="Printer & Cameras link" data-target=".level-2-prc">
                                             <img src="images/icon_1_3.webp" alt="Icon 1-3" width="20" height="20">
                                             <span>Printer & Cameras</span>
                                         </a>
-                                        <div class="submenu">
-                                            <div class="submenu-mobile-title justify-content-between">
+                                        <div class="submenu level level-2-prc">
+                                            <div class="submenu-mobile-title justify-content-between menu-level">
                                                 <a role="link" class="back-main-menu pointer" aria-label="Back Menu">
                                                     <i class="fa-solid fa-chevron-left"></i>
                                                     Printer & Cameras
                                                 </a>
-                                                <button aria-label="Close Menu" class="close-button" onclick="closeMenu()">
+                                                <button aria-label="Close Menu" class="close-button">
                                                     <svg class="icon-close" width="14" height="15">
                                                         <use xlink:href="sprite.svg#exit"></use>
                                                     </svg>
@@ -1649,18 +1830,18 @@
                                             </ul>
                                         </div>
                                     </li>
-                                    <li class="levelmobile menu-parent default_dropdown position-relative" onclick="toggleSubmenu(this)">
-                                        <a href="#" aria-label="Smart Phones link">
+                                    <li class="levelmobile menu-parent default_dropdown position-relative menu-level">
+                                        <a href="#" aria-label="Smart Phones link" data-target=".level-2-smp">
                                             <img src="images/icon_1_4.webp" alt="icon 1-4" width="20" height="20" loading="lazy">
                                             <span>Smart Phones</span>
                                         </a>
-                                        <div class="submenu">
-                                            <div class="submenu-mobile-title justify-content-between">
+                                        <div class="submenu level level-2-smp">
+                                            <div class="submenu-mobile-title justify-content-between menu-level">
                                                 <a role="link" class="back-main-menu pointer" aria-label="Back Menu">
                                                     <i class="fa-solid fa-chevron-left"></i>
                                                     Smart Phones
                                                 </a>
-                                                <button aria-label="Close Menu" class="close-button" onclick="closeMenu()">
+                                                <button aria-label="Close Menu" class="close-button">
                                                      <svg class="icon-close" width="14" height="15">
                                                         <use xlink:href="sprite.svg#exit"></use>
                                                      </svg>
@@ -1700,18 +1881,18 @@
                                             </ul>
                                         </div>
                                     </li>
-                                    <li class="levelmobile menu-parent default_dropdown position-relative" onclick="toggleSubmenu(this)">
-                                        <a href="#" aria-label="Keyboard & Mouse link">
+                                    <li class="levelmobile menu-parent default_dropdown position-relative menu-level">
+                                        <a href="#" aria-label="Keyboard & Mouse link" data-target=".level-2-km">
                                             <img src="images/icon_5.webp" alt="icon 5" width="20" height="20" loading="lazy">
                                             <span>Keyboard & Mouse</span>
                                         </a>
-                                        <div class="submenu">
-                                            <div class="submenu-mobile-title justify-content-between">
+                                        <div class="submenu level level-2-km">
+                                            <div class="submenu-mobile-title justify-content-between menu-level">
                                                 <a role="link" class="back-main-menu pointer" aria-label="Back Menu">
                                                     <i class="fa-solid fa-chevron-left"></i>
                                                     Keyboard & Mouse
                                                 </a>
-                                                <button aria-label="Close Menu" class="close-button" onclick="closeMenu()">
+                                                <button aria-label="Close Menu" class="close-button">
                                                      <svg class="icon-close" width="14" height="15">
                                                         <use xlink:href="sprite.svg#exit"></use>
                                                      </svg>
@@ -1795,7 +1976,7 @@
     </header>
 
     <!--Main-->
-    <main>
+    <main class="content">
         <!--Slider-Menu-->
         <section class="slider">
             <div class="container-fluid">
@@ -1905,7 +2086,7 @@
                                                             Cameras
                                                         </a>
                                                     </div>
-                                                    <ul class="p-0 subchildmenu sub-column ">
+                                                    <ul class="p-0 subchildmenu">
                                                         <li class="menu-item links">
                                                             <a aria-label="Digital Cameras links" href="#">
                                                                 Digital Cameras
@@ -2093,7 +2274,7 @@
                                                             Cameras
                                                         </a>
                                                     </div>
-                                                    <ul class="p-0 subchildmenu sub-column ">
+                                                    <ul class="p-0 subchildmenu">
                                                         <li class="menu-item links">
                                                             <a aria-label="Digital Cameras links" href="#">
                                                                 Digital Cameras
@@ -2552,7 +2733,7 @@
                                                 <i class="fa-solid fa-star star"></i>
                                                 <i class="fa-solid fa-star star"></i>
                                             </div>
-                                            <p class="pro-price">$569.00</p>
+                                            <p class="pro-price pro-price-regular">$56.00</p>
                                         </div>
                                     </div>
                                 </div>
@@ -2604,7 +2785,7 @@
                                         <div class="pro-info">
                                             <span class="name_brand">Toshiba</span>
                                             <h3 class="pro-name">
-                                                <a aria-label="Name product" href="#">Skytech Blaze Gaming PC Intel Core i5 15700F 5.1 GHz</a>
+                                                <a aria-label="Name product" href="#">Skytech Blaze Gaming PC Intel Core i5 15700F 5.1 GHz 1</a>
                                             </h3>
                                             <div class="rating">
                                                 <i class="fa-solid fa-star star"></i>
@@ -2614,8 +2795,8 @@
                                                 <i class="fa-solid fa-star star"></i>
                                             </div>
                                             <p class="pro-price">
-                                                <span class="pro-price-regular">$569.00</span>
-                                                <span class="pro-price-new"><del>$156.00</del></span>
+                                                <span class="pro-price-new">$560.00</span>
+                                                <span class="pro-price-del"><del>$156.00</del></span>
                                             </p>
                                         </div>
                                     </div>
@@ -2676,7 +2857,7 @@
                                                 <i class="fa-solid fa-star star"></i>
                                                 <i class="fa-solid fa-star star"></i>
                                             </div>
-                                            <p class="pro-price">$569.00</p>
+                                            <p class="pro-price pro-price-regular">$569.00</p>
                                         </div>
                                     </div>
                                 </div>
@@ -2738,8 +2919,8 @@
                                                 <i class="fa-solid fa-star star"></i>
                                             </div>
                                             <p class="pro-price">
-                                                <span class="pro-price-regular">$569.00</span>
-                                                <span class="pro-price-new"><del>$156.00</del></span>
+                                                <span class="pro-price-new">$569.00</span>
+                                                <span class="pro-price-del"><del>$156.00</del></span>
                                             </p>
                                         </div>
                                     </div>
@@ -2800,7 +2981,7 @@
                                                 <i class="fa-solid fa-star star"></i>
                                                 <i class="fa-solid fa-star star"></i>
                                             </div>
-                                            <p class="pro-price">$569.00</p>
+                                            <p class="pro-price pro-price-regular"></p>$569.00</p>
                                         </div>
                                     </div>
                                 </div>
@@ -2901,8 +3082,8 @@
                                                 <i class="fa-solid fa-star star"></i>
                                             </div>
                                             <p class="pro-price">
-                                                <span class="pro-price-regular">$569.00</span>
-                                                <span class="pro-price-new"><del>$156.00</del></span>
+                                                <span class="pro-price-new">$569.00</span>
+                                                <span class="pro-price-del"><del>$156.00</del></span>
                                             </p>
                                         </div>
                                     </div>
@@ -2963,7 +3144,7 @@
                                                 <i class="fa-solid fa-star star"></i>
                                                 <i class="fa-solid fa-star star"></i>
                                             </div>
-                                            <p class="pro-price">$569.00</p>
+                                            <p class="pro-price pro-price-regular">$569.00</p>
                                         </div>
                                     </div>
                                 </div>
@@ -3025,8 +3206,8 @@
                                                 <i class="fa-solid fa-star star"></i>
                                             </div>
                                             <p class="pro-price">
-                                                <span class="pro-price-regular">$569.00</span>
-                                                <span class="pro-price-new"><del>$156.00</del></span>
+                                                <span class="pro-price-new">$569.00</span>
+                                                <span class="pro-price-del"><del>$156.00</del></span>
                                             </p>
                                         </div>
                                     </div>
@@ -3160,7 +3341,7 @@
                                                 <i class="fa-solid fa-star star"></i>
                                                 <i class="fa-solid fa-star star"></i>
                                             </div>
-                                            <p class="pro-price">
+                                            <p class="pro-price pro-price-regular">
                                                $569.00
                                             </p>
                                         </div>
@@ -3224,8 +3405,8 @@
                                                 <i class="fa-solid fa-star star"></i>
                                             </div>
                                             <p class="pro-price">
-                                                <span class="pro-price-regular">$569.00</span>
-                                                <span class="pro-price-new"><del>$156.00</del></span>
+                                                <span class="pro-price-new">$569.00</span>
+                                                <span class="pro-price-del"><del>$156.00</del></span>
                                             </p>
                                         </div>
                                     </div>
@@ -3286,7 +3467,7 @@
                                                 <i class="fa-solid fa-star star"></i>
                                                 <i class="fa-solid fa-star star"></i>
                                             </div>
-                                            <p class="pro-price">
+                                            <p class="pro-price pro-price-regular">
                                                 $569.00
                                             </p>
                                         </div>
@@ -3350,8 +3531,8 @@
                                                 <i class="fa-solid fa-star star"></i>
                                             </div>
                                             <p class="pro-price">
-                                                <span class="pro-price-regular">$569.00</span>
-                                                <span class="pro-price-new"><del>$156.00</del></span>
+                                                <span class="pro-price-new">$569.00</span>
+                                                <span class="pro-price-del"><del>$156.00</del></span>
                                             </p>
                                         </div>
                                     </div>
@@ -3412,7 +3593,7 @@
                                                 <i class="fa-solid fa-star star"></i>
                                                 <i class="fa-solid fa-star star"></i>
                                             </div>
-                                            <p class="pro-price">
+                                            <p class="pro-price pro-price-regular">
                                                 $569.00
                                             </p>
                                         </div>
@@ -3905,7 +4086,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="header_minicart position-relative">
+                    <div class="minicart-action position-relative">
                         <a href="#" class="bls-minicart-action bls_tooltip d-flex" aria-label="Cart">
                             <svg width="21" height="17">
                                 <use xlink:href="sprite.svg#icon-cart"></use>
@@ -3914,10 +4095,10 @@
                             <span class="quick-menu-mb">Cart</span>
                         </a>
                     </div>
-              </li>
+                </li>
             </ul>
         </div>
-    </div>
+    </div>    
     <div class="dlg-demo-feature-full">
         <div class="dlg-demo-feature">
             <button class="close-button close-button-dlg position-absolute" aria-label="close header top">
@@ -4377,15 +4558,13 @@
             </div>
         </div>
     </div>
-    <div class="back-top show">
-        <span id="bls__back-top"></span>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 30" width="30" height="30">
-            <path d="M7.29 15.71a1 1 0 0 0 1.42 0L12 12.41l3.29 3.3a1 1 0 1 0 1.42-1.42l-4-4a1 1 0 0 0-1.42 0l-4 4a1 1 0 0 0 0 1.42z"/>
-            <path d="M7.29 7.71a1 1 0 0 0 1.42 0L12 4.41l3.29 3.3a1 1 0 1 0 1.42-1.42l-4-4a1 1 0 0 0-1.42 0l-4 4a1 1 0 0 0 0 1.42z" transform="translate(0 14)"/>
-        </svg>
+    <div class="back-top" id="backTop">
+        <span id="ns__back-top"></span>
+        <i class="fa-solid fa-angles-up"></i>
     </div>
 
     <!---JS-->
+    <script src="swiper-bundle.min.js" defer></script>
     <script src="swiper-bundle.js" defer></script>
     <script defer src="slide.js" ></script>
 </body>

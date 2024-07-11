@@ -403,6 +403,10 @@
   margin-top: 2.5rem !important;
 }
 
+.mt-6 {
+  margin-top: 3rem !important;
+} 
+
 .mb-1 {
   margin-bottom: 0.5rem !important;
 }
@@ -485,6 +489,10 @@
 
 .text-center {
   text-align: center !important;
+}
+
+.pointer {
+    cursor: pointer;
 }
 
 @media (min-width: 576px) {
