@@ -193,7 +193,7 @@ header {
 }
 
 header.sticky {
-    position: sticky;
+    position: fixed;
     top: 0;
     animation: scrollDown 0.4s forwards;
 }
@@ -415,12 +415,15 @@ button.action:hover{
     border-radius: 50%;
     font-size: 1rem;
     position: absolute;
-    top: -20%;
+    top: -17%;
     left: 2rem;
     background-color: var(--key-digital);
     color: var(--background);
 }
-
+.h-count.wishlist-count {
+    top: -25%;
+    left: 1.7rem;
+}
 /* Header-Bottom*/
 .header-bottom {
     border-top: 0.1rem solid var(--border-digital);
@@ -1806,6 +1809,27 @@ ul li.links a:hover {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+
+.minicart-content:after {
+    content: "";
+    background: #ffffffe5;
+    opacity: 0;
+    position: absolute;
+    transition: var(--bls-transition);
+    visibility: hidden;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+
+.minicart-content.show:after {
+    opacity: 1;
+    visibility: visible;
 }
 
 .cart-footer .addon.show {

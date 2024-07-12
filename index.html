@@ -337,7 +337,7 @@
                                                                             <path d="M11 0.5L11 1.5L-4.37114e-08 1.5L0 0.5L11 0.5Z" fill="#111111"></path>
                                                                         </svg>
                                                                     </button>
-                                                                    <input class="quantity-input text-center p-0-important" type="text" name="updates[]" value="3" data-value="3" min="0">
+                                                                    <input class="quantity-input text-center p-0-important" type="text" name="updates[]" value="" data-value="">
                                                                     <button class="quantity_button btn-reset d-flex justify-content-center align-items-center" name="plus" type="button">
                                                                         <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M5 11.5H6L6 6.5H11V5.5H6L6 0.5H5L5 5.5H0V6.5H5L5 11.5Z" fill="#111111"></path>
@@ -385,6 +385,7 @@
                                                         </button>
                                                     </div>
                                                 </div>
+                                                <div class="overlay_addons"></div>
                                                 <div class="addon" id="note">
                                                     <div class="addon-title mb-2">
                                                         <svg width="16" height="19">
@@ -431,7 +432,7 @@
                                                             <div class="form-group mb-3 d-flex flex-column">
                                                                 <label class="mb-1" for="address_country">Country/region</label>
                                                                 <select id="address_country" class="form-control" name="address[country]" data-default="United States">
-                                                                    <option value="---"></option>
+                                                                    <option value="---">---</option>
                                                                     <option value="United States">United States</option>
                                                                     <option value="Australia">Australia</option>
                                                                     <option value="Austria">Austria</option>
@@ -478,9 +479,9 @@
                                                     <div class="terms-conditions d-flex mb-3">
                                                         <input class="input m-0 conditions_form_minicart pointer" type="checkbox" name="conditions" id="conditions_form_minicart">
                                                         <label class="label-cart pointer" for="conditions_form_minicart">
-                                                            <p> I agree with 
+                                                            <span></span>I agree with 
                                                                 <a aria-label="Terms and Conditions" href="#" title="Term &amp; Condition">Terms &amp; Conditions </a>
-                                                            </p>
+                                                            </span>
                                                         </label>
                                                     </div>
                                                     <a class="btn-cart action viewcart pointer" href="#" aria-label="view cart">
@@ -2980,7 +2981,7 @@
                                                 <i class="fa-solid fa-star star"></i>
                                                 <i class="fa-solid fa-star star"></i>
                                             </div>
-                                            <p class="pro-price pro-price-regular"></p>$569.00</p>
+                                            <p class="pro-price pro-price-regular">$569.00</p>
                                         </div>
                                     </div>
                                 </div>
@@ -3341,7 +3342,7 @@
                                                 <i class="fa-solid fa-star star"></i>
                                             </div>
                                             <p class="pro-price pro-price-regular">
-                                               $569.00
+                                                $569.00
                                             </p>
                                         </div>
                                     </div>
@@ -4564,7 +4565,7 @@
 
     <!---JS-->
     <script src="swiper-bundle.min.js" defer></script>
-    <script src="swiper-bundle.js" defer></script>
+    <!-- <script src="swiper-bundle.js" defer></script> -->
     <script defer src="slide.js" ></script>
 </body>
 

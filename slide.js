@@ -229,7 +229,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const progressBar = document.querySelector('.percent_shipping_bar');
     const freeShippingMessage = document.querySelector('.cart-thres');
     const iconShipping = document.querySelector('.freeshipping-icon');
-    const returnShop = document.querySelector('.button-close-cart')
+    const returnShop = document.querySelector('.button-close-cart');
+
 
     const minicartNote = document.querySelector('.mini_cart_note');
     const note = document.getElementById('note');
@@ -237,6 +238,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const gift = document.getElementById('gift');
     const minicartShipping = document.querySelector('.mini_cart_shipping');
     const shipping = document.getElementById('shipping');
+    const overlayMinicart = document.querySelector('.minicart-content');
 
     let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 
@@ -329,7 +331,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                                 <path d="M11 0.5L11 1.5L-4.37114e-08 1.5L0 0.5L11 0.5Z" fill="#111111"></path>
                                             </svg>
                                         </button>
-                                        <input class="quantity-input text-center p-0-important" type="text" name="updates[]" value="${item.quantity}" data-value="${item.quantity}" min="0">
+                                        <input class="quantity-input text-center p-0-important" type="text" name="updates[]" value="${item.quantity}" data-value="${item.quantity}">
                                         <button class="quantity_button btn-reset d-flex justify-content-center align-items-center" name="plus" type="button">
                                             <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M5 11.5H6L6 6.5H11V5.5H6L6 0.5H5L5 5.5H0V6.5H5L5 11.5Z" fill="#111111"></path>
@@ -451,14 +453,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     minicartNote.addEventListener('click', () => {
         note.classList.add('show');
+        overlayMinicart.classList.add('show');
     });
 
     minicartGift.addEventListener('click', () => {
         gift.classList.add('show');
+        overlayMinicart.classList.add('show');
     });
 
     minicartShipping.addEventListener('click', () => {
         shipping.classList.add('show');
+        overlayMinicart.classList.add('show');
     });
 
     returnShop.addEventListener('click', hideCart);
@@ -469,6 +474,7 @@ document.addEventListener("DOMContentLoaded", function () {
     cancelButtons.forEach(button => {
         button.addEventListener('click', function () {
             this.closest('.addon').classList.remove('show');
+            overlayMinicart.classList.remove('show');
         });
     });
     updateCart();
