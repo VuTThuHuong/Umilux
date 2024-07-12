@@ -287,7 +287,6 @@ document.addEventListener("DOMContentLoaded", function () {
             });
             cartTotalPriceDisplay.textContent = '$0.00';
             freeShippingMessage.innerHTML = `<span class="free-shipping-message">Spend $${freeShippingThreshold.toFixed(2)} more to enjoy <span class="freeship-text">FREE SHIPPING!</span></span>`;
-            freeShippingMessage.style.display = 'block';
             progressBar.style.width = '0%';
             iconShipping.style.left = `0%`;
             checkoutButton.disabled = true;
@@ -425,7 +424,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 newPrice = parseFloat(newPriceElement.textContent.replace('$', ''));
             }
 
-            const existingItem = cartItems.find(item => item.name === productName);
+            // const existingItem = cartItems.find(item => item.name === productName);
+            const existingItem = cartItems.find(item => item.id === Date.now());
             if(existingItem){
                 existingItem.quantity++;
             }
@@ -440,8 +440,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     quantity: 1
                 });
             }
-            showCart();
             updateCart();
+            showCart();
         })
     });
 
@@ -463,11 +463,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     returnShop.addEventListener('click', hideCart);
     closeCart.addEventListener('click', hideCart);
-    document.addEventListener('click', (event) => {
-        if (!cart.contains(event.target) &&  !event.target.closest('.minicart-action')) {
-            hideCart();
-        }
-    })
+    overlayCart.addEventListener('click', hideCart);
 
     const cancelButtons = document.querySelectorAll('.btn-cancel');
     cancelButtons.forEach(button => {
@@ -475,6 +471,7 @@ document.addEventListener("DOMContentLoaded", function () {
             this.closest('.addon').classList.remove('show');
         });
     });
+    updateCart();
 });  
 
     /*====== Slide Text Header ======*/
@@ -573,8 +570,9 @@ for (var i = 0; i < toggleContent.length; i++) {
 
     title.addEventListener('click', function(e) {
         e.stopPropagation();
+        var openToggle = this.querySelector('.open-children-toggle');
+        openToggle.classList.toggle('visible');
         var contentList = this.nextElementSibling;
-
         contentList.classList.toggle('visible');
     });
 }

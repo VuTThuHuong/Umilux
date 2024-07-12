@@ -599,7 +599,7 @@
         height: 1px;
     }
 
-    .col-footer-item.visible .open-children-toggle::before {
+    .open-children-toggle.visible::before {
         transform: translate(-50%, -50%) rotate(-180deg);
     }
     

@@ -917,7 +917,7 @@ button.action:hover{
 }
 /*Banner*/
 .btn-link {
-    padding: 0 0 0.4rem;
+    padding: 0 0 1rem;
     color: var(--background);
     position: relative;
     align-items: center;
