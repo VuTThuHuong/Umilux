@@ -701,8 +701,9 @@
     .pro-price{
         font-size: var( --heading-title-h4);
     }
-    .list-btn{
-        display: none;
+    .btn-add{
+        height: 3rem;
+        width: 3rem;
     }
     .mobile-menu {
         max-width: 100%;
@@ -712,9 +713,10 @@
         max-width: 100%;
         width: 100%;
     }
-    .subchildmenu.show {
+    .submeu .subchildmenu.show {
         max-width: 100%;
         width: 100%;
+        height: 100vh;
     }
 }
 
