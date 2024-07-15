@@ -677,7 +677,6 @@
         flex: 0 0 auto;
         width: 58.33333333%;
     }
-     
     .d-lg-block {
         display: block !important;
     }
@@ -703,11 +702,18 @@
         margin-top: 0 !important;
         margin-bottom: 0 !important;
     }
+    .mt-lg-0{
+      margin-bottom: 0 !important;
+     } 
     .mb-lg-0{
         margin-bottom: 0 !important;
     } 
+    .mb-lg-4{
+      margin-bottom: 2rem !important;
+    } 
     .ms-lg-0{
         margin-left: 0!important ;
+
     }
 }
 
