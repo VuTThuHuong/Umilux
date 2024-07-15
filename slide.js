@@ -480,7 +480,7 @@ document.addEventListener("DOMContentLoaded", function () {
     updateCart();
 });  
 
-    /*====== Slide Text Header ======*/
+    /*====== SlideShow ======*/
 document.addEventListener("DOMContentLoaded", function () {
     const slides = document.querySelectorAll('.slide-items');
     const dots = document.querySelectorAll('.dots li');
@@ -581,4 +581,32 @@ for (var i = 0; i < toggleContent.length; i++) {
         var contentList = this.nextElementSibling;
         contentList.classList.toggle('visible');
     });
+}
+
+
+//
+document.getElementById('language_btn').addEventListener('click', function(event) {
+    toggleDropdown(event, 'language_btn');
+});
+
+document.getElementById('currency_btn').addEventListener('click', function(event) {
+    toggleDropdown(event, 'currency_btn');
+});
+
+function toggleDropdown(event, buttonId) {
+    event.stopPropagation();
+    const button = document.getElementById(buttonId);
+    const dropdownMenu = button.nextElementSibling;
+
+    document.querySelectorAll('.dropdown-menu').forEach(function(menu) {
+        if (menu !== dropdownMenu) {
+            menu.style.display = 'none';
+        }
+    });
+
+    if (dropdownMenu.style.display === 'block') {
+        dropdownMenu.style.display = 'none';
+    } else {
+        dropdownMenu.style.display = 'block';
+    }
 }

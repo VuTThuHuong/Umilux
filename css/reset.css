@@ -51,11 +51,6 @@ main {
 }
 /* Grouping content
    ========================================================================== */
-
-a {
-  background-color: transparent;
-}
-
 b,
 strong {
   font-weight: bolder;

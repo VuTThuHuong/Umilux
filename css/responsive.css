@@ -1,14 +1,23 @@
+@media only screen and (max-width: 1400px){
+    .header-content {
+        width: 45%;
+    } 
+}
+
 @media only screen and (min-width: 1200px){
     .popular-search-products .product-grid {
         --search_result-item: 5;
     }
+    
 }
 
 @media only screen and (max-width: 1069px) {
     div > section {
         padding-bottom: 50px;
     }
-    
+    .search-form {
+        max-width: 100%;
+    }
     .slide-subtitle {
         font-size: 12px;
         text-transform: uppercase;
@@ -19,23 +28,19 @@
 
     .slide-title {
         font-size: 38px;
-        font-weight: var(--font-weight-bold);
         margin-bottom: 25px;
-        color: var(--background);
     }
 
     .btn-banner {
         padding: 12px 40px;
-        border-radius: 30px;
-        font-size: var(--base-font-size);
     }
 
     .form-search {
         margin-top: 10px;
     }
 
-    .header-bottom {
-        border-top: none;
+    .header_center_content {
+        border: none;
     }
 
     .col-middle-center {
@@ -136,8 +141,6 @@
 
     .mobile-menu-content .menu-mobile-title {
         font-weight: var( --font-weight-bold);
-        text-transform: uppercase;
-        color: #fff;
         background-color: var(--color-banner-pro);
         padding: 1.5rem 0px;
         display: block;
@@ -393,21 +396,17 @@
     header .col-right {
         width: 24%;
     }
-    .cart-count {
-        left: 2.5rem;
-        top: -15%;
-    }
     .menu-parent .submenu{
         top: 100%;
         background-color: var(--background);
         padding: var(--submenu-padding);
         visibility: hidden;
         opacity: 0;
-        z-index: 1;
         position: absolute;
         box-shadow: var(--box-shadow);
         pointer-events: none;
         transition: opacity .4s, visibility .4s, transform .4s, -webkit-transform .4s;
+        z-index: 1;
     }
     .menu-parent::after {
         content: "";
@@ -462,6 +461,9 @@
 @media only screen and (max-width: 1199px){
     .popular-search-products .product-grid {
         --search_result-item: 4;
+    }
+    .header-content {
+        width: 50%;
     }
 }
 
@@ -524,8 +526,6 @@
 
     .btn-banner {
         padding: 10px 35px;
-        border-radius: 30px;
-        font-size: var(--base-font-size);
     } 
 
     h3 {
@@ -653,14 +653,11 @@
     }
 
     .mobile-stickybar .h-count{
-        min-width: 1.5rem;
-        min-height: 1.5rem;
         top: -50%;
-        font-size: 0.8rem;
         transform: translateY(50%);
     }
     .mobile-stickybar .cart-count {
-        left: 1.8rem;
+        left: 1.5rem;
     }
 
     .mobile-stickybar .wishlist-count {
